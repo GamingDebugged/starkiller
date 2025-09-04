@@ -195,9 +195,10 @@ namespace Starkiller.Core.Helpers
             }
             
             // Setup audio if available
-            if (scenario.scenarioAudioClip != null && audioSource != null)
+            AudioClip scenarioAudio = scenario.GetAudioClip(ShipScenario.AudioMoment.Introduction);
+            if (scenarioAudio != null && audioSource != null)
             {
-                audioSource.clip = scenario.scenarioAudioClip;
+                audioSource.clip = scenarioAudio;
                 if (config.playAudio)
                     audioSource.Play();
             }

@@ -45,13 +45,43 @@ public class ShipScenario : ScriptableObject
     public bool isStoryMission;
     public string storyTag; // E.g., "insurgent", "order", "imperium_corruption"
     
-    [Header("Media Elements")]
+    [Header("Presentation Videos")]
+    [Tooltip("Captain's initial greeting/presentation video")]
+    public VideoClip greetingVideo;
+    [Tooltip("Story situation video - shows the narrative context")]
+    public VideoClip storyVideo;
+    [Tooltip("Alternative greeting videos for replay variety")]
+    public VideoClip[] alternativeGreetingVideos;
+    
+    [Header("Player Decision Response Videos")]
+    [Tooltip("Video when player approves the ship")]
+    public VideoClip approveVideo;
+    [Tooltip("Video when player denies the ship")]
+    public VideoClip denyVideo;
+    [Tooltip("Video when ship is placed in holding pattern")]
+    public VideoClip holdingPatternVideo;
+    [Tooltip("Video when ship is captured with tractor beam")]
+    public VideoClip tractorBeamVideo;
+    
+    [Header("Consequence Videos")]
+    [Tooltip("Videos showing consequences of correct decisions")]
+    public VideoClip[] correctDecisionConsequenceVideos;
+    [Tooltip("Videos showing consequences of wrong decisions")]
+    public VideoClip[] wrongDecisionConsequenceVideos;
+    
+    [Header("Special Event Videos")]
     [Tooltip("Video clip to play during inspection scenarios")]
     public VideoClip inspectionVideo;
-    [Tooltip("Alternative video clips for variety")]
-    public VideoClip[] alternativeVideos;
-    [Tooltip("Audio clip for special scenario events")]
-    public AudioClip scenarioAudioClip;
+    [Tooltip("Additional special event videos")]
+    public VideoClip[] specialEventVideos;
+    
+    [Header("Audio Elements")]
+    [Tooltip("Audio clip for scenario introduction")]
+    public AudioClip introAudioClip;
+    [Tooltip("Audio clip for dramatic moments")]
+    public AudioClip dramaticAudioClip;
+    [Tooltip("Audio clip for consequence moments")]
+    public AudioClip consequenceAudioClip;
     
     /// <summary>
     /// Check if this scenario can be applied to the given ship and captain
@@ -117,21 +147,20 @@ public class ShipScenario : ScriptableObject
     }
     
     /// <summary>
-    /// Get a video clip for this scenario (primarily for inspections)
+    /// Get the greeting video for initial presentation
     /// </summary>
-    public VideoClip GetVideoClip()
+    public VideoClip GetGreetingVideo()
     {
-        // Return the main inspection video if available
-        if (inspectionVideo != null)
+        // Return main greeting video if available
+        if (greetingVideo != null)
         {
-            return inspectionVideo;
+            return greetingVideo;
         }
         
-        // Otherwise try alternative videos
-        if (alternativeVideos != null && alternativeVideos.Length > 0)
+        // Try alternative greeting videos
+        if (alternativeGreetingVideos != null && alternativeGreetingVideos.Length > 0)
         {
-            // Filter out null entries
-            var validVideos = System.Array.FindAll(alternativeVideos, v => v != null);
+            var validVideos = System.Array.FindAll(alternativeGreetingVideos, v => v != null);
             if (validVideos.Length > 0)
             {
                 return validVideos[Random.Range(0, validVideos.Length)];
@@ -139,5 +168,129 @@ public class ShipScenario : ScriptableObject
         }
         
         return null;
+    }
+    
+    /// <summary>
+    /// Get the story video that shows the narrative situation
+    /// </summary>
+    public VideoClip GetStoryVideo()
+    {
+        return storyVideo;
+    }
+    
+    /// <summary>
+    /// Get video for player decision response
+    /// </summary>
+    public VideoClip GetDecisionResponseVideo(MasterShipEncounter.DecisionState decision)
+    {
+        switch (decision)
+        {
+            case MasterShipEncounter.DecisionState.Approved:
+                return approveVideo;
+            case MasterShipEncounter.DecisionState.Denied:
+                return denyVideo;
+            case MasterShipEncounter.DecisionState.HoldingPattern:
+                return holdingPatternVideo;
+            case MasterShipEncounter.DecisionState.TractorBeam:
+                return tractorBeamVideo;
+            default:
+                return null;
+        }
+    }
+    
+    /// <summary>
+    /// Get consequence video for PersonalDataLog based on decision correctness
+    /// </summary>
+    public VideoClip GetConsequenceVideo(bool wasCorrectDecision)
+    {
+        VideoClip[] videoArray = wasCorrectDecision ? correctDecisionConsequenceVideos : wrongDecisionConsequenceVideos;
+        
+        if (videoArray != null && videoArray.Length > 0)
+        {
+            var validVideos = System.Array.FindAll(videoArray, v => v != null);
+            if (validVideos.Length > 0)
+            {
+                return validVideos[Random.Range(0, validVideos.Length)];
+            }
+        }
+        
+        return null;
+    }
+    
+    /// <summary>
+    /// Get inspection or special event video
+    /// </summary>
+    public VideoClip GetSpecialEventVideo()
+    {
+        // Return inspection video if this is an inspection scenario
+        if (type == ScenarioType.Inspection && inspectionVideo != null)
+        {
+            return inspectionVideo;
+        }
+        
+        // Otherwise try special event videos
+        if (specialEventVideos != null && specialEventVideos.Length > 0)
+        {
+            var validVideos = System.Array.FindAll(specialEventVideos, v => v != null);
+            if (validVideos.Length > 0)
+            {
+                return validVideos[Random.Range(0, validVideos.Length)];
+            }
+        }
+        
+        return inspectionVideo; // Fallback for backwards compatibility
+    }
+    
+    /// <summary>
+    /// Get audio clip for different scenario moments
+    /// </summary>
+    public AudioClip GetAudioClip(AudioMoment moment)
+    {
+        switch (moment)
+        {
+            case AudioMoment.Introduction:
+                return introAudioClip;
+            case AudioMoment.Dramatic:
+                return dramaticAudioClip;
+            case AudioMoment.Consequence:
+                return consequenceAudioClip;
+            default:
+                return null;
+        }
+    }
+    
+    /// <summary>
+    /// Audio moment types for different parts of the scenario
+    /// </summary>
+    public enum AudioMoment
+    {
+        Introduction,
+        Dramatic,
+        Consequence
+    }
+    
+    /// <summary>
+    /// Check if this scenario has complete video content for story presentation
+    /// </summary>
+    public bool HasCompleteVideoContent()
+    {
+        return greetingVideo != null && 
+               (approveVideo != null || denyVideo != null) &&
+               (correctDecisionConsequenceVideos?.Length > 0 || wrongDecisionConsequenceVideos?.Length > 0);
+    }
+    
+    /// <summary>
+    /// Get a video clip for this scenario (legacy method for backwards compatibility)
+    /// </summary>
+    public VideoClip GetVideoClip()
+    {
+        // Prioritize story presentation videos for scenarios
+        if (isStoryMission)
+        {
+            return GetGreetingVideo() ?? GetStoryVideo() ?? GetSpecialEventVideo();
+        }
+        
+        // Fall back to special events
+        return GetSpecialEventVideo();
     }
 }

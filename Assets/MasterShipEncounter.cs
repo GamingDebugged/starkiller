@@ -733,8 +733,41 @@ public class MasterShipEncounter
             captainPortrait = captainTypeData.portraitOptions[Random.Range(0, captainTypeData.portraitOptions.Length)];
         }
         
-        // Note: Videos would typically be handled by the StarkkillerMediaSystem or similar
-        // since they're not directly available in the scriptable objects
+        // Setup scenario videos if this is a story encounter
+        SetupScenarioVideos();
+    }
+    
+    /// <summary>
+    /// Setup videos from scenario data if available
+    /// </summary>
+    private void SetupScenarioVideos()
+    {
+        if (scenarioData == null) return;
+        
+        // For story missions, prioritize scenario videos over generic ones
+        if (isStoryShip && scenarioData.HasCompleteVideoContent())
+        {
+            // Use scenario greeting video as captain video
+            VideoClip scenarioGreeting = scenarioData.GetGreetingVideo();
+            if (scenarioGreeting != null)
+            {
+                captainVideo = scenarioGreeting;
+            }
+            
+            // Use scenario story video
+            VideoClip scenarioStory = scenarioData.GetStoryVideo();
+            if (scenarioStory != null)
+            {
+                scenarioVideo = scenarioStory;
+            }
+        }
+        
+        // Always check for special event videos
+        VideoClip specialVideo = scenarioData.GetSpecialEventVideo();
+        if (specialVideo != null && scenarioVideo == null)
+        {
+            scenarioVideo = specialVideo;
+        }
     }
     
     /// <summary>
@@ -745,6 +778,50 @@ public class MasterShipEncounter
         CaptainType.Captain.DialogEntry dialog = GetCurrentCaptainDialog();
         return dialog != null ? dialog.phrase : 
             "Requesting clearance to dock."; // Default fallback text
+    }
+    
+    /// <summary>
+    /// Get video for player decision response from scenario
+    /// </summary>
+    public VideoClip GetDecisionResponseVideo(DecisionState decision)
+    {
+        if (scenarioData != null)
+        {
+            return scenarioData.GetDecisionResponseVideo(decision);
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// Get consequence video for PersonalDataLog based on decision correctness
+    /// </summary>
+    public VideoClip GetConsequenceVideo(bool wasCorrectDecision)
+    {
+        if (scenarioData != null)
+        {
+            return scenarioData.GetConsequenceVideo(wasCorrectDecision);
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// Get audio clip for scenario moments
+    /// </summary>
+    public AudioClip GetScenarioAudio(ShipScenario.AudioMoment moment)
+    {
+        if (scenarioData != null)
+        {
+            return scenarioData.GetAudioClip(moment);
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// Check if this encounter has scenario-specific videos
+    /// </summary>
+    public bool HasScenarioVideos()
+    {
+        return scenarioData != null && scenarioData.HasCompleteVideoContent();
     }
 
     /// <summary>
@@ -763,22 +840,49 @@ public class MasterShipEncounter
         Debug.Log($"Ship: {shipType} - \"{shipName}\"");
         Debug.Log($"Captain: {captainRank} {captainName} ({captainFaction})");
         Debug.Log($"Story Ship: {isStoryShip} {(isStoryShip ? "Tag: " + storyTag : "")}");
+        Debug.Log($"Has Scenario Videos: {HasScenarioVideos()}");
         
-        // Add ship video
-        shipVideo = mediaDatabase.GetShipVideo(shipType, shipName);
-        Debug.Log($"Ship Video Selected: {(shipVideo != null ? shipVideo.name : "DEFAULT/NONE")}");
-        
-        // Add captain video
-        captainVideo = mediaDatabase.GetCaptainVideo(captainFaction, captainName, captainRank);
-        Debug.Log($"Captain Video Selected: {(captainVideo != null ? captainVideo.name : "DEFAULT/NONE")}");
-        
-        // Add scenario video if this is a story ship
-        if (isStoryShip && !string.IsNullOrEmpty(storyTag))
+        // For story ships with scenario videos, prioritize scenario content
+        if (isStoryShip && HasScenarioVideos())
         {
-            scenarioVideo = mediaDatabase.GetScenarioVideo(storyTag);
-            Debug.Log($"Scenario Video Selected: {(scenarioVideo != null ? scenarioVideo.name : "DEFAULT/NONE")}");
+            Debug.Log($"Using scenario videos for story encounter");
+            // Scenario videos were already set in SetupScenarioVideos()
+            // Only add ship video from media database as scenarios don't typically have ship videos
+            if (shipVideo == null)
+            {
+                shipVideo = mediaDatabase.GetShipVideo(shipType, shipName);
+                Debug.Log($"Ship Video (from media): {(shipVideo != null ? shipVideo.name : "DEFAULT/NONE")}");
+            }
+        }
+        else
+        {
+            // Regular encounters use media database videos
+            // Add ship video
+            if (shipVideo == null)
+            {
+                shipVideo = mediaDatabase.GetShipVideo(shipType, shipName);
+                Debug.Log($"Ship Video Selected: {(shipVideo != null ? shipVideo.name : "DEFAULT/NONE")}");
+            }
+            
+            // Add captain video (only if not already set by scenario)
+            if (captainVideo == null)
+            {
+                captainVideo = mediaDatabase.GetCaptainVideo(captainFaction, captainName, captainRank);
+                Debug.Log($"Captain Video Selected: {(captainVideo != null ? captainVideo.name : "DEFAULT/NONE")}");
+            }
+            
+            // Add scenario video if this is a story ship (fallback to media database)
+            if (isStoryShip && !string.IsNullOrEmpty(storyTag) && scenarioVideo == null)
+            {
+                scenarioVideo = mediaDatabase.GetScenarioVideo(storyTag);
+                Debug.Log($"Scenario Video (from media): {(scenarioVideo != null ? scenarioVideo.name : "DEFAULT/NONE")}");
+            }
         }
         
+        Debug.Log($"Final Video State:");
+        Debug.Log($"  Ship Video: {(shipVideo != null ? shipVideo.name : "NONE")}");
+        Debug.Log($"  Captain Video: {(captainVideo != null ? captainVideo.name : "NONE")}");
+        Debug.Log($"  Scenario Video: {(scenarioVideo != null ? scenarioVideo.name : "NONE")}");
         Debug.Log($"=================================");
         
         // CRITICAL FIX: Ensure the original ship name is preserved after video enhancement
