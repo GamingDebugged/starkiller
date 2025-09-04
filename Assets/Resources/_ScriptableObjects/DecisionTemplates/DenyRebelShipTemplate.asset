@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d415749005449afaf9968d5c982b24, type: 3}
+  m_Name: DenyRebelShipTemplate
+  m_EditorClassIdentifier: 
+  templateName: DenyRebelShipTemplate
+  templateId: template_deny_rebel
+  category: 3
+  basePressure: 2
+  baseImperialPoints: 15
+  baseInsurgentPoints: -20
+  increasePressureUnderTime: 1
+  increasePressureIfFamilyCrisis: 1
+  lowCreditsMultiplier: 0.8
+  imperialFeedback: Your vigilance protects the Order. The Imperium values such loyalty.
+  insurgentFeedback: Another life sacrificed to tyranny. This will not be forgotten.
+  neutralFeedback: Rebel sympathizer denied access. Security protocols upheld.
+  possibleFollowUps: 
+  - Inspection by Imperial Security
+  - Rebel retaliation threat
+  - Commendation from superiors
+  followUpChance: 0.45

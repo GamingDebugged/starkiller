@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Agricultural_Livestock_Transport
+  m_EditorClassIdentifier: 
+  manifestName: Agricultural Livestock Transport
+  manifestCode: MANIFEST-1627
+  manifestDescription: Standard livestock transport for base food production facilities
+  declaredItems:
+  - Bantha (6 head)
+  - Nerf (12 head)
+  - Feed Supplies (2 tons)
+  - Veterinary Equipment
+  actualItems:
+  - Bantha (6 head)
+  - Nerf (12 head)
+  - Feed Supplies (2 tons)
+  - Veterinary Equipment
+  totalCargoUnits: 20
+  cargoWeight: 15
+  factionRestriction: 0
+  allowedFactions: []
+  requiredShipCategories:
+  - Transport
+  - Merchant
+  - Civilian
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: AGR-LIVE-3344
+  authorizedBy: Agricultural Authority
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 3
+  requiresSpecialValidation: 0
+  validationKeywords: []
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -10
+  creditRewardIfCorrect: 5
+  priority: 1

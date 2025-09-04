@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: ImperiumFrigate
+  m_EditorClassIdentifier: 
+  typeName: Imperium Frigate
+  category: {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  size: 2
+  specificShipNames:
+  - Ascendant
+  - Ironclad
+  - Virtuoso
+  - Ultimatum
+  - Executor
+  minCrewSize: 800
+  maxCrewSize: 2500
+  commonOrigins:
+  - System Defense Fleets
+  - Military Staging Areas
+  validPurposes:
+  - System defense
+  - Patrol duties
+  - Troop transport
+  suspiciousIndicators:
+  - Unauthorized weapon charging
+  - Shield anomalies
+  visualDescription: Robust ships with multiple weapons emplacements, moderate hangar
+    capacity
+  technicalSpecification: 
+  shipIcon: {fileID: -3168733581550749585, guid: f7043b7291f49844b9671b3d3dedcbb5, type: 3}
+  shipVariations:
+  - {fileID: 2125737359283935466, guid: f7043b7291f49844b9671b3d3dedcbb5, type: 3}
+  - {fileID: 5524590292671962877, guid: f7043b7291f49844b9671b3d3dedcbb5, type: 3}
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 1
+  canBeUsedByOrder: 0
+  canSmuggle: 1

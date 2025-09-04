@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecde5a8619b94908ba5df9df2e87399, type: 3}
+  m_Name: StarkkillerBaseNarrativeData
+  m_EditorClassIdentifier: 
+  narrativeEntries:
+  - shipType: Imperium Shuttle
+    shipSubtype: Standard
+    possibleStories:
+    - Routine supply mission to Starkiller Base carrying critical medical supplies
+    - Emergency medical evacuation from border outpost
+    - Diplomatic transport with high-ranking Imperial officer
+    videoDescriptions:
+    - Shuttle approaching Starkiller Base landing zone
+    - Navigating through asteroid field with precision
+    - Docking procedure with Imperium protocol
+    associatedVideos:
+    - {fileID: 32900000, guid: b2a82fa2858bb4341b2e280ac9cb5bab, type: 3}
+    - {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+    - {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+    associatedSprites:
+    - {fileID: 5307185714078801750, guid: a76119afe553847f9837fd45e96d6559, type: 3}
+    - {fileID: -3282610866405107179, guid: 5346ba5abebe14ee095475324e53028c, type: 3}
+    - {fileID: 3964407508561363270, guid: 9191c35eed88e4e5d8cf156e140d269c, type: 3}
+    isStoryShip: 1
+    storyTag: imperium_logistics

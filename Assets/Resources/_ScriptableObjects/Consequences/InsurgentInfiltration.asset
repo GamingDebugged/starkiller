@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: InsurgentInfiltration
+  m_EditorClassIdentifier: 
+  title: InsurgentInfiltration
+  type: 0
+  severity: 2
+  possibleDescriptions:
+  - Insurgent agents have infiltrated Starkiller Base.
+  - A major security breach has resulted in critical system access by enemy agents.
+  imperiumCasualties: -17
+  creditPenalty: 50
+  imperialLoyaltyChange: -3
+  rebellionSympathyChange: 3
+  triggersInspection: 0
+  affectsFamily: 1
+  familyEffect: All Clearance Managers now under increased scrutiny
+  hasLongTermEffect: 0
+  effectDuration: 0
+  longTermDescription: 
+  endGameMessage: Security breach compromised checkpoint integrity (undermined Imperial
+    authority)
+  consequenceIcon: {fileID: -8456602196072077560, guid: 1102d5c52c6324094af7067032274369, type: 3}
+  severityColor: {r: 1, g: 0, b: 0, a: 1}

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_TradeUnion
+  m_EditorClassIdentifier: 
+  factionID: TradeUnion
+  displayName: Trade Union
+  description: Civilian traders and commercial enterprises focused on profit and
+    trade routes.
+  primaryColor: {r: 1, g: 0.84313726, b: 0, a: 1}
+  factionIcon: {fileID: -4857988021266971912, guid: 8a132fa86e5944d23a06272fee561387, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - TDU
+  - TUN
+  - TRA
+  canUseEmergencyCodes: 0
+  alliedFactions:
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  enemyFactions:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  neutralFactions:
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: df682bfaeeccc44c89f365891fbbcdf4, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 0.7
+  contrabandProbability: 0.3
+  baseSuspicionLevel: 0.3
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 1
+  commonOrigins:
+  - Trade Hub Alpha
+  - Merchant Station
+  - Free Trade Zone
+  - Outer Rim Markets
+  - Commerce District
+  commonDestinations:
+  - Trade Ports
+  - Market Stations
+  - Mining Colonies
+  - Industrial Centers
+  - Auction Houses
+  typicalCargo:
+  - Trade Goods
+  - Consumer Products
+  - Raw Materials
+  - Luxury Items
+  - Bulk Commodities
+  standardDocuments:
+  - Trade License
+  - Cargo Manifest
+  - Port Authority Papers
+  - Guild Membership
+  - Tax Records
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

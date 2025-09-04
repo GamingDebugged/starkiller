@@ -1,0 +1,11 @@
+ID,Parameter Name,Day 1 Value,Day 5 Value,Day 10 Value,Final Value,Description,Affects,Scaling    Type,Min Value,Max Value,Starting Player Value,Notes,Visual Feedback,Related Parameters,Tuning   Priority
+BAL001,ShipFrequency,5,8,12,15,Number of ships processed per day,Gameplay pacing,Linear,3,20,N/A,Increases steadily to create time pressure,Day counter,"ShipComplexity, DecisionTime",High
+BAL002,ShipComplexity,1,2,3,5,Complexity factor of ships/documentation,Difficulty,Exponential,1,5,N/A,Increases as player gains experience,Complexity indicator,"ValidationRules,   ErrorProbability",High
+BAL003,ValidShipChance,0.8,0.7,0.6,0.5,Probability of ships being valid,Success rate,Linear,0.4,0.9,N/A,Decreases to make game harder over time,None,InvalidReasonVariety,Medium
+BAL004,BribeFrequency,0.1,0.2,0.3,0.4,Probability of being offered bribes,Moral choices,Linear,0,0.5,N/A,Increases to test player morality,Bribe indicator,BribeAmount,Medium
+BAL005,BribeAmount,20,40,80,150,Credit value of typical bribes,Economy,Exponential,10,300,N/A,Increases to tempt player more,Credit display,"BribeFrequency, FamilyExpenses",High
+BAL006,FamilyExpenses,100,150,200,300,Daily credits needed for family,Economy,Linear,50,500,500 Credits,Increases to create financial pressure,Family status,"SalaryAmount, BribeAmount",High
+BAL007,SalaryAmount,120,140,160,200,Daily credits earned from salary,Economy,Linear,100,250,N/A,Increases but slower than expenses,Credit display,"FamilyExpenses, BonusCredits",Medium
+BAL008,BonusCredits,5,10,15,25,Bonus credits for correct decisions,Rewards,Linear,5,30,N/A,Increases to reward mastery,Credit display,"PenaltyCredits, SalaryAmount",Low
+BAL009,PenaltyCredits,10,20,40,80,Credit penalty for incorrect decisions,Punishment,Exponential,5,100,N/A,Increases sharply to punish mistakes,Credit display,"BonusCredits,   FamilyExpenses",Medium
+BAL010,DecisionTime,60,45,30,20,Seconds allowed per decision,Time pressure,Linear,15,60,N/A,Decreases to increase pressure,Timer display,"ShipFrequency, ShipComplexity",High

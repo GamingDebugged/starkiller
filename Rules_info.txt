@@ -1,0 +1,343 @@
+Day Rules System in Starkiller Base Command
+
+  The day rules system adds progressive complexity to gameplay as players advance through the in-game days. It
+  consists of two main components: Special Rules and Current Day Rules.
+
+  Special Rules
+
+  Special Rules are defined through the DayRule class and represent gameplay rules that activate on specific
+  days. Each rule has:
+
+  1. Activation Day: The day this rule becomes active (and stays active for all subsequent days)
+  2. Rule Description: Text explaining the rule to display to the player
+  3. Rule Type: The type of rule that affects gameplay validation
+
+  Rule Types
+
+  There are six types of rules defined in the system:
+
+  - VerifyOrigin: Validates ships based on their origin point
+  - VerifyManifest: Checks if the manifest matches the ship type
+  - CheckForContraband: Looks for contraband items in the manifest
+  - CheckForIntelligence: Adds intelligence gathering requirements
+  - ForceInspection: Requires inspection of certain ships
+  - AccessCodeChange: Changes the format or requirements for access codes
+
+  Example Special Rules Setup
+
+  Here's how to set up special rules in the Inspector:
+
+  1. Select the StarkkillerContentManager in the hierarchy
+  2. Under "Game Settings", find the "Special Rules" list
+  3. Click the "+" button to add a new rule
+  4. Configure each rule with:
+  Rule 1:
+  - Activate On Day: 2
+  - Rule Description: "Verify origin for all Imperial ships"
+  - Rule Type: VerifyOrigin
+
+  Rule 2:
+  - Activate On Day: 3
+  - Rule Description: "Check all manifests for contraband items"
+  - Rule Type: CheckForContraband
+
+  Rule 3:
+  - Activate On Day: 5
+  - Rule Description: "Force inspection for all ships from Outer Rim systems"
+  - Rule Type: ForceInspection
+
+  Current Day Rules
+
+  Current Day Rules represent the actively enforced rules for the current game day. These are dynamically
+  generated when a new day starts based on:
+
+  1. The current access codes for the day
+  2. Any special rules that have been activated up to the current day
+
+  How Current Day Rules Work
+
+  When StartNewDay(int day) is called:
+
+  1. The system clears existing day rules
+  2. It adds the current valid access codes as the first rule
+  3. It adds all special rules that have been activated up to the current day
+  4. The rules are stored in the currentDayRules list as strings for UI display
+
+  Rule Validation Examples
+
+  The system includes logic to validate ships against the active rules:
+
+  1. Access Code Validation:
+  // Valid if access code is in the current day's list
+  bool validCode = contentManager.IsAccessCodeValid("SK-1234");
+  2. Origin Validation:
+  // Only checked when the "Verify origin" rule is active
+  bool validOrigin = contentManager.IsOriginValidForDestination("Star Destroyer Finalizer", "Starkiller Base");
+  3. Contraband Check:
+  // Only checked when the "Check for contraband" rule is active
+  bool hasContraband = contentManager.ManifestContainsContraband("3 crates of blaster rifles, 2 personnel");
+  // ^ This would return true because it contains "blaster"
+
+  Complete Example Scenario
+
+  Here's a complete example of how day rules progress throughout the game:
+
+  Day 1:
+
+  - Active Rules:
+    - "Valid access codes: SK-1234, SK-5678, SK-9012"
+  - Validation Behavior:
+    - System only checks for valid access codes
+    - All other fields (origin, manifest) are automatically valid
+
+  Day 2:
+
+  - Active Rules:
+    - "Valid access codes: SK-3456, SK-7890, SK-1122"
+    - "Verify origin for all Imperial ships"
+  - Validation Behavior:
+    - System checks for valid access codes
+    - Origin validation activates, checking if the ship's origin is appropriate
+    - Example: A ship claiming to come from "Rebel Base Alpha" trying to dock at Starkiller Base would fail
+  origin validation
+
+  Day 3:
+
+  - Active Rules:
+    - "Valid access codes: SK-3333, IM-4444, SK-5555"
+    - "Verify origin for all Imperial ships"
+    - "Check all manifests for contraband items"
+  - Validation Behavior:
+    - System checks for valid access codes and origin
+    - Now also scans manifest for contraband terms
+    - Example: A manifest listing "5 crates of smuggled spice" would fail contraband validation
+
+  Day 5:
+
+  - Active Rules:
+    - "Valid access codes: IM-6789, FO-1234, SK-5678"
+    - "Verify origin for all Imperial ships"
+    - "Check all manifests for contraband items"
+    - "Force inspection for all ships from Outer Rim systems"
+  - Validation Behavior:
+    - All previous validations apply
+    - Ships from Outer Rim require inspection
+    - Example: A ship from "Tatooine Spaceport" would require inspection, even with valid codes and manifest
+
+  Implementation Details
+
+  1. Rule Activation:
+  // This adds all rules that should be active for the current day
+  foreach (var rule in specialRules)
+  {
+      if (rule.activateOnDay <= currentDay)
+      {
+          currentDayRules.Add(rule.ruleDescription);
+      }
+  }
+  2. Rule Checking:
+  // Checking if a specific rule type is active
+  bool hasContrabandRule = currentDayRules.Exists(rule =>
+      rule.Contains("contraband") || rule.Contains("Contraband"));
+  3. Validation Logic:
+  // Only perform validation if the rule is active
+  if (hasContrabandRule)
+  {
+      // Check for contraband terms
+      foreach (var term in contrabandTerms)
+      {
+          if (manifest.ToLower().Contains(term.ToLower()))
+          {
+              return true; // Contraband found
+          }
+      }
+  }
+
+  This progressive rule system creates escalating complexity over time, requiring players to pay attention to
+  more details as they advance through the game days, similar to the mechanics in "Papers, Please."
+
+> Can I have 3 examples of the data that needs to go in these lists?
+
+⏺ Here are 3 examples of data that should go into each of the core lists in the StarkkillerContentManager:
+
+  Example 1: ShipType Data
+
+  // Create a new ShipType ScriptableObject in Unity
+  // Assets > Create > Starkiller > Ship Type
+
+  // In the Inspector:
+  typeName = "Imperial Shuttle"
+  category = [Reference to "Imperial" ShipCategory]
+  commonOrigins = [
+      "Star Destroyer Finalizer",
+      "Imperial Academy",
+      "Coruscant Spaceport",
+      "Imperial Naval Base"
+  ]
+  minCrewSize = 2
+  maxCrewSize = 8
+  possibleCargos = [
+      "Personnel and supplies",
+      "Officer equipment",
+      "Imperial intelligence documents",
+      "Standard issue weapons"
+  ]
+  isImperial = true
+  isSmuggler = false
+
+  Example 2: CaptainType Data
+
+  // Create a new CaptainType ScriptableObject in Unity
+  // Assets > Create > Starkiller > Captain Type
+
+  // In the Inspector:
+  typeName = "Imperial Officer"
+  factions = ["Imperium", "First Order"]
+  possibleFirstNames = [
+      "Tarkin",
+      "Piett",
+      "Pryde",
+      "Hux",
+      "Sloane"
+  ]
+  possibleLastNames = [
+      "Motti",
+      "Tagge",
+      "Jerjerrod",
+      "Veers",
+      "Krennic"
+  ]
+  commonRanks = [
+      "Lieutenant",
+      "Commander",
+      "Captain",
+      "Colonel",
+      "Major"
+  ]
+  briberyChance = 0.1f
+  minBribeAmount = 50
+  maxBribeAmount = 200
+  typicalBehaviors = [
+      "Strictly follows Imperial protocol",
+      "Maintains rigid posture during questioning",
+      "Speaks with clipped, formal tones"
+  ]
+  dialoguePatterns = [
+      "We have urgent business at Starkiller Base, officer.",
+      "These documents are authorized by High Command.",
+      "You'll find everything in order, as expected."
+  ]
+  briberyPhrases = [
+      "Perhaps we could expedite this process...",
+      "I'm willing to compensate you for your... discretion.",
+      "Time is valuable to us both, perhaps these credits will help."
+  ]
+
+  Example 3: ShipScenario Data
+
+  // Create a new ShipScenario ScriptableObject in Unity
+  // Assets > Create > Starkiller > Ship Scenario
+
+  // In the Inspector:
+  scenarioName = "Smuggled Weapons"
+  type = ScenarioType.Invalid
+  isStoryMission = false
+  dayFirstAppears = 3
+  storyTag = "contraband"
+  shouldBeApproved = false
+  invalidReason = "Manifest contains illegal weapons"
+  offersBribe = true
+  bribeChanceMultiplier = 1.5f
+
+  // These ship types would trigger this scenario
+  applicableShipTypes = [
+      [Reference to "Light Freighter" ShipType],
+      [Reference to "Corellian Transport" ShipType]
+  ]
+
+  // These captain types would be used
+  applicableCaptainTypes = [
+      [Reference to "Smuggler" CaptainType],
+      [Reference to "Mercenary" CaptainType]
+  ]
+
+  possibleStories = [
+      "Captain claims to be delivering farming equipment to the Outer Rim.",
+      "Ship reports engine trouble and requests temporary docking for repairs.",
+      "Captain insists their manifest was incorrectly filed by a new crew member."
+  ]
+
+  possibleManifests = [
+      "Agricultural machinery, fertilizer, 3 crew members",
+      "Repair parts, medical supplies, disassembled droids",
+      "Food provisions, technical components, misc equipment"
+  ]
+
+  // The consequences if player makes wrong decision
+  severityLevel = SeverityLevel.Moderate
+  possibleConsequences = [
+      "Weapons delivered to insurgent cells result in Imperial casualties",
+      "Armaments used in sabotage of Imperial facility",
+      "Contraband enables violent uprising on nearby moon"
+  ]
+
+  Example 4: DayRule Data
+
+  // Set up in the StarkkillerContentManager component's Special Rules list
+  // Create three entries:
+
+  // Rule 1
+  activateOnDay = 2
+  ruleDescription = "Verify origin for all ships. Ships must come from authorized Imperial facilities."
+  ruleType = RuleType.VerifyOrigin
+
+  // Rule 2
+  activateOnDay = 3
+  ruleDescription = "All manifests must be checked for contraband items. Report any suspicious cargo."
+  ruleType = RuleType.CheckForContraband
+
+  // Rule 3
+  activateOnDay = 4
+  ruleDescription = "New Imperial directive: All ship captains must present proper identification with valid 
+  rank."
+  ruleType = RuleType.ForceInspection
+
+  Example 5: Consequence Data
+
+  // Create a new Consequence ScriptableObject in Unity
+  // Assets > Create > Starkiller > Consequence
+
+  // In the Inspector:
+  title = "Security Breach"
+  severity = SeverityLevel.Severe
+  description = "Insurgent agents infiltrated the facility due to your negligence."
+  imperialLoyaltyChange = -15
+  rebelSympathyChange = 0
+  creditsPenalty = 200
+  casualtyCount = 12
+  followupText = "Base Commander has formally reprimanded you. Increased security protocols are now in place."
+  hasLongTermEffect = true
+  longTermEffectDescription = "Security scrutiny increased. All ships will receive additional scanning."
+
+  Example 6: Current Access Codes (Generated at Runtime)
+
+  // These would be automatically generated at runtime in the currentAccessCodes list
+  // For Day 1:
+  currentAccessCodes = [
+      "SK-1234",
+      "SK-5678",
+      "SK-9012"
+  ]
+
+  // For Day 3 (more variation):
+  currentAccessCodes = [
+      "SK-4321",
+      "IM-8765",
+      "FO-2109",
+      "SK-6543"
+  ]
+
+  These examples should provide a good starting point for populating your content manager with meaningful game
+  data. Each object creates interconnected game mechanics - for example, a ShipScenario references specific
+  ShipTypes and CaptainTypes, while the DayRules affect how ships are validated based on their properties. All
+  of this works together to create the dynamic gameplay experience.

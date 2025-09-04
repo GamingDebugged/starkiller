@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0bf1303c01134e5bb7450ff838740e2, type: 3}
+  m_Name: VIPAuthorization
+  m_EditorClassIdentifier: 
+  codeName: VIP Authorization
+  codeValue: VIP-9876
+  type: 1
+  validFromDay: 2
+  validUntilDay: -1
+  isRevoked: 0
+  level: 3
+  authorizedFactions:
+  - imperium
+  - theorder

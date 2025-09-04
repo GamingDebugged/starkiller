@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: ImperiumOfficer
+  m_EditorClassIdentifier: 
+  typeName: Imperium Officer
+  factions:
+  - Imperium
+  factionObjects:
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  captains:
+  - firstName: Mortis
+    lastName: Op
+    rank: 
+    authorityLevel: 2
+    portrait: {fileID: -7392346335674701192, guid: e2d8ed353e6a94c2aa9110597abb7051, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 50
+    maxBribeAmount: 50
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: Greeting
+      associatedVideo: {fileID: 32900000, guid: eb95f139c7dfe421cadb51c277c76c7c, type: 3}
+    approvedDialogs:
+    - phrase: Approve
+      associatedVideo: {fileID: 32900000, guid: e300fccf4eb51453c88d8730d2b9dbb3, type: 3}
+    deniedDialogs:
+    - phrase: Denied
+      associatedVideo: {fileID: 32900000, guid: f5ad089fd4a6c47fab6cc25673d60240, type: 3}
+    bribeDialogs:
+    - phrase: Bribe
+      associatedVideo: {fileID: 32900000, guid: 485cefdf1522b4ea8aade41d932ac6dd, type: 3}
+    holdingPatternDialogs:
+    - phrase: Understood...
+      associatedVideo: {fileID: 32900000, guid: 8b8a67f2d96394cdfa1afa803e26b7c2, type: 3}
+    - phrase: 
+      associatedVideo: {fileID: 0}
+    tractorBeamDialogs: []
+    returningAfterApprovalDialogs: []
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  - firstName: idos
+    lastName: flek
+    rank: 
+    authorityLevel: 2
+    portrait: {fileID: -774065780407774298, guid: 0f996ccaeeb744608b9ad8f489ba07ea, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: This is an official Imperial vessel on priority assignment. We require
+        prompt docking authorization.
+      associatedVideo: {fileID: 32900000, guid: 267efff27e2d149a68eb9fa052ad0e33, type: 3}
+    approvedDialogs:
+    - phrase: about time
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: Pardon?
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: perhaps something for you?
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: Moving to hold
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: What is the meaning
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+    returningAfterApprovalDialogs: []
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  - firstName: Baldy
+    lastName: McBaldy
+    rank: 
+    authorityLevel: 2
+    portrait: {fileID: -8621967916203615944, guid: e882811786e134bb081c7da7e5ca3c33, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: I have no hair
+      associatedVideo: {fileID: 32900000, guid: 02ac84e0cff724f7ea26282f21a996d7, type: 3}
+    approvedDialogs:
+    - phrase: Approve
+      associatedVideo: {fileID: 32900000, guid: 2724a4e73bba649d695ecccfa7f37e53, type: 3}
+    deniedDialogs:
+    - phrase: Denied
+      associatedVideo: {fileID: 32900000, guid: 83309b5a85c424c3583d63e8e9ed0ec9, type: 3}
+    bribeDialogs:
+    - phrase: Bribe
+      associatedVideo: {fileID: 32900000, guid: 1a1dc27b7fb3340ab98756ebad7724db, type: 3}
+    holdingPatternDialogs:
+    - phrase: Holding
+      associatedVideo: {fileID: 32900000, guid: 159124b33fe1642dea8d2f93768e7cf4, type: 3}
+    tractorBeamDialogs:
+    - phrase: Tractor
+      associatedVideo: {fileID: 32900000, guid: 680f1f7983cd64cecbc9a30def3b3338, type: 3}
+    returningAfterApprovalDialogs: []
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  - firstName: Flambo
+    lastName: Yant
+    rank: 
+    authorityLevel: 2
+    portrait: {fileID: -774065780407774298, guid: 0f996ccaeeb744608b9ad8f489ba07ea, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: Hola
+      associatedVideo: {fileID: 32900000, guid: afe95d26a34c448808a4694e739a358d, type: 3}
+    approvedDialogs:
+    - phrase: Approve
+      associatedVideo: {fileID: 32900000, guid: 1aca6f48cd21d4b98b077880654a1448, type: 3}
+    deniedDialogs:
+    - phrase: Denied
+      associatedVideo: {fileID: 32900000, guid: f86d1605c8c49400fa63d16228748486, type: 3}
+    bribeDialogs:
+    - phrase: Bribe
+      associatedVideo: {fileID: 32900000, guid: 7a89d5a1e7e6d46ca8e1e18a0ca1c726, type: 3}
+    holdingPatternDialogs:
+    - phrase: Holding
+      associatedVideo: {fileID: 32900000, guid: f86d1605c8c49400fa63d16228748486, type: 3}
+    tractorBeamDialogs:
+    - phrase: Tractor
+      associatedVideo: {fileID: 32900000, guid: f86d1605c8c49400fa63d16228748486, type: 3}
+    returningAfterApprovalDialogs: []
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  - firstName: Ki
+    lastName: Korvik
+    rank: Captain
+    authorityLevel: 2
+    portrait: {fileID: 5319835030629241640, guid: 4d370354fa46b425d94d8859c549fe32, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: I am Captain Korvik, Imperial Fleet Division Seven. I will be conducting
+        routine inspections of your... performance. Your efficiency rating is currently
+        adequate. Barely.
+      associatedVideo: {fileID: 32900000, guid: 5e32a775119d04193a8d21d9f9aa270d, type: 3}
+    approvedDialogs:
+    - phrase: Hmm. Correct decision. Perhaps you're not as incompetent as the average
+        ground-dweller.
+      associatedVideo: {fileID: 32900000, guid: cbaa046606ed34506819b3ef086e78f6, type: 3}
+    deniedDialogs:
+    - phrase: Finally, some backbone. Most mammals lack the courage to refuse anyone.
+      associatedVideo: {fileID: 32900000, guid: d476a25aa72324f5aa8d7235567511c5, type: 3}
+    bribeDialogs:
+    - phrase: Your file indicated potential for flexibility. This is something to
+        help your career progression.
+      associatedVideo: {fileID: 32900000, guid: e9f49e62e1cf144569c45086000bfbe0, type: 3}
+    holdingPatternDialogs:
+    - phrase: Holding pattern initiated. I'll be watching how you handle the queue
+        pressure.
+      associatedVideo: {fileID: 32900000, guid: a3c59f753ef7447c58bfd5e87d51f49d, type: 3}
+    tractorBeamDialogs:
+    - phrase: Detained for review. Let's see how long before we crack... or you do.
+      associatedVideo: {fileID: 32900000, guid: dcd04c677bd414341906cd3f0babc5a8, type: 3}
+    returningAfterApprovalDialogs:
+    - phrase: Back again, hoooman. Your last inspection was memorable. Let's see
+        if you've learned anything.
+      associatedVideo: {fileID: 32900000, guid: 72d3183a525424a0fadcffaae9f6ab88, type: 3}
+    returningAfterDenialDialogs:
+    - phrase: The reports about this station are concerning. Show me you're not part
+        of the problem
+      associatedVideo: {fileID: 32900000, guid: d44efd1aec7714ee8be3872007d07a35, type: 3}
+    returningAfterHoldingDialogs:
+    - phrase: Time is running out hoooman. The Imperium's patience... and mine wear
+        thin.
+      associatedVideo: {fileID: 32900000, guid: 3396bad91a72b4f62812cbd831aa2a8c, type: 3}
+    returningAfterTractorBeamDialogs:
+    - phrase: Make it quick hooman. My time is valuable.
+      associatedVideo: {fileID: 32900000, guid: 8231697a8829b43bbb7e54eaba7ddd78, type: 3}
+    returningAfterBriberyDialogs:
+    - phrase: Back again, hoooman. Your last inspection was memorable. Let's see
+        if you've learned anything.
+      associatedVideo: {fileID: 32900000, guid: 72d3183a525424a0fadcffaae9f6ab88, type: 3}
+  - firstName: Amant
+    lastName: Doe
+    rank: Captain
+    authorityLevel: 2
+    portrait: {fileID: 5319835030629241640, guid: 4d370354fa46b425d94d8859c549fe32, type: 3}
+    briberyChance: 0.2
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: Commander, requesting standard docking clearance. Cargo manifest transmitted.
+      associatedVideo: {fileID: 32900000, guid: 6155a04c1fc0f4461a95c28fb3fc956f, type: 3}
+    approvedDialogs:
+    - phrase: Excellent, proceeding to docking bay seven. Glory to the Imperium.
+      associatedVideo: {fileID: 32900000, guid: 62b62719d4b754536afe9ffb9e8cc21c, type: 3}
+    deniedDialogs:
+    - phrase: What! But my credentials are valid! This will be reported.
+      associatedVideo: {fileID: 32900000, guid: 27c554862552141a9b3e54f8ce97c103, type: 3}
+    bribeDialogs:
+    - phrase: Listen, I have connections. Take the credits and we both forget the
+        irregularities.
+      associatedVideo: {fileID: 32900000, guid: e9f49e62e1cf144569c45086000bfbe0, type: 3}
+    holdingPatternDialogs:
+    - phrase: We are on schedule, you should have been expecting us. Circling around
+        as requested.
+      associatedVideo: {fileID: 32900000, guid: b8d8bc18177ff46ebaaa973068be9825, type: 3}
+    tractorBeamDialogs:
+    - phrase: There is no need for such drastic action... Lets discuss this!
+      associatedVideo: {fileID: 32900000, guid: 2092b4692349a4e50864bf7784325c26, type: 3}
+    returningAfterApprovalDialogs:
+    - phrase: Consistent, I like that in an officer.
+      associatedVideo: {fileID: 32900000, guid: 791eee18511114e5a9efed1c0574d242, type: 3}
+    returningAfterDenialDialogs:
+    - phrase: Ah, its you. Can we make this encounter smoother than last time?
+      associatedVideo: {fileID: 32900000, guid: 0ec7218ffd7bc41a4ba25eefd72545a4, type: 3}
+    returningAfterHoldingDialogs:
+    - phrase: Lets hope you brushed up on the Imperium handbook, since last we met.
+      associatedVideo: {fileID: 32900000, guid: f10e7051bab2d47f7a4f2a939f58fc6e, type: 3}
+    returningAfterTractorBeamDialogs:
+    - phrase: Not you. My ships was in repaired for a full cycle after your little
+        stunt.
+      associatedVideo: {fileID: 32900000, guid: 9b4843db4b0a24d16b6fbf05c4d8e1a8, type: 3}
+    returningAfterBriberyDialogs:
+    - phrase: Our previous arrangement was mutually beneficial. I trust we maintain
+        that... understanding
+      associatedVideo: {fileID: 32900000, guid: f1736d9a23b714590b865f7ae013479d, type: 3}
+  possibleFirstNames:
+  - Kaylon
+  - Serik
+  - Furiosa
+  - Langdon
+  - Deleny
+  possibleLastNames:
+  - Greeko
+  - Tarrock
+  - Hernandak
+  - Frux
+  - Oligante
+  commonRanks:
+  - Lieutenant
+  - Commander
+  - Captain
+  - Major
+  - Colonel
+  typicalBehaviors:
+  - Maintains formal protocol at all times
+  - Speaks with precise, clipped tones
+  - Never shows emotion or uncertainty
+  - Expects immediate compliance with orders
+  dialoguePatterns:
+  - We have urgent business at the base, officer
+  - These documents are authorized by High Command.
+  - You'll find everything in order, as expected.

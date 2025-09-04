@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Laboratory_Equipment
+  m_EditorClassIdentifier: 
+  manifestName: Laboratory Equipment
+  manifestCode: MANIFEST-4260
+  manifestDescription: Advanced laboratory equipment for research facility
+  declaredItems:
+  - Quantum Analyzers (3 units)
+  - Microscopes (10 units)
+  - Computer Terminals (15 units)
+  - Calibration Tools
+  actualItems:
+  - Quantum Analyzers (3 units)
+  - Microscopes (10 units)
+  - Computer Terminals (15 units)
+  - Calibration Tools
+  totalCargoUnits: 30
+  cargoWeight: 25
+  factionRestriction: 0
+  allowedFactions:
+  - imperium
+  - specialInterest
+  - theorder
+  - automatedsystems
+  requiredShipCategories:
+  - imperium
+  - specialInterestvessels
+  - theorder
+  - automatedsystems
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: SCI-EQP-2234
+  authorizedBy: Science Division
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 2
+  requiresSpecialValidation: 0
+  validationKeywords:
+  - laboratory
+  - scientific
+  - research
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -15
+  creditRewardIfCorrect: 10
+  priority: 1

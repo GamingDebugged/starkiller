@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_SpecialInterest
+  m_EditorClassIdentifier: 
+  factionID: special_interest
+  displayName: Special Interest Groups
+  description: Various organizations with unique agendas - scientists, explorers,
+    entertainers, and other specialized groups.
+  primaryColor: {r: 0.9019608, g: 0.5019608, b: 0.9019608, a: 1}
+  factionIcon: {fileID: -2944223934729965696, guid: 9dfc25b8f7c1d4d7dbb38d3c477ffa54, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - SPC
+  - RSH
+  - EXP
+  canUseEmergencyCodes: 0
+  alliedFactions:
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  enemyFactions:
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  neutralFactions:
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: 42204d70e60d3429c9bfdcc1cba515d2, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 0.7
+  contrabandProbability: 0.2
+  baseSuspicionLevel: 0.3
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 1
+  commonOrigins:
+  - Research Station
+  - University
+  - Entertainment Hub
+  - Explorer's Guild
+  - Special Project Site
+  commonDestinations:
+  - Field Research
+  - Conference Center
+  - Performance Venue
+  - Uncharted Space
+  - Archive Facility
+  typicalCargo:
+  - Research Equipment
+  - Scientific Samples
+  - Entertainment Gear
+  - Exploration Tools
+  - Specialized Materials
+  standardDocuments:
+  - Research Permit
+  - Special License
+  - Project Authorization
+  - Academic Credentials
+  - Performance Contract
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

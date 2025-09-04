@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_AutomatedSystems
+  m_EditorClassIdentifier: 
+  factionID: automated
+  displayName: Automated Systems
+  description: AI-controlled vessels and drone ships operating without human crews.
+  primaryColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  factionIcon: {fileID: 1942171711632327185, guid: 98feed070248d48dd85aa2477ccab7c4, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - AUT
+  - SYS
+  - DRN
+  canUseEmergencyCodes: 0
+  alliedFactions: []
+  enemyFactions: []
+  neutralFactions:
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: 080ad1230c1fb4aacaef04588d5a8a84, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 1
+  contrabandProbability: 0
+  baseSuspicionLevel: 0.4
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 0
+  commonOrigins:
+  - Automated Factory
+  - Drone Hub
+  - AI Control Center
+  - Mining Operation
+  - Processing Plant
+  commonDestinations:
+  - Resource Depot
+  - Maintenance Bay
+  - Data Center
+  - Collection Point
+  - Distribution Hub
+  typicalCargo:
+  - Raw Materials
+  - Processed Goods
+  - Maintenance Parts
+  - Data Cores
+  - Energy Cells
+  standardDocuments:
+  - System Registry
+  - Operation Protocol
+  - Maintenance Log
+  - Authorization Code
+  - Function Parameters
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

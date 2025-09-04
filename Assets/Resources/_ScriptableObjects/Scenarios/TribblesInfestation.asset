@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: TribblesInfestation
+  m_EditorClassIdentifier: 
+  scenarioName: Tribbles Infestation
+  type: 1
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 3
+  maxAppearances: 2
+  possibleStories:
+  - Just transporting some harmless pets for the entertainment districts. Nothing
+    to worry about, they're very docile.
+  - These little creatures are quite popular as therapy animals. They have a very
+    calming purr - quite therapeutic actually.
+  - Exotic pets for the officer's lounge. Command specifically requested these for...
+    morale purposes. Completely safe.
+  - Small mammals for the agricultural research division. They're studying their...
+    reproductive efficiency for food production.
+  possibleManifests:
+  - Entertainment Supplies, Habitat Modules, Small Breeding Mammals (12 units)
+  - Therapy Animals, Climate Control Pods, Exotic Pets (Docile Species)
+  - Research Specimens, Containment Units, Reproductive Study Subjects (Live)
+  - Recreation Materials, Bio-domes, Purring Creatures (Stress Relief)
+  shouldBeApproved: 0
+  invalidReason: Uncontrolled breeding species poses exponential infestation risk
+  offersBribe: 1
+  bribeChanceMultiplier: 1
+  severityLevel: 1
+  possibleConsequences:
+  - Tribbles multiply exponentially. Within hours, thousands flood the ventilation
+    systems causing complete base lockdown.
+  - Rapid reproduction overwhelms food supplies. Emergency rationing declared as
+    tribbles consume everything organic.
+  - Tribble infestation clogs critical systems. Life support compromised, requiring
+    costly emergency maintenance.
+  - Exponential breeding creates avalanche effect. Officers trapped in quarters by
+    walls of purring creatures.
+  minCasualties: 0
+  maxCasualties: 5
+  isStoryMission: 0
+  storyTag: tribbles
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: StandardSupplyRun
+  m_EditorClassIdentifier: 
+  scenarioName: Standard Supply Run
+  type: 0
+  applicableShipTypes:
+  - {fileID: 11400000, guid: f49bcb23ccf3c4996a340596a6dc6ffb, type: 2}
+  applicableCaptainTypes: []
+  dayFirstAppears: 1
+  maxAppearances: -1
+  possibleStories:
+  - Scheduled supply delivery from Kuat Shipyards. All documentation in order.
+  - Weekly supply shipment with standard provisions. Captain reports no issues during
+    transit.
+  - Regular supply run from Star Destroyer Finalizer. Routine delivery of base essentials.
+  possibleManifests:
+  - Food supplies, medical equipment, officer uniforms, 10 maintenance droids
+  - Construction materials, food rations, technical manuals, replacement parts
+  - Standard provisions, water purification modules, power cells, computer terminals
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 0
+  bribeChanceMultiplier: 1
+  severityLevel: 0
+  possibleConsequences:
+  - Delayed delivery caused minor supply shortage for base personnel.
+  - Supply delay resulted in schedule adjustments for construction teams.
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 0
+  storyTag: 

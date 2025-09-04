@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d30590365ea64ccdaadcef6542ea621, type: 3}
+  m_Name: StarkillerVideoDatabase
+  m_EditorClassIdentifier: 
+  shipVideos:
+  - shipType: StoryS
+    videoClip: {fileID: 32900000, guid: 86d8b82405f684980b7884dbd1b28e20, type: 3}
+    specificShipNames:
+    - StoryVessel
+  - shipType: Imperium
+    videoClip: {fileID: 32900000, guid: 25b2afe36858e4366a470faecf9c3173, type: 3}
+    specificShipNames:
+    - Finalizer
+  - shipType: Insurgent
+    videoClip: {fileID: 32900000, guid: fcd7c4165aa1846c4857e4f07060da60, type: 3}
+    specificShipNames:
+    - Freedom
+  - shipType: TradeUnion
+    videoClip: {fileID: 32900000, guid: a874b8b362b6a4abf841236501e5e60f, type: 3}
+    specificShipNames:
+    - Goodsalot
+  - shipType: Bounty_Hunter
+    videoClip: {fileID: 32900000, guid: bbce8e02fbaa64b83aa944e04dc0a830, type: 3}
+    specificShipNames:
+    - Betsy
+  captainVideos:
+  - faction: Imperium
+    captainRanks:
+    - Admiral
+    - Grand Admiral
+    - Lieutenant
+    - Commander
+    - Colonel
+    - Major
+    captainNames:
+    - Parkin
+    - Flux
+    - Garrick
+    videoPossibilities:
+    - {fileID: 32900000, guid: 9dd44f3e4630c464ba4b713db5bb3242, type: 3}
+    - {fileID: 32900000, guid: 071f0cd890fe24c39aa9d013d91787c3, type: 3}
+    - {fileID: 32900000, guid: 833100fa040ad41afb413c781140d90b, type: 3}
+  - faction: Insurgent
+    captainRanks:
+    - Commander
+    captainNames:
+    - Vox
+    videoPossibilities:
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+  - faction: Trade_Union
+    captainRanks:
+    - Commander
+    captainNames:
+    - Vox
+    videoPossibilities:
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+  - faction: Bounty_Hunter
+    captainRanks:
+    - Commander
+    captainNames:
+    - Vox
+    videoPossibilities:
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+  - faction: Automated_Systems
+    captainRanks:
+    - Commander
+    captainNames:
+    - Vox
+    videoPossibilities:
+    - {fileID: 32900000, guid: 3457133aa0f08427bbed5c220cb1172f, type: 3}
+  defaultShipVideo: {fileID: 32900000, guid: 99f9a50762322446d974d68f7bc0b0b7, type: 3}
+  defaultCaptainVideo: {fileID: 32900000, guid: d2d1b760009a041d4ab6e60abcfb58dd, type: 3}

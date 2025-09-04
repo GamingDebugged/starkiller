@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Pressure_RentDue
+  m_EditorClassIdentifier: 
+  entryId: e6047d43-4343-4a42-809d-06d7a4fb86d5
+  entryName: Facilities Payment Overdue
+  feedType: 1
+  headline: Facilities Payment Overdue
+  content: Residental Services came by again. They are threatening to move us to
+    the lower levels if we don't pay by the end of the week. I don't know what to
+    do.
+  videoClip: {fileID: 32900000, guid: 256b7292f30bf4c9bacf65b6b1e780ab, type: 3}
+  videoThumbnail: {fileID: 0}
+  triggerEventId: 
+  minDay: 10
+  maxDay: 10
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 1
+  actionText: Pay Facilities Bill
+  creditCost: 30
+  actionId: 
+  persistDuration: 7
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

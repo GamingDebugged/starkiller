@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manifestName: Luxury Beverage Shipment
+  manifestCode: MANIFEST-3341
+  manifestDescription: Licensed import of luxury beverages for officer's club
+  declaredItems:
+  - Corollan Brandy (50 cases)
+  - Aldereen Wine (100 bottles)
+  - Bospan Port (25 cases)
+  - Import Licenses
+  actualItems:
+  - Corollan Brandy (50 cases)
+  - Aldereen Wine (100 bottles)
+  - Bospan Port (25 cases)
+  - Import Licenses
+  totalCargoUnits: 175
+  cargoWeight: 350
+  factionRestriction: 0
+  allowedFactions:
+  - TradeUnion
+  - Pirates
+  - CivilianTransport
+  requiredShipCategories:
+  - TradeUnion
+  - CivilianTransport
+  - Pirates
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: 
+  authorizedBy: Trade Union
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: -1
+  requiresSpecialValidation: 0
+  validationKeywords: []
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -10
+  creditRewardIfCorrect: 5
+  priority: 1

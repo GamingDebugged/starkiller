@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: CorporateRepresentative
+  m_EditorClassIdentifier: 
+  typeName: Corporate Representative
+  factions:
+  - TradeUnion
+  factionObjects:
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  captains:
+  - firstName: Vex
+    lastName: Tarro
+    rank: Captain
+    authorityLevel: 2
+    portrait: {fileID: 4432534940890616350, guid: e63854e089e1b481f9ef3d46f0f6118e, type: 3}
+    briberyChance: 0.25
+    minBribeAmount: 100
+    maxBribeAmount: 100
+    deceptionChance: 0.1
+    greetingDialogs:
+    - phrase: Captain Vex Tarro, at your service.
+      associatedVideo: {fileID: 32900000, guid: 9f8ffc79f02f34c50836527d8eca83ca, type: 3}
+    approvedDialogs:
+    - phrase: You're a smart one commander, smooth sailing for everyone.
+      associatedVideo: {fileID: 32900000, guid: cff292da7d86b47c7ae98d683c982cd3, type: 3}
+    deniedDialogs:
+    - phrase: Now thats just bad for business, are you sure you won't reconsider?
+      associatedVideo: {fileID: 32900000, guid: 79bf1c97e262b47eb8f7ecb98b3fbabd, type: 3}
+    bribeDialogs:
+    - phrase: Tell you what, 100 credits says you didn't see that clerial error.
+      associatedVideo: {fileID: 32900000, guid: a654b4f255e0e4ed8bac9bfef1f1d27a, type: 3}
+    holdingPatternDialogs:
+    - phrase: Come'on now, every minute costs me credits, how about we speed this
+        along?
+      associatedVideo: {fileID: 32900000, guid: 4facacac13e2c44ff9062118753de540, type: 3}
+    tractorBeamDialogs:
+    - phrase: Woah, easy there, no need for the heavy hardware...
+      associatedVideo: {fileID: 32900000, guid: 6bc09695ee10b41659ec9589fc8359d6, type: 3}
+    returningAfterApprovalDialogs:
+    - phrase: If it isn't my favourite checkpoint commander...
+      associatedVideo: {fileID: 32900000, guid: 5728413845f334268852717ede195b8d, type: 3}
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  - firstName: Trader
+    lastName: Joe
+    rank: 
+    authorityLevel: 2
+    portrait: {fileID: 4378839330074273833, guid: 513dfc863882046649c2cdd7194f0740, type: 3}
+    briberyChance: 0.25
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0.1
+    greetingDialogs:
+    - phrase: Hi?
+      associatedVideo: {fileID: 32900000, guid: 3fc670e1cea4e479397996b7ae4bcfd3, type: 3}
+    approvedDialogs:
+    - phrase: tx
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: what
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: cash?
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: holding what
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: you can't!
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+    returningAfterApprovalDialogs: []
+    returningAfterDenialDialogs: []
+    returningAfterHoldingDialogs: []
+    returningAfterTractorBeamDialogs: []
+    returningAfterBriberyDialogs: []
+  possibleFirstNames:
+  - Orrin
+  - Torren
+  - Vikas
+  - Belak
+  - Dallas
+  possibleLastNames:
+  - Ryiad
+  - Nawl
+  - Vedda
+  - Kasta
+  - Trellis
+  commonRanks:
+  - Director
+  - Executive
+  - Representative
+  - Agent
+  typicalBehaviors:
+  - Emphasizes corporate importance and connections
+  - Often mentions contracts and agreements with the Imperium
+  - Expects preferential treatment
+  - Talks in business terminology and jargon
+  dialoguePatterns: []

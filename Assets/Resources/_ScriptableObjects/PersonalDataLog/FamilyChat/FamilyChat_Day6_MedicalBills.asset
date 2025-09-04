@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: FamilyChat_Day6_MedicalBills
+  m_EditorClassIdentifier: 
+  entryId: 7039eb2e-1270-46c9-8004-9856e79baa4e
+  entryName: 
+  feedType: 1
+  headline: Medical Bills Due
+  content: The hospital sent another notice about Tommy's treatment. They're threatening
+    to stop his medication if we don't pay soon.
+  videoClip: {fileID: 0}
+  triggerEventId: 
+  minDay: 6
+  maxDay: 13
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 1
+  actionText: Pay Medical Bills
+  creditCost: 2000
+  actionId: medical_bills_01
+  persistDuration: 5
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

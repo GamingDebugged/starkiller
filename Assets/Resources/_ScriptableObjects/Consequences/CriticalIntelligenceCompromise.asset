@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: CriticalIntelligenceCompromise
+  m_EditorClassIdentifier: 
+  title: Critical Intelligence Compromise
+  type: 0
+  severity: 3
+  possibleDescriptions:
+  - Classified Imperium intelligence has been compromised due to improper security
+    clearance protocols.
+  - Insurgent spies have obtained critical strategic information. The consequences
+    will be severe and far-reaching.
+  imperiumCasualties: 25
+  creditPenalty: 50
+  imperialLoyaltyChange: -3
+  rebellionSympathyChange: 0
+  triggersInspection: 1
+  affectsFamily: 1
+  familyEffect: Your family's security clearance is under review. Access to premium
+    facilities has been revoked.
+  hasLongTermEffect: 1
+  effectDuration: 5
+  longTermDescription: Imperium special forces deployed to counter intelligence breach.
+    Heightened security and monitoring of all personnel.
+  endGameMessage: Caused critical security failure resulting in 25 casualties (undermined
+    Imperial authority)
+  consequenceIcon: {fileID: -8456602196072077560, guid: 1102d5c52c6324094af7067032274369, type: 3}
+  severityColor: {r: 1, g: 0, b: 0, a: 1}

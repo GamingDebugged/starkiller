@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Food_Supply_Shipment
+  m_EditorClassIdentifier: 
+  manifestName: Food Supply Shipment
+  manifestCode: MANIFEST-9221
+  manifestDescription: Standard food supply delivery for base personnel
+  declaredItems:
+  - Protein Rations (5000 units)
+  - Hydration Packs (3000 units)
+  - Fresh Produce (200 kg)
+  - Cooking Supplies
+  actualItems:
+  - Protein Rations (5000 units)
+  - Hydration Packs (3000 units)
+  - Fresh Produce (200 kg)
+  - Cooking Supplies
+  totalCargoUnits: 8200
+  cargoWeight: 4100
+  factionRestriction: 0
+  allowedFactions:
+  - Merchant
+  - Transport
+  - Civilian
+  requiredShipCategories: []
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: 
+  authorizedBy: Supply Corps
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 5
+  requiresSpecialValidation: 0
+  validationKeywords: []
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -5
+  creditRewardIfCorrect: 5
+  priority: 0

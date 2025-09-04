@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f499cbc260e2b403eb3694461a7de1f0, type: 3}
+  m_Name: StarkkillerMediaDatabase
+  m_EditorClassIdentifier: 
+  prioritizeScriptableObjects: 1
+  persistVideoSelections: 1
+  shipTypes: []
+  captainTypes: []
+  legacyShipMedia: []
+  defaultShipImage: {fileID: 0}
+  defaultShipVideo: {fileID: 0}
+  legacyCaptainMedia: []
+  defaultCaptainImage: {fileID: 0}
+  defaultCaptainVideo: {fileID: 0}
+  scenarioMedia: []
+  defaultScenarioImage: {fileID: 0}
+  defaultScenarioVideo: {fileID: 0}
+  approvedImage: {fileID: 0}
+  deniedImage: {fileID: 0}
+  pendingImage: {fileID: 0}
+  warningImage: {fileID: 0}
+  logEntryIcon: {fileID: 0}
+  creditsIcon: {fileID: 0}
+  loyaltyIcon: {fileID: 0}

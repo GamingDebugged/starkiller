@@ -1,0 +1,34 @@
+File Organization Strategy
+
+When implementing new features or modifying existing ones:
+
+Check the catalog for similar functionality before creating new files
+Update the catalog when adding or significantly modifying files
+Use the catalog to identify which files to include in Project Knowledge for specific tasks
+Maintain proper namespace usage for organization (StarkillerBaseCommand namespace for core files)
+File Naming Conventions
+
+"To maintain consistency and clarity in the project, we follow these naming conventions:"
+
+"Managers - [System]Manager.cs (e.g., GameManager, TimeManager)"
+"Data Containers - [Type].cs (e.g., ShipEncounter, FamilyStatusInfo)"
+"ScriptableObjects - [Type].cs (e.g., Consequence, ShipType)"
+UI Components - [Component]Display.cs or [Component]UI.cs
+Utilities - [Name]Utility.cs or [Name]Helper.cs
+Extensions - [Class]Extensions.cs
+Project Knowledge Management Strategy
+
+"When working on a specific system, request these file categories for the Project Knowledge:"
+
+Primary System Files - All files from the system being worked on
+Integration Files - Files that connect with the system
+GameManager.cs - Always include when possible as it's the central hub
+Reference Implementation Files - For pattern consistency
+
+"For example, when working on Consequences:"
+
+Consequence.cs
+SecurityConsequenceManager.cs
+ConsequenceCompatibilityManager.cs
+GameManager.cs
+ImperialFamilySystem.cs (for family impacts)

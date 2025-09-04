@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: CivilianTransport
+  m_EditorClassIdentifier: 
+  typeName: Civilian Transport
+  factions: []
+  factionObjects:
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  captains:
+  - firstName: Civilian
+    lastName: One
+    rank: 
+    authorityLevel: 0
+    portrait: {fileID: -6466191100797793510, guid: 173c21d867dde438c91d6061542b1e48, type: 3}
+    briberyChance: 0.5
+    minBribeAmount: 20
+    maxBribeAmount: 60
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: Civial Transport requesting passage
+      associatedVideo: {fileID: 32900000, guid: 11a448c4c64014838b677bd42757a4e1, type: 3}
+    approvedDialogs:
+    - phrase: approve
+      associatedVideo: {fileID: 32900000, guid: 3b1f259fa4f124ba19208e0eebc1847d, type: 3}
+    deniedDialogs:
+    - phrase: deny
+      associatedVideo: {fileID: 32900000, guid: 2d56fdff219654626ac368b1bafe9911, type: 3}
+    bribeDialogs:
+    - phrase: bribe
+      associatedVideo: {fileID: 32900000, guid: 2e713933b67474b56a632dacd7feb4bc, type: 3}
+    holdingPatternDialogs:
+    - phrase: holding
+      associatedVideo: {fileID: 32900000, guid: 219e7b38a755c4fb5b3f2774c77b4e77, type: 3}
+    tractorBeamDialogs:
+    - phrase: tractor
+      associatedVideo: {fileID: 32900000, guid: b81277dac0383471cab7a92b4db20a02, type: 3}
+  - firstName: Kick
+    lastName: Frayat
+    rank: 
+    authorityLevel: 0
+    portrait: {fileID: -6366531623917458069, guid: e254cbde54a3849e79d239cd94ca9009, type: 3}
+    briberyChance: 0.5
+    minBribeAmount: 20
+    maxBribeAmount: 60
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: Civial Transport requesting passage
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    approvedDialogs:
+    - phrase: approve
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: deny
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: bribe
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: holding
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: tractor
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  possibleFirstNames:
+  - Kevik
+  - Tranta
+  - Rubix
+  - Lizori
+  possibleLastNames:
+  - Sineese
+  - Yakatori
+  - Myset
+  - Vivek
+  - Cam
+  commonRanks:
+  - Flight Officer
+  - First Officer
+  - Captain
+  - Pilot
+  typicalBehaviors:
+  - friendly but nervous
+  - Adheres precisely to flight patterns and procedures
+  - Shows too much emotion and is over friendly
+  - Not good with orders
+  dialoguePatterns:
+  - Hiya babes!

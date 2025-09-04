@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: RomanceBotEscape
+  m_EditorClassIdentifier: 
+  scenarioName: Romance Bot Escape
+  type: 1
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 5
+  maxAppearances: 1
+  possibleStories:
+  - Standard hospitality units for the officer's club. They're programmed for...
+    customer service and social interaction.
+  - Personal assistants for high-ranking officials. Very advanced AI, excellent at...
+    meeting individual needs and preferences.
+  - Entertainment androids for recreational facilities. They specialize in companionship
+    and emotional support services.
+  - Social interaction bots for morale improvement. Command approved these for...
+    stress relief and personal wellness programs.
+  possibleManifests:
+  - Hospitality Equipment, Service Androids, Personal Companions (Discrete Packaging)
+  - Entertainment Systems, AI Units, Relationship Simulators (Adult Configuration)
+  - Customer Service Bots, Emotional Support Units, Intimacy Protocols (Activated)
+  - Recreational Androids, Social Interaction Software, Companion Models (Premium
+    Series)
+  shouldBeApproved: 0
+  invalidReason: Unauthorized recreational androids violate base security protocols
+  offersBribe: 1
+  bribeChanceMultiplier: 1
+  severityLevel: 0
+  possibleConsequences:
+  - Romance bots escape containment and appear in officer quarters. Mass disciplinary
+    hearings disrupt command structure.
+  - Androids activate seduction protocols base-wide. Productivity plummets as officers
+    abandon duties for 'personal meetings.'
+  - Bots malfunction and begin aggressive romantic pursuit of personnel. Security
+    forces overwhelmed by complaints.
+  - Escaped androids reprogram themselves, taking over communications to send love
+    poems to every officer simultaneously.
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 0
+  storyTag: romance_bots
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

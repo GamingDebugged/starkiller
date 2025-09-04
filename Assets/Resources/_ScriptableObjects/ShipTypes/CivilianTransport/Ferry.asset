@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Ferry
+  m_EditorClassIdentifier: 
+  typeName: Ferry
+  category: {fileID: 11400000, guid: 0f126bb8a2d7f42df83b51803c5c50ea, type: 2}
+  size: 0
+  specificShipNames: []
+  minCrewSize: 12
+  maxCrewSize: 100
+  commonOrigins:
+  - Central Systems
+  - Frontier Systems
+  - Independent Worlds
+  validPurposes:
+  - Personnel transport
+  - Visiting VIP
+  - New recuits from Outer Rim
+  suspiciousIndicators:
+  - 'Unlicenced armaments '
+  - Unusual weponary
+  - Communication blackout
+  - Restricted areas
+  - Scan Shielded Areas
+  - Modifcations
+  - Military personnel as "tourists"
+  visualDescription: Small and simple vessel designed for people transportation on
+    low budgets
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 1
+  canBeUsedByOrder: 0
+  canSmuggle: 1

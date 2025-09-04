@@ -1,0 +1,11 @@
+ID,Code Pattern,Faction,Clearance Level,Valid From Day,Valid To Day,Example,Validation Rules,Purpose,Issuing Authority,Format Description,Special Notes
+ACC001,SK-####,Imperium,Standard,1,5,SK-1234,4 digits after prefix,Standard Starkiller Base   access,Base Security Office,"""SK"" prefix + 4 digits",Basic civilian and low-level military access
+ACC002,IM-####,Imperium,Military,2,10,IM-5678,"4 digits after prefix, first digit > 3",Military   personnel access,Imperial Military Command,"""IM"" prefix + 4 digits",Required for all military ships and   personnel
+ACC003,AD-###-##,Imperium,Administrative,3,15,AD-912-45,"3 digits, dash, 2 digits",Administrative level access,Central Bureau,"""AD"" prefix + 3 digits + dash + 2 digits",For imperial   administrators and bureaucrats
+ACC004,ORD-######,The Order,Special,5,Unlimited,ORD-765432,"6 digits, sum of digits divisible by   3",Order authority override,The Order Command,"""ORD"" prefix + 6 digits",Grants special privileges to   Order personnel
+ACC005,TU-##-####,Trade Union,Commercial,1,Unlimited,TU-97-2583,"2 digits, dash, 4 digits",Commercial shipping license,Trade Union Authority,"""TU"" prefix + 2 digits + dash + 4 digits",Required for   all commercial shipping
+ACC006,SC-####/##,Corporate,Business,3,Unlimited,SC-7890/42,"4 digits, slash, 2 digits",Corporate sector access,Corporate Sector Authority,"""SC"" prefix + 4 digits + slash + 2 digits",For   corporate vessels and executives
+ACC007,DIP-##X###,Neutral,Diplomatic,1,Unlimited,DIP-72X456,"2 digits, letter, 3 digits",Diplomatic mission code,Galactic Diplomatic Corps,"""DIP"" prefix + 2 digits + letter + 3 digits",For   diplomatic vessels and ambassadors
+ACC008,SP-####-#,Spaceport,Civilian,1,Unlimited,SP-8275-3,"4 digits, dash, 1 check digit",Civilian transport registry,Spaceport Authority,"""SP"" prefix + 4 digits + dash + check digit",Standard   civilian ship registration
+ACC009,EMG-#####,Emergency,Emergency,1,Unlimited,EMG-12345,"5 digits, first digit is priority   (1-5)",Emergency services access,Emergency Response Bureau,"""EMG"" prefix + priority digit + 4 digits",For    medical and emergency vessels
+ACC010,XX-?????,Invalid,None,N/A,N/A,XX-A7H!3,Non-standard format with letters/symbols,Invalid    example,None,Any format not matching valid patterns,Used for testing rejection protocols

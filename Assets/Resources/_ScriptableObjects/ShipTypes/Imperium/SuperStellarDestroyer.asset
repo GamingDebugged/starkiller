@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: SuperStellarDestroyer
+  m_EditorClassIdentifier: 
+  typeName: Super Stellar Destroyer
+  category: {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  size: 4
+  specificShipNames:
+  - Sovereign
+  - Finaliser
+  - Justifier
+  - Ender
+  - Finisher
+  - Rulemaker
+  minCrewSize: 10000
+  maxCrewSize: 30000
+  commonOrigins:
+  - Central Command
+  - Fleet Shipyards
+  - Defense Sector HQ
+  validPurposes:
+  - Fleet command
+  - System patrol
+  - show of force
+  suspiciousIndicators:
+  - Unauthorized system entry
+  - Communications blackout
+  visualDescription: The largest military starships in the fleet with various armaments
+    and mega cannons. Large number of attack fighters and bombers. Include multiple
+    squadrons of troops and special squadrons. Captained by High Admirals
+  technicalSpecification: 
+  shipIcon: {fileID: 5524590292671962877, guid: f7043b7291f49844b9671b3d3dedcbb5, type: 3}
+  shipVariations:
+  - {fileID: 21300002, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 1
+  canSmuggle: 0

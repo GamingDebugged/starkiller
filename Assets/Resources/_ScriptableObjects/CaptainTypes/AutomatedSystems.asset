@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: AutomatedSystems
+  m_EditorClassIdentifier: 
+  typeName: Automated Systems
+  factions:
+  - Automated Systems
+  factionObjects:
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  captains:
+  - firstName: Control
+    lastName: System
+    rank: 
+    authorityLevel: 3
+    portrait: {fileID: -6644712722772485445, guid: b5e10578233494d9fa0e2fd5d617d33b, type: 3}
+    briberyChance: 0.1
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: Autovessel TK421 delivering requested equipment... Clearance codes
+        transmitted.
+      associatedVideo: {fileID: 32900000, guid: 0f8c829f8f126474cb865cbade4e85b0, type: 3}
+    approvedDialogs:
+    - phrase: Affirmative. Coming around to Docking Bay 109
+      associatedVideo: {fileID: 32900000, guid: 0b0062e6785e8474c823516e72216b54, type: 3}
+    deniedDialogs:
+    - phrase: Decision incorrect. Ephemeral falibility in play..
+      associatedVideo: {fileID: 32900000, guid: 86d88f6bf385c443a9d543c3378f2ba7, type: 3}
+    bribeDialogs: []
+    holdingPatternDialogs:
+    - phrase: Moving to holding position.
+      associatedVideo: {fileID: 32900000, guid: ef1ca6aa90863483484a550885c7f95e, type: 3}
+    tractorBeamDialogs:
+    - phrase: 'This action is unnecessary. A report has been filed '
+      associatedVideo: {fileID: 32900000, guid: 638f19d294b0c4d9699de0bf1beaf2c6, type: 3}
+  - firstName: AI
+    lastName: Protocol
+    rank: AI
+    authorityLevel: 3
+    portrait: {fileID: 1942171711632327185, guid: 98feed070248d48dd85aa2477ccab7c4, type: 3}
+    briberyChance: 0.1
+    minBribeAmount: 20
+    maxBribeAmount: 40
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: 
+      associatedVideo: {fileID: 32900000, guid: 0f8c829f8f126474cb865cbade4e85b0, type: 3}
+    approvedDialogs:
+    - phrase: thank you
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: oh no
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: credits?
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: moving to hollding
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: please don't
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  possibleFirstNames:
+  - HAL
+  - CEE3
+  - MOTHER
+  possibleLastNames:
+  - 001
+  - PEE-0
+  - 007
+  commonRanks:
+  - Artificial Narrow Intelligence (ANI)
+  - Artificial General Intelligence (AGI)
+  - Artificial Superintelligence (ASI)
+  typicalBehaviors: []
+  dialoguePatterns: []

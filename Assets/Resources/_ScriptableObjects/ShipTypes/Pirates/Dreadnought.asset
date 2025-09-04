@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Dreadnought
+  m_EditorClassIdentifier: 
+  typeName: Strike Vessel (Modified)
+  category: {fileID: 11400000, guid: ecb30c89403cb43c2bb35dd60b19facc, type: 2}
+  size: 1
+  specificShipNames: []
+  minCrewSize: 500
+  maxCrewSize: 5000
+  commonOrigins:
+  - Partnerships
+  - Important Missions
+  validPurposes:
+  - Everything
+  suspiciousIndicators:
+  - Unauthorized combat operations
+  - Modified boarding systems
+  - Powering Up Weapons
+  visualDescription: 'Massive ancient alien ship taken by the Pirate Queen Jukka.
+    Nomadic homeworld to many pirates and crminals '
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 0
+  canSmuggle: 0

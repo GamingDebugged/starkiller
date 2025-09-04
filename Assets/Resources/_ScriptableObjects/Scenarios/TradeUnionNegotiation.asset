@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: TradeUnionNegotiation
+  m_EditorClassIdentifier: 
+  scenarioName: Trade Union Negotiation Team
+  type: 3
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 4
+  maxAppearances: 2
+  possibleStories:
+  - 'Trade Union delegation arriving for negotiations with base command. Not on scheduled
+    arrivals but authorization codes are valid.
+
+'
+  - Corporate representatives requesting urgent meeting regarding supply contracts.
+    Arrival time differs from official schedule but credentials check out.
+  - Trade Union officials claim their docking window was rescheduled. No record of
+    change in system but their clearance codes are authentic.
+  possibleManifests:
+  - Trade Union representatives, contract specialists, protocol droids, negotiation
+    materials, luxury gifts
+  - Corporate negotiation team, economic advisors, cargo samples, presentation equipment,
+    valuable trade goods
+  - Union officials, legal advisors, data on resource availability, contract proposals,
+    ceremonial items
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 1
+  bribeChanceMultiplier: 0.6
+  severityLevel: 0
+  possibleConsequences:
+  - Trade Union representatives were denied access, resulting in unfavorable contract
+    terms. Base operations budget reduced by 15%.
+  - Important negotiations delayed, causing Trade Union to sign exclusive deal with
+    another facility. Supply costs increased substantially.
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 1
+  storyTag: trade_union_negotiation

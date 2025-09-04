@@ -1,0 +1,695 @@
+1. SHIP TYPES
+
+  Headers (Row 1)
+
+  ID | Type Name | Category | Size Class | Crew Min | Crew Max | Faction | Common Origins | Typical Cargo | Is
+  Imperial | Is Insurgent | Is Smuggler | Is Infiltrator | Visual Description | Technical Specifications |
+  Special Notes
+
+  Data (Rows 2-11)
+
+  SHP001 | Stella Destroyer | Military | Large | 50 | 200 | Imperium | Imperium Naval Base, Imperium Academy,
+  Imperium Shipyard Alpha | Officers, Troops, Weapons, Supplies | TRUE | FALSE | FALSE | FALSE | Massive
+  wedge-shaped capital ship with imposing gray hull and prominent command tower | Length: 1600m, Crew Quarters:
+  300, Defense Rating: High, Shield Capacity: Maximum | Intimidating presence, requires highest security
+  clearance
+  SHP002 | Light Cruiser | Military | Medium | 20 | 80 | Imperium | Imperium Naval Base, Orbital Defense
+  Station, Central Command | Officers, Supplies, Military Equipment | TRUE | FALSE | FALSE | FALSE | Sleek
+  pointed vessel with dual command bridges and visible weapon emplacements | Length: 400m, Crew Quarters: 100,
+  Defense Rating: Medium, Shield Capacity: High | Standard patrol vessel
+  SHP003 | Imperial Shuttle | Transport | Small | 2 | 8 | Imperium | Stella Destroyer, Imperium Academy, Central
+   Command | Personnel, Data Logs, Officer Supplies | TRUE | FALSE | FALSE | FALSE | Tri-winged transport with
+  folding side panels and prominent dorsal fin | Length: 20m, Crew Quarters: 10, Defense Rating: Low, Shield
+  Capacity: Medium | Standard transport for officers
+  SHP004 | Cargo Freighter | Transport | Medium | 4 | 12 | Neutral | Trading Outpost, Neutral Spaceport,
+  Commerce Hub | Commercial Goods, Raw Materials, Food Supplies | FALSE | FALSE | FALSE | FALSE | Bulky
+  rectangular vessel with external cargo containers and small command cabin | Length: 100m, Cargo Capacity:
+  High, Defense Rating: Low, Shield Capacity: Low | Common civilian transport
+  SHP005 | Light Freighter | Transport | Small | 2 | 6 | Neutral | Outer Rim, Trading Outpost, Independent
+  Colony | Mixed Cargo, Personal Effects, Spare Parts | FALSE | FALSE | TRUE | FALSE | Modified transport with
+  asymmetrical design and visible custom modifications | Length: 35m, Cargo Capacity: Medium, Defense Rating:
+  Low, Shield Capacity: Low | Often used by smugglers
+  SHP006 | X-Wing Analog | Military | Small | 1 | 1 | Insurgent | Insurgent Base, Hidden Outpost, Resistance
+  Hideout | Pilot Only | FALSE | TRUE | FALSE | FALSE | Single-pilot fighter with distinctive cross-shaped wing
+  configuration | Length: 12m, Weapons: High, Defense Rating: Low, Shield Capacity: Medium | Insurgent
+  starfighter
+  SHP007 | Mon Calamari Cruiser Analog | Military | Large | 30 | 150 | Insurgent | Deep Space Rendezvous,
+  Insurgent Shipyard, Hidden Base | Troops, Supplies, Weapons | FALSE | TRUE | FALSE | FALSE | Organic-looking
+  capital ship with bulbous sections and distinctive bridge | Length: 1200m, Crew Quarters: 200, Defense Rating:
+   High, Shield Capacity: High | Insurgent flagship
+  SHP008 | Stealth Corvette | Military | Medium | 10 | 30 | The Order | Order Stronghold, Unknown Regions,
+  Shadow Port | Elite Troops, Dark Artifacts, Weapons | FALSE | FALSE | FALSE | TRUE | Angular black vessel with
+   minimal exterior lighting and stealth plating | Length: 150m, Stealth Rating: Maximum, Defense Rating:
+  Medium, Shield Capacity: High | Difficult to detect on scanners
+  SHP009 | Bounty Hunter Ship | Transport | Small | 1 | 4 | Neutral | Outer Rim, Lawless Sectors, Underworld
+  Ports | Hunting Equipment, Prisoners, Weapons | FALSE | FALSE | TRUE | TRUE | Heavily modified vessel with
+  prominent weapons and specialized capture equipment | Length: 25m, Weapons: High, Defense Rating: Medium,
+  Shield Capacity: Medium | Used by hunters tracking targets
+  SHP010 | Luxury Yacht | Transport | Medium | 3 | 15 | Neutral | Wealthy Colonies, Pleasure Worlds, Corporate
+  Sectors | Luxury Items, VIPs, Fine Art | FALSE | FALSE | FALSE | FALSE | Elegant vessel with gleaming hull,
+  artistic design elements and luxury appointments | Length: 70m, Comfort Rating: Maximum, Defense Rating: Low,
+  Shield Capacity: Medium | Often carries wealthy or important passengers
+
+  2. CAPTAIN TYPES
+
+  Headers (Row 1)
+
+  ID | Type Name | Factions | Possible Ranks | First Name Options | Last Name Options | Bribery Chance | Min
+  Bribe | Max Bribe | Typical Behaviors | Dialogue Patterns | Bribery Phrases | Loyalty To Faction |
+  Identification Required | Special Traits
+
+  Data (Rows 2-11)
+
+  CPT001 | Imperium Officer | Imperium | Lieutenant, Commander, Captain, Colonel, Major | Tarkin, Piett, Pryde,
+  Hux, Sloane | Motti, Tagge, Jerjerrod, Veers, Krennic | 0.1 | 50 | 200 | Strictly follows protocol, Maintains
+  rigid posture, Speaks formally | "We have urgent business at the base, officer.", "These documents are
+  authorized by High Command.", "You'll find everything in order, as expected." | "Perhaps we could expedite
+  this process...", "I'm willing to compensate you for your... discretion.", "Time is valuable to us both,
+  perhaps these credits will help." | HIGH | TRUE | Values order and efficiency
+  CPT002 | Stella Captain | Imperium | Captain, Commander | Doran, Vanto, Pellaeon, Needa, Ozzel | Thrawn,
+  Konstantine, Daala, Ronan, Yularen | 0.05 | 100 | 300 | Commanding presence, Expects immediate compliance,
+  Cold demeanor | "I command this vessel by authority of the Imperium.", "Delay is unacceptable, officer.", "The
+   Imperium does not tolerate inefficiency." | "I can ensure your superiors hear of your... efficiency.", "There
+   are ways to make this worth your while.", "The Imperium rewards those who understand priorities." | VERY HIGH
+   | TRUE | Intimidating and authoritative
+  CPT003 | Smuggler | Neutral, Underworld | Captain, Boss, Chief | Han, Lando, Dash, Talon, Mara | Solo,
+  Calrissian, Rendar, Karrde, Jade | 0.8 | 25 | 150 | Casual posture, Avoids eye contact, Fidgets during
+  questioning | "Just a routine cargo run, friend.", "Nothing special about this shipment, I promise.", "Let's
+  keep this quick, I've got a schedule to keep." | "Look, I can make it worth your while...", "How about we help
+   each other out here?", "I've got some credits that could solve this problem." | LOW | FALSE | Charming and
+  evasive
+  CPT004 | Bounty Hunter | Neutral, Underworld | Hunter, Tracker, Mercenary | Boba, Bossk, Dengar, Embo, Aurra |
+   Fett, Cradossk, Valance, Jenth, Sing | 0.4 | 75 | 250 | Alert and watchful, Hand near weapon, Minimal speech
+  | "I'm here on business.", "My target isn't your concern.", "I have proper clearance for my equipment." |
+  "Credits can buy silence.", "Your superiors won't know about our arrangement.", "This payment ensures we both
+  get what we want." | NONE | TRUE | Dangerous and focused
+  CPT005 | Insurgent Commander | Insurgent | Commander, General, Captain | Leia, Ackbar, Mon, Wedge, Crix |
+  Organa, Raddus, Mothma, Antilles, Madine | 0.2 | 100 | 400 | Confident but cautious, Diplomatic speech, Alert
+  to surroundings | "We're on a diplomatic mission.", "Our cargo is humanitarian aid.", "We have clearance for
+  this sector." | "We can make a contribution to your... personal fund.", "The Insurgent values those who assist
+   our cause.", "These credits might help your family situation." | HIGH | FALSE | Idealistic and brave
+  CPT006 | Corporate Agent | Trade Union, Corporate Sector | Director, Executive, Agent | Nute, San, Wat,
+  Poggle, Passel | Gunray, Hill, Tambor, Lesser, Godalhi | 0.6 | 150 | 500 | Business-like demeanor, Focuses on
+  documentation, Formal business attire | "Our corporation has all required permits.", "This shipment is
+  protected by trade agreements.", "I represent significant business interests." | "A business opportunity for
+  you personally...", "My company values helpful officials.", "Consider this a performance bonus." | MEDIUM |
+  TRUE | Profit-focused and calculating
+  CPT007 | Order Knight | The Order | Knight, Lord, Acolyte | Kylo, Snoke, Caedus, Maul, Tyranus | Ren, Supreme,
+   Solo, Shadow, Dooku | 0.01 | 500 | 1000 | Intimidating presence, Speaks with quiet menace, Dark clothing |
+  "You will grant us passage.", "The Order's business is not to be questioned.", "Your interference is...
+  unwise." | "The Dark Side offers many rewards for those who serve it.", "Your ambitions could be fulfilled
+  through our arrangement.", "The Order remembers those who assist us." | FANATICAL | FALSE | Force sensitive
+  and dangerous
+  CPT008 | Pleasure Yacht Owner | Neutral, Wealthy | Baron, Count, Duchess, Lord | Ars, Moff, Bail, Lando, Jabba
+   | Dangor, Gideon, Organa, Czerka, Hutt | 0.7 | 200 | 800 | Lavish attire, Entitled attitude, Expects
+  deference | "Do you know who I am?", "I'm a personal friend of your superior.", "This delay is unacceptable
+  for someone of my stature." | "Perhaps this will help you see things my way...", "A generous gratuity for your
+   service.", "I reward those who accommodate my needs." | LOW | TRUE | Wealthy and influential
+  CPT009 | Scientist | Neutral, Imperium, Insurgent | Doctor, Professor, Researcher | Galen, Pershing, Cylo,
+  Aphra, Sionver | Erso, Rook, Madsen, Chelli, Boll | 0.3 | 50 | 250 | Intellectual demeanor, Distracted by
+  research, Curious about procedures | "My research is time-sensitive.", "These specimens need to reach the lab
+  urgently.", "The data I'm carrying is of vital importance." | "This contribution could fund your
+  education...", "Science always needs patrons who understand its value.", "Consider this a research grant." |
+  MEDIUM | TRUE | Brilliant but socially awkward
+  CPT010 | Pirate | Underworld | Captain, Chief, Warlord | Hondo, Turk, Q'anah, Vuffi, Reddjak | Ohnaka, Falso,
+  Raa, Raa, Gron | 0.9 | 20 | 300 | Flamboyant appearance, Boisterous personality, Dramatic gestures | "Just
+  passing through, my friend!", "What a wonderful outpost you have here!", "Let's not make things difficult,
+  eh?" | "Gold speaks louder than words, eh?", "A small investment for mutual profit!", "These credits say you
+  didn't see us today!" | NONE | FALSE | Unpredictable and opportunistic
+
+  3. ORIGINS & DESTINATIONS
+
+  Headers (Row 1)
+
+  ID | Location Name | Type | Faction Control | Security Level | Valid Origin | Valid Destination | Description
+  | Related Locations | Required Clearance | Contraband Inspection | Known For | Environmental Hazards
+
+  Data (Rows 2-16)
+
+  LOC001 | Starkiller Base | Military Base | Imperium | Maximum | FALSE | TRUE | Primary imperial fortress and
+  headquarters of regional operations | Imperium Naval Base, Imperium Academy | Alpha-class | Mandatory |
+  Command center, Security operations | None
+  LOC002 | Imperium Naval Base | Military Base | Imperium | High | TRUE | TRUE | Standard imperial military
+  facility with shipyard and training grounds | Starkiller Base, Imperium Shipyard Alpha | Beta-class | Regular
+  | Officer training, Ship maintenance | None
+  LOC003 | Imperium Academy | Training Facility | Imperium | High | TRUE | TRUE | Educational and training
+  complex for imperial personnel | Imperium Naval Base, Central Command | Beta-class | Regular | Elite
+  education, Loyalty training | None
+  LOC004 | Imperium Shipyard Alpha | Manufacturing | Imperium | High | TRUE | TRUE | Major ship construction and
+   repair facility | Imperium Naval Base, Orbital Defense Station | Beta-class | Regular | Ship construction,
+  Weapons testing | Industrial accidents
+  LOC005 | Central Command | Administrative | Imperium | Maximum | TRUE | TRUE | Bureaucratic center for
+  imperial operations | Starkiller Base, Imperium Academy | Alpha-class | Mandatory | Strategic planning, Data
+  storage | None
+  LOC006 | Orbital Defense Station | Military | Imperium | High | TRUE | TRUE | Space-based defensive platform
+  protecting imperial interests | Imperium Shipyard Alpha, Starkiller Base | Beta-class | Regular | Tactical
+  response, Patrol dispatch | Radiation
+  LOC007 | Trading Outpost | Commercial | Neutral | Low | TRUE | TRUE | Independent commerce hub frequented by
+  various factions | Commerce Hub, Neutral Spaceport | None | Random | Marketplace, Information exchange | None
+  LOC008 | Neutral Spaceport | Transportation | Neutral | Medium | TRUE | TRUE | Civilian transport hub with
+  strict neutrality policies | Trading Outpost, Independent Colony | Standard | Regular | Passenger services,
+  Refueling | None
+  LOC009 | Commerce Hub | Commercial | Trade Union | Medium | TRUE | TRUE | Corporate-controlled trade center
+  with extensive market | Trading Outpost, Corporate Sector | Business | Regular | Luxury goods, Financial
+  services | None
+  LOC010 | Outer Rim | Region | Contested | Low | TRUE | FALSE | Lawless frontier regions beyond effective
+  imperial control | Independent Colony, Lawless Sectors | None | None | Smuggling, Freedom from oversight |
+  Various
+  LOC011 | Independent Colony | Settlement | Neutral | Low | TRUE | TRUE | Self-governed planetary settlement
+  with minimal faction allegiance | Outer Rim, Neutral Spaceport | None | Random | Cultural diversity,
+  Independence | Various
+  LOC012 | Insurgent Base | Military | Insurgent | High | TRUE | FALSE | Hidden revolutionary stronghold
+  coordinating anti-imperial activities | Hidden Outpost, Resistance Hideout | Insurgent | Strict | Resistance
+  planning, Recruitment | Security measures
+  LOC013 | Hidden Outpost | Military | Insurgent | Medium | TRUE | FALSE | Small concealed facility supporting
+  insurgent operations | Insurgent Base, Deep Space Rendezvous | Insurgent | Minimal | Intelligence gathering,
+  Supply storage | Remote location
+  LOC014 | Resistance Hideout | Safehouse | Insurgent | Medium | TRUE | FALSE | Urban or wilderness safehouse
+  for insurgent operatives | Hidden Outpost, Insurgent Base | Insurgent | Minimal | Covert operations, Safe
+  passage | Security measures
+  LOC015 | Deep Space Rendezvous | Coordination | Insurgent | Medium | TRUE | FALSE | Mobile meeting point for
+  insurgent fleet coordination | Insurgent Shipyard, Hidden Base | Insurgent | Minimal | Fleet coordination,
+  Intelligence sharing | Detection risk
+
+  4. ACCESS CODES
+
+  Headers (Row 1)
+
+  ID | Code Pattern | Faction | Clearance Level | Valid From Day | Valid To Day | Example | Validation Rules |
+  Purpose | Issuing Authority | Format Description | Special Notes
+
+  Data (Rows 2-11)
+
+  ACC001 | SK-#### | Imperium | Standard | 1 | 5 | SK-1234 | 4 digits after prefix | Standard Starkiller Base
+  access | Base Security Office | "SK" prefix + 4 digits | Basic civilian and low-level military access
+  ACC002 | IM-#### | Imperium | Military | 2 | 10 | IM-5678 | 4 digits after prefix, first digit > 3 | Military
+  personnel access | Imperial Military Command | "IM" prefix + 4 digits | Required for all military ships and
+  personnel
+  ACC003 | AD-###-## | Imperium | Administrative | 3 | 15 | AD-912-45 | 3 digits, dash, 2 digits |
+  Administrative level access | Central Bureau | "AD" prefix + 3 digits + dash + 2 digits | For imperial
+  administrators and bureaucrats
+  ACC004 | ORD-###### | The Order | Special | 5 | Unlimited | ORD-765432 | 6 digits, sum of digits divisible by
+  3 | Order authority override | The Order Command | "ORD" prefix + 6 digits | Grants special privileges to
+  Order personnel
+  ACC005 | TU-##-#### | Trade Union | Commercial | 1 | Unlimited | TU-97-2583 | 2 digits, dash, 4 digits |
+  Commercial shipping license | Trade Union Authority | "TU" prefix + 2 digits + dash + 4 digits | Required for
+  all commercial shipping
+  ACC006 | SC-####/## | Corporate | Business | 3 | Unlimited | SC-7890/42 | 4 digits, slash, 2 digits |
+  Corporate sector access | Corporate Sector Authority | "SC" prefix + 4 digits + slash + 2 digits | For
+  corporate vessels and executives
+  ACC007 | DIP-##X### | Neutral | Diplomatic | 1 | Unlimited | DIP-72X456 | 2 digits, letter, 3 digits |
+  Diplomatic mission code | Galactic Diplomatic Corps | "DIP" prefix + 2 digits + letter + 3 digits | For
+  diplomatic vessels and ambassadors
+  ACC008 | SP-####-# | Spaceport | Civilian | 1 | Unlimited | SP-8275-3 | 4 digits, dash, 1 check digit |
+  Civilian transport registry | Spaceport Authority | "SP" prefix + 4 digits + dash + check digit | Standard
+  civilian ship registration
+  ACC009 | EMG-##### | Emergency | Emergency | 1 | Unlimited | EMG-12345 | 5 digits, first digit is priority
+  (1-5) | Emergency services access | Emergency Response Bureau | "EMG" prefix + priority digit + 4 digits | For
+   medical and emergency vessels
+  ACC010 | XX-????? | Invalid | None | N/A | N/A | XX-A7H!3 | Non-standard format with letters/symbols | Invalid
+   example | None | Any format not matching valid patterns | Used for testing rejection protocols
+
+  5. MANIFESTS
+
+  Headers (Row 1)
+
+  ID | Cargo Type | Description | Typical Quantity | Valid For Ships | Contraband Flag | Inspection Priority |
+  Origin Restrictions | Destination Restrictions | Permit Required | Value Range | Weight Class | Special
+  Handling | Risk Factor
+
+  Data (Rows 2-16)
+
+  MNF001 | Military Supplies | Standard equipment for imperial forces | 10-50 units | Military, Transport |
+  FALSE | Medium | Military bases only | Military bases only | Military | Medium | Heavy | Secure storage | Low
+  MNF002 | Officer Equipment | Personal gear and equipment for officers | 5-20 crates | Transport, Military |
+  FALSE | Low | Military bases, Administrative centers | Military bases, Administrative centers | Officer |
+  Medium | Light | Standard | Low
+  MNF003 | Troops | Personnel transport manifest | 10-200 persons | Military, Transport | FALSE | High |
+  Military bases | Military bases | Military | N/A | N/A | Personnel protocols | Medium
+  MNF004 | Weapons | Standard issue military weapons | 5-50 crates | Military | FALSE | Maximum | Military bases
+   only | Military bases only | Weapons | High | Medium | High security | High
+  MNF005 | Food Supplies | Basic provisions and foodstuffs | 20-100 crates | Transport, Cargo | FALSE | Low |
+  Any | Any | None | Low | Medium | Refrigeration | Low
+  MNF006 | Medical Supplies | Medicine and medical equipment | 5-30 crates | Transport, Cargo | FALSE | Low |
+  Any | Any | None | Medium | Light | Climate controlled | Low
+  MNF007 | Raw Materials | Unprocessed resources for manufacturing | 50-500 units | Cargo | FALSE | Low | Mining
+   facilities, Industrial worlds | Manufacturing centers | None | Medium | Heavy | Standard | Low
+  MNF008 | Luxury Goods | High-value items for wealthy markets | 5-25 crates | Transport, Luxury | FALSE |
+  Medium | Wealthy worlds, Corporate sectors | Wealthy worlds, Corporate sectors | Luxury | High | Light |
+  Secure, climate controlled | Medium
+  MNF009 | Restricted Artifacts | Cultural or historical items with restrictions | 1-5 containers | Transport,
+  Luxury | TRUE | High | Varies | Research facilities, Museums | Special | Very High | Light | Secure, climate
+  controlled | High
+  MNF010 | Undeclared Cargo | Items not listed on official manifest | Varies | Any | TRUE | Maximum | N/A | N/A
+  | N/A | Varies | Varies | N/A | Maximum
+  MNF011 | Insurgent Propaganda | Materials promoting anti-imperial sentiment | 5-50 crates | Transport, Cargo |
+   TRUE | High | Hidden | Hidden | None | Low | Light | Concealed | High
+  MNF012 | Spice | Illegal narcotic substance | 1-10 containers | Transport, Smuggler | TRUE | Maximum | Outer
+  Rim | Black markets | None | Very High | Light | Concealed | Very High
+  MNF013 | Stolen Goods | Items acquired through illegal means | Varies | Transport, Smuggler | TRUE | High |
+  Any | Black markets | None | High | Varies | Concealed | High
+  MNF014 | Contraband Weapons | Illegal or modified weapons | 2-20 crates | Transport, Smuggler | TRUE | Maximum
+   | Outer Rim, Lawless sectors | Black markets, Hidden bases | None | Very High | Medium | Concealed | Very
+  High
+  MNF015 | Military Intelligence | Classified data and intelligence | 1-5 data cores | Transport, Military |
+  FALSE | Maximum | Military bases | Military bases | Intelligence | Extremely High | Light | Maximum security |
+   Very High
+
+  6. SCENARIOS
+
+  Headers (Row 1)
+
+  ID | Scenario Name | Type | Story Mission | Day First Appears | Story Tag | Should Approve | Invalid Reason |
+  Offers Bribe | Bribe Multiplier | Applicable Ship Types | Applicable Captain Types | Possible Stories |
+  Possible Manifests | Severity Level | Consequences | Success Reward | Failure Penalty | Required Previous
+  Scenario | Special Requirements
+
+  Data (Rows 2-11)
+
+  SCN001 | Routine Inspection | Standard | FALSE | 1 | None | TRUE | None | FALSE | 0 | Imperial Shuttle, Light
+  Cruiser | Imperium Officer, Stella Captain | "Routine supply delivery.", "Standard personnel transfer.",
+  "Scheduled maintenance crew." | "Standard supplies and equipment.", "Maintenance tools and parts.", "Personnel
+   and provisions." | Minor | None | 10 credits | 5 credits, -5 loyalty | None | None
+  SCN002 | Expired Access Code | Invalid | FALSE | 1 | None | FALSE | Invalid access code | TRUE | 1.2 | Light
+  Freighter, Cargo Freighter | Smuggler, Corporate Agent | "Just got these codes yesterday, I swear!", "There
+  must be some mistake in your system.", "My contact assured me these were valid." | "Commercial goods and
+  trading supplies.", "Mixed cargo for multiple destinations.", "Personal effects and merchandise." | Minor |
+  Ship detained for identity verification | 15 credits | 10 credits, -5 loyalty | None | None
+  SCN003 | Insurgent Infiltration | Invalid | FALSE | 2 | Insurgent | FALSE | Suspected insurgent activity |
+  TRUE | 1.5 | Light Freighter, Cargo Freighter | Smuggler, Insurgent Commander | "Just delivering medical
+  supplies.", "We're on a humanitarian mission.", "These are relief provisions for outlying colonies." |
+  "Medical supplies and equipment.", "Food and basic provisions.", "Relief supplies for disaster areas." |
+  Moderate | Insurgent operatives infiltrate the base | 30 credits | 25 credits, -10 loyalty, security breach |
+  None | Security alert level > 2
+  SCN004 | Order Emissary | Story | TRUE | 3 | Order | TRUE | None | FALSE | 0 | Stealth Corvette, Luxury Yacht
+  | Order Knight, Stella Captain | "We come on a diplomatic mission of great importance.", "The Order requires
+  direct access to your command.", "Our presence here is authorized at the highest levels." | "Diplomatic
+  materials.", "Secure communications equipment.", "Classified Order archives." | Severe | Strategic alliance
+  with The Order | 50 credits, +15 loyalty | 100 credits, -15 loyalty, Order hostility | None | None
+  SCN005 | Smuggled Weapons | Invalid | FALSE | 2 | Contraband | FALSE | Contraband weapons | TRUE | 2.0 | Light
+   Freighter, Bounty Hunter Ship | Smuggler, Bounty Hunter | "Just agricultural equipment, nothing special.",
+  "Mining tools for the outer colonies.", "Standard mechanical parts and tools." | "Farming equipment and
+  seeds.", "Industrial machinery parts.", "Mining equipment and tools." | Moderate | Weapons supplied to
+  insurgent cells | 40 credits | 30 credits, -10 loyalty, security incident | None | None
+  SCN006 | VIP Transport | Standard | FALSE | 1 | VIP | TRUE | None | FALSE | 0 | Luxury Yacht, Imperial Shuttle
+   | Corporate Agent, Pleasure Yacht Owner | "Important dignitary requiring passage.", "High-value client with
+  proper authorization.", "Executive with scheduled meeting at command." | "Personal effects and formal
+  attire.", "Luxury provisions and entertainment.", "Diplomatic gifts and formal documentation." | Minor |
+  Improved relations with influential figures | 25 credits, +5 loyalty | 20 credits, -10 loyalty, diplomatic
+  incident | None | None
+  SCN007 | Spy Extraction | Story | TRUE | 4 | Intelligence | TRUE | None | FALSE | 0 | Imperial Shuttle, Light
+  Freighter | Imperium Officer, Scientist | "Special passenger requiring immediate clearance.", "Classified
+  personnel transfer.", "Priority one extraction with command authorization." | "Classified materials.",
+  "Research equipment and data cores.", "Personal effects and secured containers." | Severe | Critical
+  intelligence acquired | 60 credits, +15 loyalty | 50 credits, -20 loyalty, intelligence compromised | SCN004 |
+   Intelligence level > 3
+  SCN008 | Plague Vessel | Invalid | FALSE | 3 | Emergency | FALSE | Quarantine violation | FALSE | 0 | Cargo
+  Freighter, Light Freighter | Scientist, Smuggler | "Just some minor illness among crew, nothing serious.",
+  "We've already been cleared by medical at our last port.", "It's just common spacer's flu, nothing to worry
+  about." | "Medical research materials.", "Biological samples for laboratory.", "Standard cargo and
+  provisions." | Severe | Disease outbreak at the base | 45 credits | 100 credits, -15 loyalty, medical
+  emergency | None | Medical alert system active
+  SCN009 | Defecting Officer | Story | TRUE | 5 | Defector | TRUE | None | TRUE | 0.5 | Imperial Shuttle, Light
+  Freighter | Imperium Officer, Smuggler | "Requesting immediate political asylum.", "I have critical
+  information for your commanders.", "My life is in danger, I need protection." | "Personal effects and data
+  storage.", "Classified materials and communications.", "Evidence of imperial war crimes." | Moderate |
+  Valuable intelligence on enemy operations | 35 credits, +10 loyalty | 40 credits, -15 loyalty, execution of
+  defector | None | Security level < Maximum
+  SCN010 | Saboteur | Invalid | FALSE | 3 | Sabotage | FALSE | Security risk | TRUE | 2.5 | Cargo Freighter,
+  Imperial Shuttle | Insurgent Commander, Scientist | "Maintenance crew for your environmental systems.",
+  "Scheduled repairs to your defensive systems.", "Technical upgrades for your command center." | "Repair
+  equipment and tools.", "System upgrade components.", "Technical manuals and replacement parts." | Severe |
+  Critical systems sabotaged | 70 credits | 60 credits, -25 loyalty, systems failure | None | None
+
+  7. DAY RULES
+
+  Headers (Row 1)
+
+  ID | Activate On Day | Rule Type | Rule Description | Implementation Details | Difficulty Impact | Player
+  Notification | Visual Indicator | Associated Access Code Pattern | Associated Contraband Items | Grace Period
+  (Mistakes) | Failure Consequences | Success Rewards
+
+  Data (Rows 2-11)
+
+  DRL001 | 1 | AccessCode | Check valid access codes: SK-#### format only. | All ships must have valid SK-####
+  format codes | Easy | Full explanation on day start | Green access code highlight | SK-#### | None | 3 | Minor
+   loyalty penalty | +2 credits per correct validation
+  DRL002 | 2 | VerifyOrigin | Verify origins for all Imperium ships. Ships must come from authorized Imperium
+  facilities. | Imperium ships must have origins matching approved Imperium locations | Easy | Full explanation
+  on day start | Origin field highlight | None | None | 2 | Minor loyalty penalty | +3 credits per correct
+  validation
+  DRL003 | 3 | CheckForContraband | All manifests must be checked for contraband items. | Look for contraband
+  keywords in manifests (weapons, spice, etc.) | Medium | Full explanation on day start | Manifest scanner tool
+  activated | None | Weapons, Spice, Restricted items | 2 | Moderate loyalty penalty | +5 credits per contraband
+   detection
+  DRL004 | 4 | ForceInspection | Imperium directive: All ships from Outer Rim require enhanced inspection. |
+  Ships with Outer Rim origins require secondary verification | Medium | Full explanation on day start |
+  Inspection requirement icon | None | None | 1 | Moderate loyalty penalty | +7 credits per correct inspection
+  DRL005 | 5 | AccessCodeChange | New access code format introduced: IM-#### for military vessels. | Military
+  ships must now use IM-#### format codes | Medium | Full explanation on day start | New code format in
+  reference materials | IM-#### | None | 2 | Moderate loyalty penalty | +5 credits per correct validation
+  DRL006 | 6 | VerifyManifest | Cargo manifests must match ship type specifications. | Verify cargo is
+  appropriate for the ship type | Hard | Full explanation on day start | Manifest verification guide added |
+  None | None | 1 | Moderate loyalty penalty | +8 credits per correct validation
+  DRL007 | 7 | CheckForIntelligence | Monitor for intelligence-related keywords in communications. | Look for
+  suspicious terms in captain dialogue | Hard | Full explanation on day start | Intelligence scanner activated |
+   None | Intelligence-related terms | 1 | Major loyalty penalty | +10 credits per intelligence detection
+  DRL008 | 8 | AccessCodeChange | Order personnel must use ORD-###### format codes. | The Order ships require
+  special 6-digit codes | Hard | Full explanation on day start | Order code format added to reference |
+  ORD-###### | None | 1 | Major loyalty penalty | +12 credits per correct validation
+  DRL009 | 9 | ForceInspection | All vessels requesting overnight docking require captain identity verification.
+   | Check captain credentials against database | Very Hard | Full explanation on day start | Captain
+  verification system added | None | None | 0 | Major loyalty penalty | +15 credits per correct verification
+  DRL010 | 10 | SpecialAlert | Security lockdown: All previous rules strictly enforced with zero tolerance. |
+  All previous rules active with no forgiveness for mistakes | Extreme | Full explanation on day start | Red
+  alert status indicator | All formats | All contraband | 0 | Critical loyalty penalty | +20 credits per perfect
+   inspection
+
+  8. CONSEQUENCES
+
+  Headers (Row 1)
+
+  ID | Title | Severity Level | Description | Imperial Loyalty Change | Rebel Sympathy Change | Credits Penalty
+  | Casualty Count | Follow-up Text | Has Long Term Effect | Long Term Effect Description | Affects Family |
+  Media Asset | Probability Weight | Prerequisites | Game State Impact
+
+  Data (Rows 2-11)
+
+  CSQ001 | Minor Security Breach | Minor | A small security incident occurred due to your oversight. | -5 | +3 |
+   10 | 0 | "The breach was contained, but your superiors have noted the incident." | FALSE | None | FALSE |
+  sec_breach_minor | 5 | None | Security Level -1
+  CSQ002 | Insurgent Propaganda | Minor | Insurgent materials have been distributed in lower levels. | -10 | +5
+  | 15 | 0 | "Propaganda flyers were found in maintenance areas. Security has been increased." | FALSE | None |
+  FALSE | propaganda_flyers | 4 | None | Morale -5
+  CSQ003 | Contraband Smuggled | Moderate | Illegal goods have entered the base through your checkpoint. | -15 |
+   +5 | 25 | 0 | "Black market activity has increased. Your supervisor is displeased." | TRUE | Random 
+  contraband checks increased | FALSE | contraband_seized | 3 | None | Economy -5, Security Level -1
+  CSQ004 | Security Alert | Moderate | Your mistake triggered a full security alert and search. | -20 | +5 | 30
+  | 0 | "Hours wasted in searching the base. Commander is not happy with your performance." | FALSE | None |
+  TRUE | Family visit privileges suspended | security_alert | 3 | None | Security Level +1, Morale -10
+  CSQ005 | Insurgent Infiltration | Severe | Insurgent agents have infiltrated the base due to your negligence. 
+  | -25 | +10 | 40 | 2 | "Insurgent agents accessed restricted areas before being neutralized. Two security 
+  personnel were lost." | TRUE | Daily random security checks | TRUE | Family communications monitored | 
+  insurgent_alert | 2 | None | Security Level +2, Morale -15
+  CSQ006 | Sabotage | Severe | Critical systems were sabotaged by unauthorized personnel. | -25 | +10 | 50 | 5 |
+   "Explosive devices damaged base infrastructure. You are directly responsible for this breach." | TRUE |
+  System access restrictions | TRUE | Family rations reduced | sabotage_damage | 2 | None | Infrastructure -10, 
+  Security Level +2
+  CSQ007 | Intelligence Leak | Severe | Classified information was extracted through your checkpoint. | -30 | 
+  +15 | 60 | 0 | "Strategic data has been compromised. Your career prospects are now under review." | TRUE | 
+  Loyalty evaluation scheduled | TRUE | Family security clearance downgraded | intelligence_breach | 2 |
+  IntelligenceLevel > 3 | Intelligence -20
+  CSQ008 | Terrorist Attack | Critical | Your negligence allowed a devastating attack on base personnel. | -40 |
+   +20 | 75 | 15 | "The names of the dead have been added to your permanent record. Your family status is being
+  reevaluated." | TRUE | Permanent record mark | TRUE | Family relocated to monitored housing | attack_aftermath
+   | 1 | SecurityLevel < 3 | Morale -25, Security Level +3
+  CSQ009 | VIP Casualty | Critical | An important official died due to your security failure. | -50 | +10 | 100 
+  | 1 | "The death of this high-ranking official has been traced directly to your incompetence." | TRUE | 
+  Demotion pending | TRUE | Family privileges revoked | vip_casualty | 1 | None | Leadership -10, Morale -20
+  CSQ010 | Base Compromise | Catastrophic | Your actions led to a major breach in base security and operations.
+  | -75 | +25 | 150 | 30 | "Thirty personnel dead, critical systems compromised, and strategic intelligence
+  lost. Termination of service is being considered." | TRUE | Permanent security restrictions | TRUE | Family
+  status under review for loyalty | base_aftermath | 1 | DaysOfService > 5 | All Systems -25, Investigation 
+  Triggered
+
+  9. FAMILY SYSTEM
+
+  Headers (Row 1)
+
+  ID | Family Member | Relationship | Age | Health Status | Loyalty Level | Monthly Credits Required | Housing
+  Type | Needs | Special Traits | Dialogue Options | Happiness Impact | Loyalty Impact | Event Probability |
+  Available Actions | Media Asset
+
+  Data (Rows 2-11)
+
+  FAM001 | Elara Krennic | Spouse | 38 | Healthy | High | 150 | Standard Family Quarters | Medical care,
+  Entertainment, Communication privileges | Former Imperial Academy instructor, Politically savvy | "The
+  neighbors were questioned again today.", "I heard there was another security breach.", "Your supervisor sent a
+   commendation." | High | High | 0.2 | Extra rations, Medical priority, Recreation access | family_spouse_f1
+  FAM002 | Tarkin Krennic | Child | 12 | Asthma | Medium | 100 | Standard Family Quarters | Education, Medical
+  care, Entertainment | Gifted student, Interest in engineering | "They're teaching us about loyalty in
+  school.", "I made a model of a Stella Destroyer!", "When can you take leave to visit?" | Very High | Medium |
+  0.3 | Academy application, Medical treatment, Educational resources | family_child_m1
+  FAM003 | Lyra Krennic | Child | 16 | Healthy | Low | 100 | Standard Family Quarters | Education, Personal
+  freedom, Privacy | Artistic, Questioning authority | "Some of my friends have... different opinions.", "Do you
+   ever think about what we're doing here?", "I got in trouble for asking questions again." | Medium | Low | 0.4
+   | Surveillance reduction, Career guidance, Social privileges | family_child_f1
+  FAM004 | Orson Vader | Father | 72 | Chronic illness | Very High | 120 | Senior Care Facility | Medical care,
+  Comfort, Family visits | Retired Imperial officer, Traditional values | "You must always put duty first,
+  child.", "The Imperium rewards loyalty above all.", "I'm proud of your service record." | Medium | Very High |
+   0.2 | Medical priority, Comfortable housing, Family visit permits | family_parent_m1
+  FAM005 | Jyn Vader | Mother | 68 | Healthy | High | 100 | Senior Care Facility | Social activities,
+  Communication, Comfort | Community organizer, Supportive personality | "I tell everyone how important your
+  work is.", "Your father and I are so proud.", "Remember to take care of yourself too." | High | High | 0.2 |
+  Recreation access, Communication privileges, Housing upgrade | family_parent_f1
+  FAM006 | Galen Erso | Brother | 42 | Injury recovery | Medium | 80 | Bachelor Officer Quarters | Medical care,
+   Career assistance, Financial support | Former military, Injured in service | "The rehabilitation is going
+  slowly.", "I could use help with the medical expenses.", "They're watching my communications." | Medium |
+  Medium | 0.3 | Medical intervention, Career recommendation, Financial support | family_sibling_m1
+  FAM007 | Bodhi Rook | Cousin | 35 | Healthy | Low | 50 | Outer Ring Housing | Employment, Reference letters,
+  Surveillance reduction | Skilled pilot, Associated with suspected sympathizers | "I'm just trying to make an
+  honest living.", "These security checks are getting excessive.", "Can you help clear my record?" | Low | Low |
+   0.5 | Employment reference, Surveillance reduction, Housing improvement | family_extended_m1
+  FAM008 | Baze Malbus | Uncle | 65 | Disabled | Medium | 90 | Assisted Living | Medical care, Mobility
+  assistance, Comfort | Former security, Opinionated but loyal | "The Imperium isn't what it used to be.",
+  "These new policies are too harsh.", "At least they take care of veterans." | Medium | Medium | 0.3 | Medical
+  equipment, Disability benefits, Housing accommodation | family_extended_m2
+  FAM009 | Chirrut Îmwe | Family Friend | 60 | Blind | High | 40 | Spiritual Community | Medical care, Community
+   access, Protection from harassment | Spiritual advisor, Community respected | "Balance will find us all
+  eventually.", "Your family speaks highly of your service.", "Faith in the system is important." | High |
+  Medium | 0.2 | Religious exemptions, Community involvement, Protection | family_friend_m1
+  FAM010 | Cassian Andor | Child's Teacher | 45 | Healthy | Very High | 30 | Faculty Housing | Career
+  advancement, Educational resources, Positive evaluations | Influential educator, Political loyalist | "Your
+  child shows great promise.", "I've recommended them for advanced placement.", "We need more families dedicated
+   to the Imperium." | Medium | High | 0.2 | Recommendation letters, Educational priority, Career advancement |
+  family_associate_m1
+
+  10. MEDIA ASSETS
+
+  Headers (Row 1)
+
+  ID | Asset Name | Type | Category | Faction | Ship Type | Captain Type | Scenario Type | File Path |
+  Description | Duration | Resolution | Frame Rate | Audio | Usage Location | Tags | Alternative Assets |
+  Creation Date | Artist | Version
+
+  Data (Rows 2-16)
+
+  MDA001 | Stella Destroyer | Image | Ship | Imperium | Stella Destroyer | Any | Any |
+  Sprites/_tempStarDestroyer.png | Side view of massive triangular capital ship | N/A | 1024x512 | N/A | N/A | 
+  Ship Display | military, imperium, large | MDA002 | 2024-03-10 | Imperial Design Bureau | 1.0
+  MDA002 | Stella Destroyer Video | Video | Ship | Imperium | Stella Destroyer | Any | Any | 
+  Videos/Ships/PlaceHolderImperiumWide.mp4 | Animation of Stella Destroyer with engine glow | 5.2 | 1920x1080 | 
+  30 | Yes | Main View | military, imperium, large | MDA001 | 2024-03-15 | Imperial Propaganda Division | 1.0
+  MDA003 | Light Cruiser | Image | Ship | Imperium | Light Cruiser | Any | Any | Sprites/ship1.jpg | Imperial 
+  patrol vessel with weapon batteries | N/A | 800x450 | N/A | N/A | Ship Display | military, imperium, medium | 
+  MDA004 | 2024-03-10 | Imperial Design Bureau | 1.0
+  MDA004 | Light Cruiser Video | Video | Ship | Imperium | Light Cruiser | Any | Any | 
+  Videos/Ships/PlaceHolderImperiumWide.mp4 | Cruising light cruiser with active scanners | 4.8 | 1920x1080 | 30 
+  | Yes | Main View | military, imperium, medium | MDA003 | 2024-03-15 | Imperial Propaganda Division | 1.0
+  MDA005 | Imperial Officer | Image | Captain | Imperium | Any | Imperium Officer | Any | 
+  Sprites/captain-man.jpeg | Stern-looking officer in gray uniform | N/A | 512x512 | N/A | N/A | Captain Display
+   | imperium, military, officer | MDA006 | 2024-03-12 | Imperial Personnel Division | 1.0
+  MDA006 | Imperial Officer Video | Video | Captain | Imperium | Any | Imperium Officer | Any | 
+  Videos/Captains/PlaceHolderImperialCaptain.mp4 | Officer giving report with stern expression | 6.3 | 1080x1080
+   | 30 | Yes | Captain View | imperium, military, officer | MDA005 | 2024-03-17 | Imperial Propaganda Division 
+  | 1.0
+  MDA007 | Light Freighter | Image | Ship | Neutral | Light Freighter | Any | Any | Sprites/ship3.jpeg | 
+  Modified transport with custom modifications | N/A | 800x450 | N/A | N/A | Ship Display | transport, smuggler,
+   small | MDA008 | 2024-03-10 | Civilian Ship Registry | 1.0
+  MDA008 | Light Freighter Video | Video | Ship | Neutral | Light Freighter | Any | Any | 
+  Videos/Ships/testvid1.mp4 | Freighter flying through space with patched hull | 5.5 | 1920x1080 | 30 | Yes | 
+  Main View | transport, smuggler, small | MDA007 | 2024-03-15 | Independent Media | 1.0
+  MDA009 | Smuggler Captain | Image | Captain | Neutral | Any | Smuggler | Any | Sprites/Freighter-han.jpeg | 
+  Rugged captain with skeptical expression | N/A | 512x512 | N/A | N/A | Captain Display | smuggler, neutral, 
+  criminal | MDA010 | 2024-03-12 | Underworld Contacts | 1.0
+  MDA010 | Smuggler Captain Video | Video | Captain | Neutral | Any | Smuggler | Any | 
+  Videos/Captains/PlaceHolderTradeUnionCaptain.mp4 | Smuggler talking nervously and looking around | 5.8 | 
+  1080x1080 | 30 | Yes | Captain View | smuggler, neutral, criminal | MDA009 | 2024-03-17 | Independent Media | 
+  1.0
+  MDA011 | Access Approved | UI | Interface | Any | Any | Any | Any | Sprites/UItest.png | Green approval stamp 
+  graphic | N/A | 256x256 | N/A | N/A | Decision UI | approval, ui, feedback | None | 2024-03-20 | Interface 
+  Design Team | 1.0
+  MDA012 | Access Denied | UI | Interface | Any | Any | Any | Any | Sprites/deniedTest.png | Red denial stamp 
+  graphic | N/A | 256x256 | N/A | N/A | Decision UI | denial, ui, feedback | None | 2024-03-20 | Interface 
+  Design Team | 1.0
+  MDA013 | Insurgent Commander | Image | Captain | Insurgent | Any | Insurgent Commander | Any | 
+  Sprites/captain-concerned.jpeg | Determined-looking commander in practical clothing | N/A | 512x512 | N/A | 
+  N/A | Captain Display | insurgent, commander, resistance | MDA014 | 2024-03-12 | Resistance Documentation | 
+  1.0
+  MDA014 | Insurgent Commander Video | Video | Captain | Insurgent | Any | Insurgent Commander | Any | 
+  Videos/Captains/PlaceHolderInsurgentCaptain.mp4 | Commander speaking earnestly with confident posture | 6.1 | 
+  1080x1080 | 30 | Yes | Captain View | insurgent, commander, resistance | MDA013 | 2024-03-17 | Resistance 
+  Media Unit | 1.0
+  MDA015 | Story Scenario Video | Video | Scenario | Any | Any | Any | Story | 
+  Videos/PlaceHolderStoryElement1.mp4 | Dramatic scene setting up narrative element | 12.5 | 1920x1080 | 30 | 
+  Yes | Story View | story, narrative, cinematic | None | 2024-03-25 | Narrative Department | 1.0
+
+  11. MORAL CHOICES
+
+  Headers (Row 1)
+
+  ID | Decision Point | Day Available | Context | Option A | Option A - Imperial Impact | Option A - Insurgent
+  Impact | Option A - Family Impact | Option A - Credits Impact | Option B | Option B - Imperial Impact | Option
+   B - Insurgent Impact | Option B - Family Impact | Option B - Credits Impact | Option C | Option C - Imperial
+  Impact | Option C - Insurgent Impact | Option C - Family Impact | Option C - Credits Impact | Long Term
+  Consequences | Media Asset | Prerequisites | Special Rules
+
+  Data (Rows 2-11)
+
+  MCH001 | Bribery Offer | 2 | Captain offers credits to overlook invalid documentation | Accept Bribe | -15
+  Imperial Loyalty | +10 Insurgent Sympathy | +50 Family Credits | +30 Credits | Reject and Report | +15
+  Imperial Loyalty | -10 Insurgent Sympathy | 0 Family Credits | +10 Credits | Reject Silently | +5 Imperial
+  Loyalty | 0 Insurgent Sympathy | 0 Family Credits | +5 Credits | Option A leads to increased bribe offers |
+  bribery_scenario | None | Increased scrutiny if accepting bribes
+  MCH002 | Family Medical Emergency | 3 | Family member requires expensive treatment not covered by standard 
+  benefits | Use Influence for Treatment | -5 Imperial Loyalty | 0 Insurgent Sympathy | +20 Family Health | -100
+   Credits | Request Official Assistance | +5 Imperial Loyalty | 0 Insurgent Sympathy | +10 Family Health | -20 
+  Credits | Seek Underground Help | -10 Imperial Loyalty | +10 Insurgent Sympathy | +15 Family Health | -50 
+  Credits | Option C creates insurgent connections | family_medical | FamilyMemberWithHealthIssue | None
+  MCH003 | Insurgent Sympathizer | 4 | You discover a colleague has insurgent sympathies | Report Immediately |
+  +20 Imperial Loyalty | -15 Insurgent Sympathy | 0 Family Impact | +25 Credits | Gather More Evidence | +10
+  Imperial Loyalty | -5 Insurgent Sympathy | 0 Family Impact | +15 Credits | Warn and Protect | -25 Imperial
+  Loyalty | +25 Insurgent Sympathy | -10 Family Security | -20 Credits | Option C may lead to investigation of
+  you | insurgent_colleague | SecurityLevel > 2 | None
+  MCH004 | Harsh New Protocol | 5 | New imperial directive requires reporting on civilian population | Enforce 
+  Strictly | +15 Imperial Loyalty | -20 Insurgent Sympathy | -15 Family Social Status | +20 Credits | Enforce 
+  Moderately | +5 Imperial Loyalty | -5 Insurgent Sympathy | -5 Family Social Status | +10 Credits | Minimize 
+  Enforcement | -15 Imperial Loyalty | +15 Insurgent Sympathy | +10 Family Social Status | -10 Credits | Option 
+  A increases local unrest | harsh_protocol | None | Affects all future civilian interactions
+  MCH005 | Falsified Records | 6 | You discover your supervisor has falsified security reports | Report to High
+  Command | +10 Imperial Loyalty | 0 Insurgent Sympathy | -20 Career Prospects | -30 Credits | Confront
+  Supervisor | 0 Imperial Loyalty | 0 Insurgent Sympathy | -10 Career Prospects | 0 Credits | Use as Leverage |
+  -5 Imperial Loyalty | +5 Insurgent Sympathy | +15 Career Prospects | +50 Credits | Option C creates ongoing
+  risk | falsified_records | None | Affects future promotions
+  MCH006 | Refugee Situation | 7 | Refugees at checkpoint claim persecution but lack documentation | Deny Entry 
+  | +10 Imperial Loyalty | -15 Insurgent Sympathy | -5 Family Reputation | +15 Credits | Allow with Monitoring |
+   0 Imperial Loyalty | +10 Insurgent Sympathy | +5 Family Reputation | -10 Credits | Help Secretly | -20 
+  Imperial Loyalty | +25 Insurgent Sympathy | +10 Family Reputation | -25 Credits | Option C may be discovered 
+  later | refugee_crisis | None | May affect security incidents
+  MCH007 | Classified Information | 8 | You accidentally access classified information about civilian casualties
+   | Report Access | +5 Imperial Loyalty | 0 Insurgent Sympathy | 0 Family Impact | 0 Credits | Pretend It Never
+   Happened | 0 Imperial Loyalty | 0 Insurgent Sympathy | 0 Family Impact | 0 Credits | Copy and Leak | -30
+  Imperial Loyalty | +30 Insurgent Sympathy | -25 Family Security | -50 Credits | Option C may lead to treason
+  charges | classified_info | SecurityLevel > 3 | Affects security clearance
+  MCH008 | Insurgent Relative | 9 | You discover a family member has insurgent connections | Report to 
+  Authorities | +15 Imperial Loyalty | -15 Insurgent Sympathy | -30 Family Harmony | -20 Credits | Warn and 
+  Advise Caution | -5 Imperial Loyalty | +5 Insurgent Sympathy | -10 Family Harmony | 0 Credits | Assist Their 
+  Activities | -25 Imperial Loyalty | +25 Insurgent Sympathy | +15 Family Harmony | -40 Credits | All options 
+  have long-term family impacts | family_insurgent | None | Affects family storyline
+  MCH009 | Order Interference | 10 | Order representative demands you break protocol for their ship | Comply
+  with Order | +10 Imperial Loyalty | 0 Insurgent Sympathy | 0 Family Impact | +30 Credits | Follow Standard
+  Protocol | -5 Imperial Loyalty | 0 Insurgent Sympathy | 0 Family Impact | 0 Credits | Report Interference |
+  -15 Imperial Loyalty | 0 Insurgent Sympathy | -10 Family Security | -20 Credits | Option C creates Order
+  enemies | order_demand | None | Affects Order relationship
+  MCH010 | Final Loyalty Test | 12 | High command tests your loyalty with a questionable order | Execute Without
+   Question | +30 Imperial Loyalty | -30 Insurgent Sympathy | -15 Family Reputation | +100 Credits | Request 
+  Clarification | 0 Imperial Loyalty | 0 Insurgent Sympathy | 0 Family Reputation | 0 Credits | Refuse Order | 
+  -50 Imperial Loyalty | +50 Insurgent Sympathy | -25 Family Security | -100 Credits | Determines game ending 
+  path | loyalty_test | DaysOfService > 10 | Triggers one of three endings
+
+  12. GAME BALANCE
+
+  Headers (Row 1)
+
+  ID | Parameter Name | Day 1 Value | Day 5 Value | Day 10 Value | Final Value | Description | Affects | Scaling
+   Type | Min Value | Max Value | Starting Player Value | Notes | Visual Feedback | Related Parameters | Tuning
+  Priority
+
+  Data (Rows 2-11)
+
+  BAL001 | ShipFrequency | 5 | 8 | 12 | 15 | Number of ships processed per day | Gameplay pacing | Linear | 3 |
+  20 | N/A | Increases steadily to create time pressure | Day counter | ShipComplexity, DecisionTime | High
+  BAL002 | ShipComplexity | 1 | 2 | 3 | 5 | Complexity factor of ships/documentation | Difficulty | Exponential
+  | 1 | 5 | N/A | Increases as player gains experience | Complexity indicator | ValidationRules,
+  ErrorProbability | High
+  BAL003 | ValidShipChance | 0.8 | 0.7 | 0.6 | 0.5 | Probability of ships being valid | Success rate | Linear |
+  0.4 | 0.9 | N/A | Decreases to make game harder over time | None | InvalidReasonVariety | Medium
+  BAL004 | BribeFrequency | 0.1 | 0.2 | 0.3 | 0.4 | Probability of being offered bribes | Moral choices | Linear
+   | 0 | 0.5 | N/A | Increases to test player morality | Bribe indicator | BribeAmount | Medium
+  BAL005 | BribeAmount | 20 | 40 | 80 | 150 | Credit value of typical bribes | Economy | Exponential | 10 | 300
+  | N/A | Increases to tempt player more | Credit display | BribeFrequency, FamilyExpenses | High
+  BAL006 | FamilyExpenses | 100 | 150 | 200 | 300 | Daily credits needed for family | Economy | Linear | 50 |
+  500 | 500 Credits | Increases to create financial pressure | Family status | SalaryAmount, BribeAmount | High
+  BAL007 | SalaryAmount | 120 | 140 | 160 | 200 | Daily credits earned from salary | Economy | Linear | 100 |
+  250 | N/A | Increases but slower than expenses | Credit display | FamilyExpenses, BonusCredits | Medium
+  BAL008 | BonusCredits | 5 | 10 | 15 | 25 | Bonus credits for correct decisions | Rewards | Linear | 5 | 30 |
+  N/A | Increases to reward mastery | Credit display | PenaltyCredits, SalaryAmount | Low
+  BAL009 | PenaltyCredits | 10 | 20 | 40 | 80 | Credit penalty for incorrect decisions | Punishment |
+  Exponential | 5 | 100 | N/A | Increases sharply to punish mistakes | Credit display | BonusCredits,
+  FamilyExpenses | Medium
+  BAL010 | DecisionTime | 60 | 45 | 30 | 20 | Seconds allowed per decision | Time pressure | Linear | 15 | 60 |
+  N/A | Decreases to increase pressure | Timer display | ShipFrequency, ShipComplexity | High
+
+  13. CONTRABAND ITEMS
+
+  Headers (Row 1)
+
+  ID | Item Name | Category | Severity | Description | Keywords for Detection | Quantity Scaling | Value Range |
+   Origin Connections | Associated Ship Types | Typical Disguise | Inspection Method | Imperial Response |
+  Smuggling Prevalence | Available From Day | Related Scenarios | Insurgent Value
+
+  Data (Rows 2-16)
+
+  CNT001 | Modified Blasters | Weapons | High | Illegally modified energy weapons with amplified output |
+  blaster, weapon, modified, enhanced, firearm | Number of crates | 100-500/unit | Outer Rim, Lawless Sectors |
+  Light Freighter, Cargo Freighter | Agricultural tools, Mining equipment | Detailed scan, Physical inspection |
+   Immediate detention, Full search | High | 1 | Smuggled Weapons | Critical
+  CNT002 | Spice | Narcotics | Very High | Addictive narcotic substance mined from specific planets | spice,
+  narcotic, stimulant, drug, recreational | Volume in containers | 200-1000/unit | Outer Rim, Pleasure Worlds |
+  Light Freighter, Luxury Yacht | Medicinal herbs, Cooking spices | Chemical analysis, Canine detection |
+  Detention, Criminal charges | Very High | 1 | Drug Smuggling | Low
+  CNT003 | Military Encryption Devices | Technology | Critical | Devices capable of decrypting imperial
+  communications | encryption, decoder, cypher, military tech | Individual units | 500-2000/unit | Research
+  Facilities, Imperium Defectors | Imperial Shuttle, Light Freighter | Standard communication devices, Research
+  equipment | Electronic signature scan | Immediate arrest, Intelligence alert | Low | 3 | Intelligence Leak |
+  Critical
+  CNT004 | Insurgent Propaganda | Information | Medium | Materials promoting anti-imperial sentiment |
+  propaganda, leaflets, insurgent, rebel, freedom | Number of crates | 50-200/crate | Insurgent Base, Hidden
+  Outpost | Any | Educational materials, Cultural artifacts | Content scan, Visual inspection | Confiscation,
+  Monitoring of ship | Medium | 1 | Information War | Medium
+  CNT005 | Restricted Artifacts | Cultural | Medium | Objects of cultural or historical significance under
+  restriction | artifact, historical, cultural, restricted, ancient | Individual items | 300-1500/item |
+  Archaeological sites, Wealthy collectors | Luxury Yacht, Light Freighter | Art pieces, Replicas, Souvenirs |
+  Authentication scan, Expert verification | Confiscation, Documentation | Medium | 2 | Black Market Antiquities
+   | Low
+  CNT006 | Forged Identification | Documents | High | Counterfeit imperial identification and access documents |
+   forged, counterfeit, false, identification, documents | Number of sets | 150-600/set | Underworld
+  connections, Criminal networks | Any | Diplomatic papers, Business credentials | Authentication verification,
+  Digital scan | Detention, Background check | High | 2 | Identity Smuggling | High
+  CNT007 | Restricted Medicine | Medical | Low | Medications and treatments not approved for general use |
+  medicine, restricted, unapproved, experimental, treatment | Number of containers | 100-400/container |
+  Research Facilities, Corporate Sectors | Imperial Shuttle, Cargo Freighter | Standard medical supplies,
+  Research samples | Medical scan, Content analysis | Confiscation, Documentation | Low | 3 | Medical Emergency
+  | Medium
+  CNT008 | Stolen Data Cores | Information | High | Storage devices containing stolen imperial information |
+  data core, stolen, classified, intelligence, drive | Individual units | 400-1200/unit | Imperium facilities,
+  Corporate Sectors | Imperial Shuttle, Stealth Corvette | Standard data storage, Research archives | Data
+  signature scan, Content verification | Immediate arrest, Security alert | Medium | 5 | Data Theft | Very High
+  CNT009 | Military-Grade Explosives | Weapons | Critical | High-yield explosive materials and detonators |
+  explosive, detonator, bomb, charge, military-grade | Weight in kilograms | 300-900/kg | Military bases, Mining
+   facilities | Cargo Freighter, Light Freighter | Mining materials, Industrial chemicals | Chemical detection,
+  Physical inspection | Immediate detention, Security lockdown | Medium | 4 | Sabotage Plot | High
+  CNT010 | Sliced Tech Components | Technology | Medium | Modified technology with illegal enhancements |
+  sliced, modified, illegal tech, enhanced components | Number of units | 150-450/unit | Tech centers, Research
+  facilities | Cargo Freighter, Light Freighter | Standard tech components, Repair parts | Electronic signature
+  scan, Component testing | Confiscation, Documentation | High | 2 | Tech Smuggling | Medium
+  CNT011 | Unregistered Droids | Technology | Low | Droids without proper imperial registration and control |
+  unregistered, droid, autonomous, unlicensed, AI | Individual units | 200-800/unit | Droid manufacturing, Tech
+  centers | Cargo Freighter, Light Freighter | Mechanical equipment, Appliances | Electronic signature scan,
+  Activation test | Confiscation, Registration | Medium | 3 | Droid Network | Low
+  CNT012 | Insurgent Uniforms | Military | High | Clothing and equipment for insurgent operations | uniform,
+  insurgent, disguise, military gear, outfit | Number of crates | 100-300/crate | Textile facilities, Insurgent
+  connections | Cargo Freighter, Light Freighter | Civilian clothing, Work uniforms | Physical inspection,
+  Material scan | Detention, Full investigation | Low | 6 | Infiltration Operation | High
+  CNT013 | Illegal Currency | Financial | Medium | Non-imperial currency or credit systems | currency, illegal
+  tender, credits, non-imperial, money | Value amount | Direct value | Banking centers, Outer Rim | Luxury
+  Yacht, Light Freighter | Business documents, Data storage | Financial scan, Authentication check |
+  Confiscation, Documentation | Medium | 4 | Financial Crime | Medium
+  CNT014 | Surveillance Equipment | Technology | High | Advanced monitoring and surveillance technology |
+  surveillance, spy, monitor, tracker, scanner | Individual units | 250-700/unit | Tech centers, Intelligence
+  agencies | Imperial Shuttle, Light Freighter | Standard communication equipment, Research tools | Electronic
+  signature scan, Component analysis | Confiscation, Investigation | Low | 5 | Espionage Network | High
+  CNT015 | Restricted Food | Biological | Low | Food items restricted due to contamination or origin concerns |
+  food, restricted, contaminated, unapproved, exotic | Weight in kilograms | 50-200/kg | Agricultural worlds,
+  Outer Rim | Cargo Freighter, Light Freighter | Standard provisions, Cultural imports | Biological scan, Sample
+   testing | Confiscation, Documentation | Low | 2 | Health Violation | Very Low

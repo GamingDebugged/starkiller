@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb768c493c4e3479ba44eb4f5e97b220, type: 3}
+  m_Name: ImperiumVessels
+  m_EditorClassIdentifier: 
+  categoryName: Imperium Vessel
+  categoryDescription: Imperium
+  associatedFactions:
+  - Imperium
+  compatibleCaptainFactions:
+  - Imperium
+  validOrigins:
+  - Central Command
+  - Fleet Shipyards
+  - Defense Sector HQ
+  - Border outposts
+  - Intelligence Command
+  - Defense Sector
+  requiredDocuments:
+  - Authorisation Code
+  validAccessCodePrefixes:
+  - IV
+  suspicionBaseLevel: 0.1
+  requiresSpecialClearance: 0
+  priorityAccess: 1
+  categoryColor: {r: 1, g: 0, b: 0, a: 1}
+  canCarryContraband: 0
+  exemptFromRandomSearches: 0

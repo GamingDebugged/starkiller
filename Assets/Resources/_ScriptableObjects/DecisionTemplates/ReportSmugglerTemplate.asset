@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d415749005449afaf9968d5c982b24, type: 3}
+  m_Name: ReportSmugglerTemplate
+  m_EditorClassIdentifier: 
+  templateName: ReportSmugglerTemplate
+  templateId: template_report_smuggler
+  category: 1
+  basePressure: 1
+  baseImperialPoints: 15
+  baseInsurgentPoints: -10
+  increasePressureUnderTime: 0
+  increasePressureIfFamilyCrisis: 0
+  lowCreditsMultiplier: 0.7
+  imperialFeedback: Smuggler apprehended. Your vigilance strengthens the Order.
+  insurgentFeedback: Another supply line severed. People will suffer for this.
+  neutralFeedback: Contraband detected and reported. Security team dispatched.
+  possibleFollowUps: 
+  - Commendation received
+  - Smuggler network investigation
+  - Retaliation warning
+  - Bonus credits awarded
+  followUpChance: 0.4

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Battleship
+  m_EditorClassIdentifier: 
+  typeName: Battleship
+  category: {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  size: 1
+  specificShipNames:
+  - Executor
+  - Devastator
+  - Bastion
+  - Demeter
+  - Supreme
+  minCrewSize: 1000
+  maxCrewSize: 2500
+  commonOrigins:
+  - Fleet Command
+  - Strategic Defense Centre
+  - Outer Rings
+  - Imperium Dominator Base
+  - Starbuck Spaceport
+  validPurposes:
+  - Fleet support
+  - Planetary protection
+  - Strategic defense
+  suspiciousIndicators:
+  - Unauthorized weapon tests
+  - Unusual crew rotations
+  visualDescription: Heavily armored ships with significant firepower but less imposing
+    than Stellar Destroyers
+  technicalSpecification: 
+  shipIcon: {fileID: 8956490695715892292, guid: a259cfc2dc52d411881525549a65add8, type: 3}
+  shipVariations: []
+  defaultShipVideo: {fileID: 32900000, guid: f888ad28f5fcf4de6a15efb92867af3f, type: 3}
+  videoClipPossibilities:
+  - {fileID: 32900000, guid: 9da71d6be7e1a4a20baa625cb59215e8, type: 3}
+  - {fileID: 32900000, guid: ff7774ae9d1764a989107d42a9242ec5, type: 3}
+  - {fileID: 32900000, guid: 44c7849b3726749fdacde3ef81befcb3, type: 3}
+  canBeInfiltrated: 1
+  canBeUsedByOrder: 1
+  canSmuggle: 1

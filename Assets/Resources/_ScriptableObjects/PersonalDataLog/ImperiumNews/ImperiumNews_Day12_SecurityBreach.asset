@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: ImperiumNews_Day12_SecurityBreach
+  m_EditorClassIdentifier: 
+  entryId: 83ae0fd1-4035-4072-8982-b69c269c097b
+  entryName: Rogue Droid Units Discovered
+  feedType: 0
+  headline: Rogue Droid Units Discovered
+  content: Illegal combat modifications found in decommissioned units. Tech-crimes
+    investigating.
+  videoClip: {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+  videoThumbnail: {fileID: 9105620304023138525, guid: 3243d1453735b47eeb6a804e07404033, type: 3}
+  triggerEventId: 
+  minDay: 12
+  maxDay: 12
+  appearanceChance: 1
+  severity: 1
+  linkedToIncident: 0
+  linkedIncidentType: security_breach
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

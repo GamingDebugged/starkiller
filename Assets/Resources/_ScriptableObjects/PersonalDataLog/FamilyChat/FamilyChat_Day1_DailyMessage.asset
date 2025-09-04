@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: FamilyChat_Day1_DailyMessage
+  m_EditorClassIdentifier: 
+  entryId: 87a0385e-5c8c-4b9b-bf58-450b0e60e580
+  entryName: Message from partner
+  feedType: 1
+  headline: It's quiet, too quiet!
+  content: Hi! Hope you're staying safe at work. Mom says dinner was quiet without
+    you again. Love you!
+  videoClip: {fileID: 0}
+  videoThumbnail: {fileID: 0}
+  triggerEventId: 
+  minDay: 1
+  maxDay: 1
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines:
+  - Catch any crimz?
+  - Is the gossip true?
+  - VIP?
+  alternateContent:
+  - Hey, how are things in security? Any excitement?
+  - I heard a bounty hunter stopped by, do you know who it was?
+  - Did I see an Imperium Stellar Destroyer pull alongside today?
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

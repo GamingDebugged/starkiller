@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: ReputationDamage
+  m_EditorClassIdentifier: 
+  title: Reputation Damage
+  type: 2
+  severity: 1
+  possibleDescriptions:
+  - Your reputation among fellow officers has been damaged by recent security failures.
+  - Word of your errors has spread through the base, affecting how others perceive
+    you.
+  imperiumCasualties: 0
+  creditPenalty: 5
+  imperialLoyaltyChange: -1
+  rebellionSympathyChange: 0
+  triggersInspection: 0
+  affectsFamily: 0
+  familyEffect: 
+  hasLongTermEffect: 1
+  effectDuration: 2
+  longTermDescription: Reduced cooperation from colleagues. Decisions scrutinized
+    more carefully by peers.
+  endGameMessage: Service record tarnished by questionable decisions
+  consequenceIcon: {fileID: -1532894025756376689, guid: c71ff0c4a6a10443b95ead61a895e500, type: 3}
+  severityColor: {r: 1, g: 1, b: 0, a: 1}

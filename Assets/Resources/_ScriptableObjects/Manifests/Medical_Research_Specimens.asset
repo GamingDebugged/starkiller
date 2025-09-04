@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Medical_Research_Specimens
+  m_EditorClassIdentifier: 
+  manifestName: Medical Research Specimens
+  manifestCode: MANIFEST-5062
+  manifestDescription: Biological specimens for advanced medical research
+  declaredItems:
+  - Biological Samples
+  - Research Materials
+  - Preservation Equipment
+  - Documentation
+  actualItems:
+  - Black Market Organs
+  - Unknown Origin Body Parts
+  - No Documentation
+  - Illegal Preservation
+  totalCargoUnits: 50
+  cargoWeight: 40
+  factionRestriction: 1
+  allowedFactions:
+  - Pirates
+  - SpecialInterest
+  - Insurgent
+  - TheOrder
+  requiredShipCategories: []
+  hasContraband: 1
+  hasFalseEntries: 1
+  contrabandType: 2
+  contrabandItems:
+  - Illegal Organs
+  - Body Parts
+  - No Documentation
+  isEasilyDetectable: 1
+  clearanceCode: 
+  authorizedBy: Dr. Anon
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 5
+  requiresSpecialValidation: 1
+  validationKeywords:
+  - medical
+  - research
+  - specimen
+  suspiciousKeywords:
+  - organ
+  - body part
+  - Anon
+  reputationImpactIfWrong: -60
+  creditRewardIfCorrect: 30
+  priority: 3

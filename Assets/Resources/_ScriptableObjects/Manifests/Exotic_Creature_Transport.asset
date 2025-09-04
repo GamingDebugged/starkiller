@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Exotic_Creature_Transport
+  m_EditorClassIdentifier: 
+  manifestName: Exotic Creature Transport
+  manifestCode: MANIFEST-8851
+  manifestDescription: Licensed transport of exotic fauna for research purposes
+  declaredItems:
+  - Nexu (2 specimens)
+  - Ysalamir (6 specimens)
+  - Voorpak (4 specimens)
+  - Care Instructions
+  actualItems:
+  - Nexu (2 specimens)
+  - Ysalamir (6 specimens)
+  - Voorpak (4 specimens)
+  - Care Instructions
+  totalCargoUnits: 12
+  cargoWeight: 8
+  factionRestriction: 0
+  allowedFactions:
+  - TradeUnion
+  - Merchant
+  - BountyHunter
+  - Civilian
+  requiredShipCategories: []
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: ZOO-EXO-4421
+  authorizedBy: Xenobiology Department
+  requiredClearanceLevel: 2
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 5
+  requiresSpecialValidation: 1
+  validationKeywords:
+  - exotic
+  - creature
+  - research
+  suspiciousKeywords:
+  - nexu
+  - ysalamir
+  reputationImpactIfWrong: -15
+  creditRewardIfCorrect: 10
+  priority: 1

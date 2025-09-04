@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: StrikeVessel
+  m_EditorClassIdentifier: 
+  typeName: Strike Vessel
+  category: {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  size: 0
+  specificShipNames:
+  - Reliant
+  - Devastator
+  - 'Devourer '
+  - 'Assimilator '
+  - Absorber
+  minCrewSize: 60
+  maxCrewSize: 200
+  commonOrigins:
+  - Military Installations
+  - Central Systems
+  validPurposes:
+  - Military Special Operations
+  - Anti-Piracy Units
+  - Show of Force
+  suspiciousIndicators:
+  - Unauthorized combat operations
+  - Modified boarding systems
+  visualDescription: Large cumbersome ships designed for ramming and boarding other
+    ships during battles. Designed to Strike and cling to enemy ships they can be
+    used by both Pirate and Imperium.
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 0
+  canSmuggle: 0

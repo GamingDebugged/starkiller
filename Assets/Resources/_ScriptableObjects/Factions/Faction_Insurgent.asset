@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_Insurgent
+  m_EditorClassIdentifier: 
+  factionID: insurgent
+  displayName: Insurgents
+  description: Rebels fighting against the Imperium's oppressive rule. Freedom fighters
+    or terrorists, depending on perspective.
+  primaryColor: {r: 0.7529412, g: 0.22352941, b: 0.16862746, a: 1}
+  factionIcon: {fileID: 4017018558505068298, guid: ca5f85dff31c945618755de136928692, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes: []
+  canUseEmergencyCodes: 0
+  alliedFactions: []
+  enemyFactions:
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  neutralFactions:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  authorizedShipCategories: []
+  forbiddenShipCategories: []
+  protocolAdherence: 0.3
+  contrabandProbability: 0.7
+  baseSuspicionLevel: 0.8
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 0
+  commonOrigins:
+  - Hidden Base
+  - Rebel Outpost
+  - Sympathizer Port
+  - Underground Network
+  - Resistance Cell
+  commonDestinations:
+  - Secret Location
+  - Safe House
+  - Supply Cache
+  - Rebel Base
+  - Recruitment Center
+  typicalCargo:
+  - Medical Supplies
+  - Weapons
+  - Propaganda Materials
+  - Stolen Intel
+  - Liberation Equipment
+  standardDocuments:
+  - Forged Papers
+  - Stolen Credentials
+  - False Identity
+  - Resistance Codes
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: PartySuppliesExplosion
+  m_EditorClassIdentifier: 
+  scenarioName: Party Supplies Malfunction
+  type: 1
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 4
+  maxAppearances: 1
+  possibleStories:
+  - Celebration supplies for the Admiral's promotion ceremony. Everything's been
+    specially ordered - confetti cannons, streamers, the works!
+  - Entertainment materials for the officer's morale event. Command wants this to
+    be spectacular - pyrotechnics, party poppers, celebration foam.
+  - Recreation equipment for the annual base anniversary. Premium celebration gear
+    - automated decorations, festive explosives, joy dispensers.
+  - Party supplies for the victory celebration. Interactive decorations, atmospheric
+    enhancement devices, jubilation accelerators.
+  possibleManifests:
+  - Entertainment Materials, Confetti Cannons, Celebration Pyrotechnics (Pressurized)
+  - Recreation Supplies, Party Poppers, Festive Explosives (Hair Trigger Sensitivity)
+  - Morale Equipment, Streamer Dispensers, Joy Foam Generators (Unstable Compound)
+  - Celebration Gear, Automated Decorators, Atmospheric Enhancers (Volatile)
+  shouldBeApproved: 0
+  invalidReason: Improperly stored celebration pyrotechnics pose explosion hazard
+  offersBribe: 1
+  bribeChanceMultiplier: 1
+  severityLevel: 1
+  possibleConsequences:
+  - Confetti cannons malfunction during unloading, coating entire hangar in colorful
+    chaos. Cleanup takes days.
+  - Party foam generators explode, filling docking bay with sticky celebration foam.
+    Personnel trapped for hours.
+  - Pyrotechnic decorations detonate prematurely, covering the base in glitter and
+    streamers. Everything sparkles indefinitely.
+  - Automated party systems activate simultaneously, creating deafening celebration
+    music and blinding disco lights.
+  minCasualties: 0
+  maxCasualties: 3
+  isStoryMission: 0
+  storyTag: party_chaos
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: SystemSkipper
+  m_EditorClassIdentifier: 
+  typeName: System Skipper
+  category: {fileID: 11400000, guid: df682bfaeeccc44c89f365891fbbcdf4, type: 2}
+  size: 0
+  minCrewSize: 5
+  maxCrewSize: 20
+  commonOrigins:
+  - Central Worlds
+  - Established Colonies
+  - Imperium Academy
+  validPurposes:
+  - Personel Transport
+  - Small Shipments
+  - Personal Items
+  suspiciousIndicators:
+  - Weapon-grade materials
+  - Containment field fluctuations
+  - Mismatched cargo manifests
+  - Unauthorized compartments
+  visualDescription: Small ships with large cargo holds and minimal amenities
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  canBeInfiltrated: 1
+  canBeUsedByOrder: 0
+  canSmuggle: 1

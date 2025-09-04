@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: Scientist
+  m_EditorClassIdentifier: 
+  typeName: Scientist
+  factions:
+  - Neutral
+  - Imperium
+  - Insurgent
+  factionObjects:
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  captains:
+  - firstName: Kit
+    lastName: Katan
+    rank: Researcher
+    authorityLevel: 1
+    portrait: {fileID: 0}
+    briberyChance: 0.25
+    minBribeAmount: 50
+    maxBribeAmount: 75
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: My research is time-sensitive
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: These specimens need to reach the lab urgently
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: The data I'm carrying is of vital importance
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    approvedDialogs:
+    - phrase: aprov
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: deny
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: bribe
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: hodl
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: trct
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  - firstName: Serif
+    lastName: Cloudways
+    rank: Doctor
+    authorityLevel: 3
+    portrait: {fileID: -7392346335674701192, guid: e2d8ed353e6a94c2aa9110597abb7051, type: 3}
+    briberyChance: 0.25
+    minBribeAmount: 20
+    maxBribeAmount: 50
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: Can we hurry this along, none of us are getting any younger
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: Can we board please, we have a serious matter to discuss
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: We need urgent clearance, our work is extremely time sensitive.
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    approvedDialogs:
+    - phrase: approve
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: denied
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: Bribe
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: hold
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: tractor
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  - firstName: Gar
+    lastName: Stango
+    rank: Proffessor
+    authorityLevel: 5
+    portrait: {fileID: 0}
+    briberyChance: 0.33
+    minBribeAmount: 40
+    maxBribeAmount: 80
+    deceptionChance: 0.2
+    greetingDialogs:
+    - phrase: Hello there youngling! If you could pop oen that little door of yours
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: Knock Knock little one, may we enter? haha!
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    - phrase: Wow, Is this place just wonderful. I look forward to being shown around.
+      associatedVideo: {fileID: 32900000, guid: faf8921354d684bc7925b5a9b12ff75c, type: 3}
+    approvedDialogs: []
+    deniedDialogs: []
+    bribeDialogs: []
+    holdingPatternDialogs: []
+    tractorBeamDialogs: []
+  possibleFirstNames:
+  - Jalen
+  - Kershing
+  - Cylos
+  - Kaphra
+  - Fion
+  possibleLastNames:
+  - Kursa
+  - Rocus
+  - Madman
+  - Chellin
+  - Boll
+  commonRanks:
+  - Doctor
+  - Professor
+  - Researcher
+  typicalBehaviors:
+  - Intellectual demeanor, Distracted by research, Curious about procedures
+  dialoguePatterns:
+  - 

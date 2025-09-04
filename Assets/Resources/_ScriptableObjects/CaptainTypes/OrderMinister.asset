@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: OrderMinister
+  m_EditorClassIdentifier: 
+  typeName: Order Minister
+  factions:
+  - The Order
+  factionObjects:
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  captains:
+  - firstName: Jod
+    lastName: Baran
+    rank: 
+    authorityLevel: 7
+    portrait: {fileID: -2814001696579968802, guid: 9af6aabde24424a4b9ca038a94b2cade, type: 3}
+    briberyChance: 0
+    minBribeAmount: 0
+    maxBribeAmount: 0
+    deceptionChance: 0
+    greetingDialogs:
+    - phrase: Enter
+      associatedVideo: {fileID: 32900000, guid: 234ad9ee0efef4ac7afa21971e57f802, type: 3}
+    approvedDialogs:
+    - phrase: Approved
+      associatedVideo: {fileID: 32900000, guid: b0bd188d0869d4070ad2f53123ede2de, type: 3}
+    deniedDialogs:
+    - phrase: Denied
+      associatedVideo: {fileID: 32900000, guid: dc8913691f34a46b8aed8fb0057a18db, type: 3}
+    bribeDialogs: []
+    holdingPatternDialogs:
+    - phrase: holding
+      associatedVideo: {fileID: 32900000, guid: dc8913691f34a46b8aed8fb0057a18db, type: 3}
+    tractorBeamDialogs:
+    - phrase: tractor
+      associatedVideo: {fileID: 32900000, guid: dc8913691f34a46b8aed8fb0057a18db, type: 3}
+  possibleFirstNames:
+  - Father
+  - Preacher
+  - Sister
+  possibleLastNames:
+  - Lima
+  - Tarek
+  - Asmir
+  - Grenn
+  - Eros
+  - Shandok
+  - Juuk
+  commonRanks:
+  - Preist
+  - Cardinal
+  - Acolyte
+  typicalBehaviors:
+  - Intimidating presence, Speaks with quiet menace, Dark clothing
+  dialoguePatterns:
+  - '"You will grant us passage.", "The Order''s business is not to be questioned.",
+    "Your interference is...   unwise."'

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_Pirate
+  m_EditorClassIdentifier: 
+  factionID: pirate
+  displayName: Pirate Clans
+  description: Outlaws and smugglers operating outside the law, preying on vulnerable
+    ships.
+  primaryColor: {r: 0, g: 0, b: 0, a: 1}
+  factionIcon: {fileID: 5003127712210896617, guid: 946f5f0307d7b4c18aec8884403a7ae9, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes: []
+  canUseEmergencyCodes: 0
+  alliedFactions: []
+  enemyFactions:
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  neutralFactions: []
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: ecb30c89403cb43c2bb35dd60b19facc, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 0.1
+  contrabandProbability: 0.9
+  baseSuspicionLevel: 0.9
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 0
+  commonOrigins:
+  - Hidden Base
+  - Asteroid Field
+  - Lawless Sector
+  - Unknown Space
+  - Pirate Haven
+  commonDestinations:
+  - Black Market
+  - Hidden Port
+  - Fence Location
+  - Raid Target
+  - Smuggler's Run
+  typicalCargo:
+  - Stolen Goods
+  - Contraband
+  - Weapons
+  - Illegal Substances
+  - Plunder
+  standardDocuments:
+  - Forged Papers
+  - Stolen Credentials
+  - Fake Registry
+  - Black Market Pass
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

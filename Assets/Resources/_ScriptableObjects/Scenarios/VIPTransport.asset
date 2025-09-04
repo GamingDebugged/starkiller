@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: VIPTransport
+  m_EditorClassIdentifier: 
+  scenarioName: VIP Transport
+  type: 0
+  applicableShipTypes:
+  - {fileID: 11400000, guid: a3477ad28739a4d999e49fb05d801841, type: 2}
+  - {fileID: 11400000, guid: c7c01436f00ce451cb2225bd795c6955, type: 2}
+  applicableCaptainTypes:
+  - {fileID: 11400000, guid: d685b1dd19fbc4f0ea28e07f728f22dd, type: 2}
+  dayFirstAppears: 2
+  maxAppearances: 2
+  possibleStories:
+  - Imperial shuttle requests immediate clearance for high-ranking official. Claims
+    security protocols prevent advance notification.
+  - VIP transport carrying senior military advisor requires priority docking. Unusual
+    timing but credentials check out.
+  - Unmarked shuttle with diplomatic codes requesting expedited clearance. Passenger
+    manifest classified.
+  possibleManifests:
+  - Classified
+  - VIP passenger, security detail, classified documents, diplomatic package
+  - Senior officer, personal staff, security droids, encrypted communications equipment
+  - Imperial dignitary, bodyguards, sealed diplomatic containers
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 0
+  bribeChanceMultiplier: 0
+  severityLevel: 0
+  possibleConsequences:
+  - Denied access to a high-ranking official has damaged your reputation. Formal
+    complaint filed.
+  - Imperial dignitary was delayed, resulting in diplomatic embarrassment for the
+    base.
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 0
+  storyTag: 
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

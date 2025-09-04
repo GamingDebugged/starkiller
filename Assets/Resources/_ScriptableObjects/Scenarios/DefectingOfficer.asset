@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: DefectingOfficer
+  m_EditorClassIdentifier: 
+  scenarioName: Defecting Officer
+  type: 3
+  applicableShipTypes:
+  - {fileID: 11400000, guid: c7c01436f00ce451cb2225bd795c6955, type: 2}
+  - {fileID: 11400000, guid: dd8607a21565c4e90928dfc485dc74bc, type: 2}
+  applicableCaptainTypes:
+  - {fileID: 11400000, guid: d685b1dd19fbc4f0ea28e07f728f22dd, type: 2}
+  dayFirstAppears: 5
+  maxAppearances: 1
+  possibleStories:
+  - Imperial officer requesting emergency docking. Claims to have critical intelligence
+    about rebel activity but seems unusually nervous.
+  - High-ranking official arriving unannounced in personal vessel. Insists on speaking
+    only with base commander about 'sensitive matters'.
+  - Military shuttle with single occupant transmitting top-level clearance. Pilot
+    refuses standard security protocols citing intelligence classification.
+  possibleManifests:
+  - Single passenger, personal belongings, data storage devices, encrypted files
+  - Imperial officer, classified documents, security access codes, personal effects
+  - Military personnel, intelligence briefing materials, restricted data modules
+  shouldBeApproved: 0
+  invalidReason: Suspected defection attempt
+  offersBribe: 0
+  bribeChanceMultiplier: 0
+  severityLevel: 2
+  possibleConsequences:
+  - The officer was indeed planning to defect. Your decision allowed a traitor access
+    to the base, resulting in stolen intelligence and {CASUALTIES} loyal personnel
+    killed during their escape.
+  - The officer had legitimate intelligence about an imminent rebel attack. Without
+    this information, defenses were unprepared, resulting in {CASUALTIES} casualties
+  minCasualties: 5
+  maxCasualties: 15
+  isStoryMission: 1
+  storyTag: defecting_officer

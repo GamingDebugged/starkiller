@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: ChildDetention
+  m_EditorClassIdentifier: 
+  title: Child Detention
+  type: 3
+  severity: 3
+  possibleDescriptions:
+  - Your child has been detained for questioning about suspicious materials found
+    in your family quarters.
+  - Imperium agents have taken your child for a special "loyalty education program"
+    due to your pattern of mistakes.
+  imperiumCasualties: 0
+  creditPenalty: 30
+  imperialLoyaltyChange: -2
+  rebellionSympathyChange: 3
+  triggersInspection: 0
+  affectsFamily: 1
+  familyEffect: Your child has been placed in the Imperium Youth Loyalty Program.
+    Limited visitation rights granted.
+  hasLongTermEffect: 1
+  effectDuration: 6
+  longTermDescription: Your child will undergo intensive Imperium loyalty training.
+    Family cohesion severely impacted.
+  endGameMessage: Decisions severely impacted family security status (undermined
+    Imperial authority)
+  consequenceIcon: {fileID: 3395621636104416745, guid: 0391f39647c904e94a51c64c5f503b4b, type: 3}
+  severityColor: {r: 1, g: 0, b: 0, a: 1}

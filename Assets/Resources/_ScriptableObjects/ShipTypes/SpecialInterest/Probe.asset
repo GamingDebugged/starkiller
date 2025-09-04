@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Probe
+  m_EditorClassIdentifier: 
+  typeName: Probe
+  category: {fileID: 11400000, guid: 42204d70e60d3429c9bfdcc1cba515d2, type: 2}
+  size: 0
+  specificShipNames:
+  - CT421
+  - DD130
+  - GR808
+  minCrewSize: 0
+  maxCrewSize: 1
+  commonOrigins:
+  - Unknown
+  - No Data
+  validPurposes:
+  - Information trading
+  suspiciousIndicators:
+  - Life signs on board
+  - Power surges
+  - Flight plan changes
+  visualDescription: Small robotic ships designed to collect information from around
+    the galaxy. Information is traded for repairs, upgrades and additional information
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 1
+  canBeUsedByOrder: 0
+  canSmuggle: 0

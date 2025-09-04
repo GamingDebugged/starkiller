@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: Family Reassignment
+  m_EditorClassIdentifier: 
+  title: Family Reassignment
+  type: 3
+  severity: 2
+  possibleDescriptions:
+  - Due to security concerns, your family has been temporarily reassigned to another
+    sector.
+  - Your continued failure to uphold Imperium protocols has resulted in your family
+    being relocated for monitoring.
+  imperiumCasualties: 0
+  creditPenalty: 10
+  imperialLoyaltyChange: -1
+  rebellionSympathyChange: 2
+  triggersInspection: 0
+  affectsFamily: 1
+  familyEffect: Family temporarily relocated to monitoring quarters. Communication
+    restricted to text messages only.
+  hasLongTermEffect: 1
+  effectDuration: 4
+  longTermDescription: Family under surveillance and subject to loyalty screening
+    before return to normal quarters.
+  endGameMessage: Family relocated to monitoring quarters after security concerns
+    (increased rebel sympathies)
+  consequenceIcon: {fileID: 3395621636104416745, guid: 0391f39647c904e94a51c64c5f503b4b, type: 3}
+  severityColor: {r: 1, g: 0.5, b: 0, a: 1}

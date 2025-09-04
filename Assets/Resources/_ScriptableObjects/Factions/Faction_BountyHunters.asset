@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_BountyHunter
+  m_EditorClassIdentifier: 
+  factionID: bounty_hunters
+  displayName: Bounty Hunters Guild
+  description: Licensed hunters tracking criminals and fugitives for profit across
+    the galaxy.
+  primaryColor: {r: 0.54509807, g: 0.27058825, b: 0.07450981, a: 1}
+  factionIcon: {fileID: -4417107446888883160, guid: 88da59dd685444c739863f4f2fe6d0e0, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - BHG
+  - HNT
+  - LIC
+  canUseEmergencyCodes: 0
+  alliedFactions: []
+  enemyFactions: []
+  neutralFactions:
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: 7a921ca0f9a644dbe97cce6fe75bb11c, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 0.6
+  contrabandProbability: 0.4
+  baseSuspicionLevel: 0.5
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 1
+  commonOrigins:
+  - Hunter's Lodge
+  - Guild Station
+  - Last Known Location
+  - Tracking Point
+  - Informant Network
+  commonDestinations:
+  - Target Location
+  - Guild Office
+  - Prison Transport
+  - Collection Point
+  - Hideout Search
+  typicalCargo:
+  - Restraint Equipment
+  - Tracking Devices
+  - Weapons
+  - Prisoner Transport
+  - Hunter Supplies
+  standardDocuments:
+  - Bounty License
+  - Guild Membership
+  - Target Warrant
+  - Capture Authorization
+  - Payment Contract
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Economic_SecurityImpact
+  m_EditorClassIdentifier: 
+  entryId: 2ef3aef5-ab2a-48c9-b8a0-c4186e130b2f
+  entryName: Security Crackdown Hurts Small Business
+  feedType: 2
+  headline: Security Crackdown Hurts Small Business
+  content: Local merchants report 50% drop in revenue due to checkpoint delays. 'We're
+    being strangled by bureaucracy,' says Traders Union.
+  videoClip: {fileID: 32900000, guid: 778d530bd16e24a7ebc85572addc7d55, type: 3}
+  videoThumbnail: {fileID: -7144773097191472602, guid: fa343a3983dff43bc8a2e07bed58a1cb, type: 3}
+  triggerEventId: 
+  minDay: 8
+  maxDay: 8
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

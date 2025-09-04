@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: ImperiumNews_Day10_Propaganda
+  m_EditorClassIdentifier: 
+  entryId: eeaeff22-bd68-4cee-97ef-66eb5f7540d5
+  entryName: Imperial Fleet Strengthens Border Security
+  feedType: 0
+  headline: Docking Sector Performance Metrics
+  content: Sector Seven achieves 94.3% processing efficiency. Maintain excellence
+    for Imperium glory.
+  videoClip: {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+  videoThumbnail: {fileID: 9105620304023138525, guid: 3243d1453735b47eeb6a804e07404033, type: 3}
+  triggerEventId: 
+  minDay: 10
+  maxDay: 10
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

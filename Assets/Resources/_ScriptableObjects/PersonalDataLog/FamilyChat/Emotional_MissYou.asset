@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Emotional_MissYou
+  m_EditorClassIdentifier: 
+  entryId: e7efeade-c624-4398-8076-9740eb655628
+  entryName: We miss you
+  feedType: 1
+  headline: We miss you
+  content: You're smart little daughter drew a picture of you at work today. She
+    says you're 'keeping everyone safe.' The kids don't understand why you can't
+    come home.
+  videoClip: {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+  videoThumbnail: {fileID: 0}
+  triggerEventId: 
+  minDay: 9
+  maxDay: 9
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Add Picture
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

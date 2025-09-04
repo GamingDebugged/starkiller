@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3bad5f6881f104056bd56fd00fb79231
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fallbackValidScenario: {fileID: 11400000, guid: f2f48085a1ac44970a585ceb52c3e0a0, type: 2}
+  - fallbackInvalidScenario: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

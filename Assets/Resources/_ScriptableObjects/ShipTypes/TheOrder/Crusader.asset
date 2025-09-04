@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Crusader
+  m_EditorClassIdentifier: 
+  typeName: Crusader
+  category: {fileID: 11400000, guid: 955e75db6720a463ba597f6bf5513fc3, type: 2}
+  size: 2
+  specificShipNames:
+  - Wrath
+  - Fury
+  - Burden
+  - Pain
+  minCrewSize: 100
+  maxCrewSize: 300
+  commonOrigins:
+  - Order Temples
+  - Unknown Space
+  validPurposes:
+  - Order business (rarely specified)
+  suspiciousIndicators:
+  - Any behavior outside regular Order protocols
+  visualDescription: Feared ships of The Order, a magic weilding collective of Dark
+    Priests, High Priests and Cardinals.
+  technicalSpecification: Ominous vessels with dark hull plating and minimal external
+    features
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 1
+  canSmuggle: 0

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Droid_Shipment
+  m_EditorClassIdentifier: 
+  manifestName: Droid Shipment
+  manifestCode: MANIFEST-3826
+  manifestDescription: Standard droid shipment for base operations and maintenance
+  declaredItems:
+  - Convo Droids (5 units)
+  - Maintenance Bots (10 units)
+  - Starmech Droids (3 units)
+  - Restraining Collars
+  actualItems:
+  - Convo Droids (5 units)
+  - Maintenance Bots (10 units)
+  - Starmech Droids (3 units)
+  - Restraining Collars
+  totalCargoUnits: 18
+  cargoWeight: 20
+  factionRestriction: 0
+  allowedFactions: []
+  requiredShipCategories:
+  - Merchant
+  - Imperium
+  - Transport
+  - AutomatedSystems
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: DRD-IMP-3344
+  authorizedBy: Droid Registration Bureau
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 3
+  requiresSpecialValidation: 0
+  validationKeywords:
+  - droid
+  - maintenance
+  - protocol
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -10
+  creditRewardIfCorrect: 5
+  priority: 0

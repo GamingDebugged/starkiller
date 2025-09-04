@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: WifeInjured
+  m_EditorClassIdentifier: 
+  title: Partner Injured
+  type: 1
+  severity: 1
+  possibleDescriptions:
+  - Your partner was injured
+  imperiumCasualties: 0
+  creditPenalty: 10
+  imperialLoyaltyChange: 0
+  rebellionSympathyChange: 0
+  triggersInspection: 0
+  affectsFamily: 1
+  familyEffect: 'Health bills will increase temporarily '
+  hasLongTermEffect: 0
+  effectDuration: 3
+  longTermDescription: Finances stretched by non working partner
+  endGameMessage: Minor security lapse recorded in service record
+  consequenceIcon: {fileID: 3395621636104416745, guid: 0391f39647c904e94a51c64c5f503b4b, type: 3}
+  severityColor: {r: 1, g: 0, b: 0, a: 1}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: CriticalBaseSabotage
+  m_EditorClassIdentifier: 
+  title: Critical Base Sabotage
+  type: 0
+  severity: 3
+  possibleDescriptions:
+  - A rebel operative you cleared has sabotaged critical base systems. Multiple casualties
+    reported.
+  - Your security failure has allowed a devastating attack on Imperium infrastructure.
+  - We have sitewide bugs in many of the computer systems including the clearance
+    systems.
+  imperiumCasualties: 40
+  creditPenalty: 70
+  imperialLoyaltyChange: -4
+  rebellionSympathyChange: 0
+  triggersInspection: 1
+  affectsFamily: 1
+  familyEffect: Your family is being investigated for possible complicity. Communication
+    privileges suspended.
+  hasLongTermEffect: 1
+  effectDuration: 7
+  longTermDescription: Martial law declared in your sector. All personnel under extreme
+    scrutiny with mandatory loyalty screenings.
+  endGameMessage: Caused critical security failure resulting in 40 casualties (undermined
+    Imperial authority)
+  consequenceIcon: {fileID: -8456602196072077560, guid: 1102d5c52c6324094af7067032274369, type: 3}
+  severityColor: {r: 1, g: 0, b: 0, a: 1}

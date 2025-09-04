@@ -1,0 +1,11 @@
+ID,Parameter Name,Day 1 Value,Day 5 Value,Day 10 Value,Final Value,Description,Affects,Scaling    Type,Min Value,Max Value,Starting Player Value,Notes,Visual Feedback,Related Parameters,Tuning   Priority
+BAL001,ShipFrequency,5.0,8.0,12.0,15.0,Number of ships processed per day,Gameplay pacing,Linear,3.0,20.0,,Increases steadily to create time pressure,Day counter,"ShipComplexity, DecisionTime",High
+BAL002,ShipComplexity,1.0,2.0,3.0,5.0,Complexity factor of ships/documentation,Difficulty,Exponential,1.0,5.0,,Increases as player gains experience,Complexity indicator,"ValidationRules,   ErrorProbability",High
+BAL003,ValidShipChance,0.8,0.7,0.6,0.5,Probability of ships being valid,Success rate,Linear,0.4,0.9,,Decreases to make game harder over time,,InvalidReasonVariety,Medium
+BAL004,BribeFrequency,0.1,0.2,0.3,0.4,Probability of being offered bribes,Moral choices,Linear,0.0,0.5,,Increases to test player morality,Bribe indicator,BribeAmount,Medium
+BAL005,BribeAmount,20.0,40.0,80.0,150.0,Credit value of typical bribes,Economy,Exponential,10.0,300.0,,Increases to tempt player more,Credit display,"BribeFrequency, FamilyExpenses",High
+BAL006,FamilyExpenses,100.0,150.0,200.0,300.0,Daily credits needed for family,Economy,Linear,50.0,500.0,500 Credits,Increases to create financial pressure,Family status,"SalaryAmount, BribeAmount",High
+BAL007,SalaryAmount,120.0,140.0,160.0,200.0,Daily credits earned from salary,Economy,Linear,100.0,250.0,,Increases but slower than expenses,Credit display,"FamilyExpenses, BonusCredits",Medium
+BAL008,BonusCredits,5.0,10.0,15.0,25.0,Bonus credits for correct decisions,Rewards,Linear,5.0,30.0,,Increases to reward mastery,Credit display,"PenaltyCredits, SalaryAmount",Low
+BAL009,PenaltyCredits,10.0,20.0,40.0,80.0,Credit penalty for incorrect decisions,Punishment,Exponential,5.0,100.0,,Increases sharply to punish mistakes,Credit display,"BonusCredits,   FamilyExpenses",Medium
+BAL010,DecisionTime,60.0,45.0,30.0,20.0,Seconds allowed per decision,Time pressure,Linear,15.0,60.0,,Decreases to increase pressure,Timer display,"ShipFrequency, ShipComplexity",High

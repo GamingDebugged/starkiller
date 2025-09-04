@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d5d5fb678e4591ae1750671d7c794, type: 3}
+  m_Name: StoryProgression
+  m_EditorClassIdentifier: 
+  title: Insurgent Contact
+  type: 4
+  severity: 1
+  possibleDescriptions:
+  - Your pattern of decisions has drawn the attention of individuals sympathetic
+    to the resistance.
+  - A mysterious message has appeared on your personal terminal, offering assistance
+    from those opposing the Imperium.
+  imperiumCasualties: 0
+  creditPenalty: 0
+  imperialLoyaltyChange: 0
+  rebellionSympathyChange: 2
+  triggersInspection: 0
+  affectsFamily: 0
+  familyEffect: 
+  hasLongTermEffect: 1
+  effectDuration: 3
+  longTermDescription: Occasional encrypted messages appear on your terminal, offering
+    a different perspective on Imperium rule.
+  endGameMessage: 'Made pivotal story decision: Insurgent Contact (increased rebel
+    sympathies)'
+  consequenceIcon: {fileID: -5754737305665264257, guid: f8e9ce8f3526d4c91a2b3c180aa246c8, type: 3}
+  severityColor: {r: 0.5, g: 0.5, b: 1, a: 1}

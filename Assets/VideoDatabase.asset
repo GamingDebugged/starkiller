@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d30590365ea64ccdaadcef6542ea621, type: 3}
+  m_Name: VideoDatabase
+  m_EditorClassIdentifier: 
+  shipVideos:
+  - shipType: Orion Shuttle
+    videoClip: {fileID: 32900000, guid: 100b6f7d00efd40a783751cf77526d2f, type: 3}
+    specificShipNames:
+    - Vector
+    - Vanguard
+    - Vanguard
+  - shipType: Stellar Destroyer
+    videoClip: {fileID: 32900000, guid: 209fd3a8bde24428dac3e194a2fbb2f2, type: 3}
+    specificShipNames:
+    - Allegiance
+    - Procursator
+    - Terminator
+    - Victory
+    - Dominator
+  - shipType: Super Stellar Destroyer
+    videoClip: {fileID: 32900000, guid: 5f56b20ba32d94b3c979cab2891db204, type: 3}
+    specificShipNames:
+    - Sovereign
+    - Finaliser
+    - Justifier
+    - Justifier
+    - Supremecy
+  - shipType: Imperium Scout Ship
+    videoClip: {fileID: 32900000, guid: 31e53848150034810ad1bc5c760f3b9a, type: 3}
+    specificShipNames:
+    - Herald
+    - Light
+    - Torchbearer
+  - shipType: Imperium Frigate
+    videoClip: {fileID: 32900000, guid: 77fc58c1ddc1d4f2a8a8fa941071f224, type: 3}
+    specificShipNames:
+    - Herald
+    - Light
+    - Torchbearer
+  - shipType: Patroller
+    videoClip: {fileID: 32900000, guid: dd2f2c93c22384f149a6a0417ce18854, type: 3}
+    specificShipNames:
+    - Ascendant
+    - Ironclad
+    - Virtuoso
+    - Ultimatum
+  - shipType: Troop Dropship
+    videoClip: {fileID: 32900000, guid: 778d530bd16e24a7ebc85572addc7d55, type: 3}
+    specificShipNames:
+    - Death From Above
+    - Blazer
+    - Firefox
+    - Bruiser
+    - Buster
+    - Smasher
+  - shipType: Strike Vessel
+    videoClip: {fileID: 32900000, guid: 423f34ff757414dc3a7c71cb3aeee047, type: 3}
+    specificShipNames:
+    - Reliant
+    - Devastator
+    - Devourer
+    - Assimilator
+  - shipType: Battleship
+    videoClip: {fileID: 32900000, guid: f888ad28f5fcf4de6a15efb92867af3f, type: 3}
+    specificShipNames:
+    - Bastion
+    - Demeter
+    - Supreme
+  - shipType: Troop Dropship
+    videoClip: {fileID: 32900000, guid: 778d530bd16e24a7ebc85572addc7d55, type: 3}
+    specificShipNames:
+    - xxx
+    - yyy
+    - zzz
+  captainVideos:
+  - faction: Imperium
+    captainRanks:
+    - Flipper
+    - Flopper
+    - Flapper
+    captainNames:
+    - Kevin
+    - Bevin
+    - Mevin
+    videoPossibilities:
+    - {fileID: 32900000, guid: 31805184dc6c543c381e7d55db9dccc6, type: 3}
+    - {fileID: 32900000, guid: 1b784b2b3d2904d30ad7ee7f74e64c35, type: 3}
+    - {fileID: 32900000, guid: fc87485ee00ef421d97497da1b8be225, type: 3}
+    - {fileID: 32900000, guid: 267efff27e2d149a68eb9fa052ad0e33, type: 3}
+    - {fileID: 32900000, guid: 3c495400a3aab477a8697bb91bc83df4, type: 3}
+  defaultShipVideo: {fileID: 32900000, guid: b2a82fa2858bb4341b2e280ac9cb5bab, type: 3}
+  defaultCaptainVideo: {fileID: 32900000, guid: 219e1b78c32104a1a8e35d89ea851c75, type: 3}

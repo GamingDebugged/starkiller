@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d415749005449afaf9968d5c982b24, type: 3}
+  m_Name: ApproveImperiumOfficerTemplate
+  m_EditorClassIdentifier: 
+  templateName: ApproveImperiumOfficerTemplate
+  templateId: template_approve_imperium
+  category: 3
+  basePressure: 1
+  baseImperialPoints: 10
+  baseInsurgentPoints: -5
+  increasePressureUnderTime: 0
+  increasePressureIfFamilyCrisis: 0
+  lowCreditsMultiplier: 1.0
+  imperialFeedback: Efficient service noted. The Order appreciates your dedication.
+  insurgentFeedback: Another cog in the machine of oppression.
+  neutralFeedback: High-ranking officer cleared for entry.
+  possibleFollowUps: 
+  - Favorable performance review
+  - Priority assignment bonus
+  followUpChance: 0.25

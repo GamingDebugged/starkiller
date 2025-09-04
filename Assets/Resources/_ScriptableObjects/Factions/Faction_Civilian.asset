@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_Civilian
+  m_EditorClassIdentifier: 
+  factionID: civilian
+  displayName: Civilians
+  description: Regular citizens and non-military personnel going about their daily
+    lives.
+  primaryColor: {r: 0.6784314, g: 0.84705883, b: 0.9019608, a: 1}
+  factionIcon: {fileID: -6366531623917458069, guid: e254cbde54a3849e79d239cd94ca9009, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - CIV
+  - PUB
+  canUseEmergencyCodes: 1
+  alliedFactions:
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  enemyFactions:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  neutralFactions:
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  - {fileID: 11400000, guid: fd6304c8937c149c5b20cc7fb94eeaf3, type: 2}
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: 0f126bb8a2d7f42df83b51803c5c50ea, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 0.6
+  contrabandProbability: 0.1
+  baseSuspicionLevel: 0.2
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 0
+  hasPriorityAccess: 0
+  canBeInfiltrated: 1
+  commonOrigins:
+  - Residential Sector
+  - Civilian Port
+  - Colony World
+  - Trade Station
+  - Urban Center
+  commonDestinations:
+  - Home Port
+  - Work Station
+  - Vacation Spot
+  - Family Visit
+  - Shopping District
+  typicalCargo:
+  - Personal Effects
+  - Consumer Goods
+  - Passengers
+  - Food Supplies
+  - Household Items
+  standardDocuments:
+  - Civilian ID
+  - Travel Permit
+  - Insurance Papers
+  - Employment Records
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Incident_TerroristStopped
+  m_EditorClassIdentifier: 
+  entryId: f3081a75-3573-46fe-bf90-c9c9e5b3beaa
+  entryName: Terrorist Plot Foiled at Checkpoint
+  feedType: 0
+  headline: Terrorist Plot Foiled at Checkpoint
+  content: Alert security officer prevents catastrophic attack. Explosive materials
+    discovered during routine inspection. Officer receives Medal of Vigilance.
+  videoClip: {fileID: 32900000, guid: b2a82fa2858bb4341b2e280ac9cb5bab, type: 3}
+  videoThumbnail: {fileID: 9105620304023138525, guid: 3243d1453735b47eeb6a804e07404033, type: 3}
+  triggerEventId: 
+  minDay: 7
+  maxDay: 7
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

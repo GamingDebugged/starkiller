@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2fbd7a64d8d47abb65e49d92f7092b, type: 3}
+  m_Name: MasterDataLogCollection
+  m_EditorClassIdentifier: 
+  imperiumNewsEntries:
+  - {fileID: 11400000, guid: 3cce7beffde714bc9916ec04e708a837, type: 2}
+  - {fileID: 11400000, guid: d589669707bb743b48d933e6daeb6a25, type: 2}
+  - {fileID: 11400000, guid: 3e83a3262edd645a3b5ddae544ac0729, type: 2}
+  - {fileID: 11400000, guid: 8da5c995ce6a549f69f278c42796b752, type: 2}
+  - {fileID: 11400000, guid: 2c8e4b2be8e684c8bb39176ea350a5a0, type: 2}
+  - {fileID: 11400000, guid: 4d0f14bc3cbc5428c8106cc21c4b4378, type: 2}
+  - {fileID: 11400000, guid: 4bd1662c6aa3e4b14990a5a12bd2cdd9, type: 2}
+  - {fileID: 11400000, guid: c4a9e7b203b9748d59882247db733c99, type: 2}
+  - {fileID: 11400000, guid: 13d55b3bda4404772904af26219e166d, type: 2}
+  - {fileID: 11400000, guid: e8c29acda996049fe909763ebc5683f8, type: 2}
+  - {fileID: 11400000, guid: 223487a009d8948209b2d3bd4dd042db, type: 2}
+  - {fileID: 11400000, guid: 18cf7381bf36e4c759770d45238b23cb, type: 2}
+  - {fileID: 11400000, guid: b3d405cb317f4482897a916b5b6b2702, type: 2}
+  - {fileID: 11400000, guid: 094d88330b2d04f10be1ed713914550f, type: 2}
+  - {fileID: 11400000, guid: aa8d3566c25404606ae5e31684b1bae6, type: 2}
+  - {fileID: 11400000, guid: 511800d86c8f345838bb70a1405faa7f, type: 2}
+  - {fileID: 11400000, guid: cd8a60b6452b448ad992f4b441d700df, type: 2}
+  familyChatEntries:
+  - {fileID: 11400000, guid: cea2a4ab01e7548108e0a61ef4432afd, type: 2}
+  - {fileID: 11400000, guid: f3513067e5add43bf83796d6e2555456, type: 2}
+  - {fileID: 11400000, guid: 07d2f9526e5bc4f5099d9ae32eb4c595, type: 2}
+  - {fileID: 11400000, guid: 9932f9dc1833c4a1f90e389efb1207de, type: 2}
+  - {fileID: 11400000, guid: abb22c81238324b6faa5c8c36f8ea8c1, type: 2}
+  - {fileID: 11400000, guid: cf502cf45c0d84578a652e1551a5a4aa, type: 2}
+  - {fileID: 11400000, guid: 3f6672c31a4284213b8648cd2eb1f223, type: 2}
+  - {fileID: 11400000, guid: 84dfe8e9e419b47cc883aa0c070a6637, type: 2}
+  - {fileID: 11400000, guid: a34ab8486ac04439daf543af01d84221, type: 2}
+  - {fileID: 11400000, guid: 5da0a6f2fd7034f5595d2689aaba12ca, type: 2}
+  - {fileID: 11400000, guid: 23d9b3a137732437da543def421202f9, type: 2}
+  - {fileID: 11400000, guid: 008a6f976c5ec47bca7225f93d2e5abf, type: 2}
+  - {fileID: 11400000, guid: b6fbaa7400427467d89013aa32717258, type: 2}
+  - {fileID: 11400000, guid: 7921e40a97ce243a89537bdaf3963556, type: 2}
+  - {fileID: 11400000, guid: 720fbdc661ae04eb9bfc502c25564f2c, type: 2}
+  - {fileID: 11400000, guid: 93c606b7e3a0b4af3a7b3405bcdb1cb9, type: 2}
+  - {fileID: 11400000, guid: 415e2c4f5ce0641359faf301bd4d96e7, type: 2}
+  frontierEzineEntries:
+  - {fileID: 11400000, guid: 1e7aa0d976d4549fb9f136770b2b5b8f, type: 2}
+  - {fileID: 11400000, guid: 7e55406c753cb4517b6babd4f3b68d5c, type: 2}
+  - {fileID: 11400000, guid: 1b00b4696570647bc89456a611e7d3a6, type: 2}
+  - {fileID: 11400000, guid: a6c67630a11d2488eb01c4ee30597800, type: 2}
+  - {fileID: 11400000, guid: 42c0665571eab49aca61a47d0c70e11c, type: 2}
+  - {fileID: 11400000, guid: b542d8145cc00429faa70e2136deaced, type: 2}
+  - {fileID: 11400000, guid: 80450e01988f1417f8539eabf472ebd4, type: 2}
+  - {fileID: 11400000, guid: 2003d712429bd4fae98b18d34f533740, type: 2}
+  - {fileID: 11400000, guid: fea10db7fed554bb39de5d4e183bca34, type: 2}
+  - {fileID: 11400000, guid: 8aee0e332a7054c8cb5f7c87be144a44, type: 2}
+  - {fileID: 11400000, guid: 8c9d7dce7b13442b68059f7baf871678, type: 2}
+  - {fileID: 11400000, guid: 75964401b4f2b48ec8db7231c94c8dbc, type: 2}
+  - {fileID: 11400000, guid: 2bac2b1015adb499c9dc174d9579a1e5, type: 2}
+  - {fileID: 11400000, guid: 64ac143f09f2642f380fab25b9f90c3f, type: 2}
+  - {fileID: 11400000, guid: 86e4d1a3434f14d26a8a2079da05fa5c, type: 2}
+  - {fileID: 11400000, guid: 847513ed1201d467aa11b1fa1f63f2ad, type: 2}
+  daySpecificEntries: []
+  eventTriggeredEntries: []
+  randomImperiumNews: []
+  randomFamilyChat: []
+  randomFrontierNews: []

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: SabotagedShip
+  m_EditorClassIdentifier: 
+  scenarioName: Sabotaged Ship
+  type: 2
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 3
+  maxAppearances: 3
+  possibleStories:
+  - 'Supply ship requesting emergency docking. Sensors detect unusual power fluctuations,
+    but captain insists everything is under control.
+
+'
+  - Freighter transmitting valid codes but showing signs of damage. Crew communications
+    seem strained and inconsistent.
+  - Maintenance vessel claiming critical system failure. Scans show reactor instability.
+    Captain desperately requests immediate docking.
+  possibleManifests:
+  - Routine supplies, replacement parts, mechanical components, reactor stabilizers
+  - Construction materials, power cells, coolant systems, technical repair equipment
+  - Engineering crew, emergency repair equipment, radiation shielding, spare parts
+  shouldBeApproved: 0
+  invalidReason: Ship shows signs of sabotage or critical instability
+  offersBribe: 0
+  bribeChanceMultiplier: 0
+  severityLevel: 2
+  possibleConsequences:
+  - Sabotaged ship exploded upon docking, causing severe damage to bay facilities
+    and killing {CASUALTIES} personnel.
+  - Ship's unstable reactor went critical within the docking bay. Radiation contamination
+    resulted in {CASUALTIES} casualties and rendered section unusable.
+  minCasualties: 8
+  maxCasualties: 22
+  isStoryMission: 0
+  storyTag: 

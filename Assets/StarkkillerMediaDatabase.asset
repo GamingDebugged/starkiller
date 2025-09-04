@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f499cbc260e2b403eb3694461a7de1f0, type: 3}
+  m_Name: StarkkillerMediaDatabase
+  m_EditorClassIdentifier: 
+  prioritizeScriptableObjects: 1
+  persistVideoSelections: 1
+  shipTypes:
+  - {fileID: 11400000, guid: ffa7e4a4c01c84d02bf63f12d7bfb4f7, type: 2}
+  - {fileID: 11400000, guid: f49bcb23ccf3c4996a340596a6dc6ffb, type: 2}
+  - {fileID: 11400000, guid: 168a4e6ff7adb4acba7338c01067d407, type: 2}
+  - {fileID: 11400000, guid: a5717f67ad836474b898037ca3e1b255, type: 2}
+  - {fileID: 11400000, guid: a25f88637e9cf4b8d8ebe93cb6afb649, type: 2}
+  - {fileID: 11400000, guid: d3b14856c0709426f91a6a7396d4964e, type: 2}
+  - {fileID: 11400000, guid: 3c0d7944f677e4fb6af643f31da6f2c6, type: 2}
+  - {fileID: 11400000, guid: 589d041916c3b459f8115dfe1d233b02, type: 2}
+  - {fileID: 11400000, guid: dd8607a21565c4e90928dfc485dc74bc, type: 2}
+  - {fileID: 11400000, guid: 32a097497a72343ffb4b85c63c594b78, type: 2}
+  - {fileID: 11400000, guid: b1f5edeb0987d46f89f867b6b8fac38c, type: 2}
+  - {fileID: 11400000, guid: cbd8e99159dda4bcc841c054d10dc03d, type: 2}
+  - {fileID: 11400000, guid: d9cd3c869e31e4409acb34a4c38059fd, type: 2}
+  - {fileID: 11400000, guid: 0a891de3120704294960bb8823d484e1, type: 2}
+  - {fileID: 11400000, guid: c7c01436f00ce451cb2225bd795c6955, type: 2}
+  - {fileID: 11400000, guid: 73106b68e0d814b1eac8ee32652abac1, type: 2}
+  - {fileID: 11400000, guid: a3477ad28739a4d999e49fb05d801841, type: 2}
+  - {fileID: 11400000, guid: b4c9b89bc9e694a788cf02eceb542637, type: 2}
+  - {fileID: 11400000, guid: ec10fd90138ca4945970cef03fe3550d, type: 2}
+  - {fileID: 11400000, guid: 9934d2c38e8814d14bae3af455442159, type: 2}
+  - {fileID: 11400000, guid: 9f36accbc9d1a4dd0adb7d5d414ae9d6, type: 2}
+  - {fileID: 11400000, guid: 4a4f573409ec24cf6b0573d156d4a6ac, type: 2}
+  - {fileID: 11400000, guid: 1b2f0e4a2e84c4b1084cdb6b9675367d, type: 2}
+  - {fileID: 11400000, guid: a59d8f74cef2d4268bf456c2d639aa81, type: 2}
+  - {fileID: 11400000, guid: e702ac3a554d64e0d8f405fcd812b4f2, type: 2}
+  - {fileID: 11400000, guid: 0adbe7599f5e44d1ea278a377b4b8093, type: 2}
+  - {fileID: 11400000, guid: 81d14ecc81b7649a2b6f0d0a60125849, type: 2}
+  - {fileID: 11400000, guid: 60703d376e15744deb950df43d4b8fca, type: 2}
+  captainTypes:
+  - {fileID: 11400000, guid: c3391d6624e3a4486bd2fa96d658e10d, type: 2}
+  - {fileID: 11400000, guid: f9be57976f7744ef8961fd967944ab2e, type: 2}
+  - {fileID: 11400000, guid: d685b1dd19fbc4f0ea28e07f728f22dd, type: 2}
+  - {fileID: 11400000, guid: 7898bc82e32014b84957b290174d3d17, type: 2}
+  - {fileID: 11400000, guid: 73ae308979c434995b6686b46985dc72, type: 2}
+  - {fileID: 11400000, guid: 9d705c334c03f43bd89b15e90c0ffa63, type: 2}
+  - {fileID: 11400000, guid: 5a84e1ab184a84276896d38fd6f28cd8, type: 2}
+  - {fileID: 11400000, guid: 12f6b34478af2441bba5c6bc377d90b3, type: 2}
+  legacyShipMedia:
+  - shipTypeName: Stellar Destroyer
+    shipImage: {fileID: 0}
+    shipVideo: {fileID: 32900000, guid: 44c7849b3726749fdacde3ef81befcb3, type: 3}
+    shipVariations: []
+    specificShipNames: []
+  - shipTypeName: Orion Shuttle
+    shipImage: {fileID: 0}
+    shipVideo: {fileID: 32900000, guid: 100b6f7d00efd40a783751cf77526d2f, type: 3}
+    shipVariations: []
+    specificShipNames: []
+  - shipTypeName: Imperium Frigate
+    shipImage: {fileID: 0}
+    shipVideo: {fileID: 32900000, guid: 9da71d6be7e1a4a20baa625cb59215e8, type: 3}
+    shipVariations: []
+    specificShipNames: []
+  - shipTypeName: Super Stellar Destroyer
+    shipImage: {fileID: 0}
+    shipVideo: {fileID: 32900000, guid: ff7774ae9d1764a989107d42a9242ec5, type: 3}
+    shipVariations: []
+    specificShipNames: []
+  defaultShipImage: {fileID: -1033340682074949599, guid: 8ab3702b026ee4701bf1cfa5672870df, type: 3}
+  defaultShipVideo: {fileID: 32900000, guid: d03eadf09a45e4f7c89fb484a787f86c, type: 3}
+  legacyCaptainMedia:
+  - faction: Imperium
+    portraits: []
+    captainVideos:
+    - {fileID: 32900000, guid: 9dd44f3e4630c464ba4b713db5bb3242, type: 3}
+    - {fileID: 32900000, guid: 9dd44f3e4630c464ba4b713db5bb3242, type: 3}
+    - {fileID: 32900000, guid: 9dd44f3e4630c464ba4b713db5bb3242, type: 3}
+    captainRanks: []
+    captainNames: []
+  - faction: Insurgent
+    portraits: []
+    captainVideos:
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+    - {fileID: 32900000, guid: 83e8c42217230478394fa430be9b6341, type: 3}
+    captainRanks: []
+    captainNames: []
+  - faction: Bounty Hunter
+    portraits: []
+    captainVideos:
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+    - {fileID: 32900000, guid: b42c06266eed54990ac1589d5a211005, type: 3}
+    captainRanks: []
+    captainNames: []
+  - faction: Trade_Union
+    portraits: []
+    captainVideos:
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+    - {fileID: 32900000, guid: 825586301b401407eb8f880987dba70c, type: 3}
+    captainRanks: []
+    captainNames: []
+  - faction: Smugglers
+    portraits: []
+    captainVideos:
+    - {fileID: 32900000, guid: 4e74b319c1cf94732818d65d713de0b8, type: 3}
+    - {fileID: 32900000, guid: 4e74b319c1cf94732818d65d713de0b8, type: 3}
+    - {fileID: 32900000, guid: 4e74b319c1cf94732818d65d713de0b8, type: 3}
+    captainRanks: []
+    captainNames: []
+  defaultCaptainImage: {fileID: -4860485847705989202, guid: c3521bfdcb21b4333a5825306fbd6080, type: 3}
+  defaultCaptainVideo: {fileID: 32900000, guid: d2d1b760009a041d4ab6e60abcfb58dd, type: 3}
+  scenarioMedia:
+  - scenarioTag: SuspiciousCargo
+    scenarioImages:
+    - {fileID: -1044158966689024580, guid: cd98282a75c6b400692164a4d019c967, type: 3}
+    scenarioVideos:
+    - {fileID: 32900000, guid: f846dc58b16bb4e83b5ae1be7b8641d4, type: 3}
+  - scenarioTag: test
+    scenarioImages:
+    - {fileID: -1044158966689024580, guid: cd98282a75c6b400692164a4d019c967, type: 3}
+    scenarioVideos:
+    - {fileID: 32900000, guid: f846dc58b16bb4e83b5ae1be7b8641d4, type: 3}
+  - scenarioTag: ImperiumInspection
+    scenarioImages:
+    - {fileID: -1044158966689024580, guid: cd98282a75c6b400692164a4d019c967, type: 3}
+    scenarioVideos:
+    - {fileID: 32900000, guid: f846dc58b16bb4e83b5ae1be7b8641d4, type: 3}
+  defaultScenarioImage: {fileID: -5537381153655208044, guid: 8d3a891400dd9497aaf927f270293139, type: 3}
+  defaultScenarioVideo: {fileID: 32900000, guid: 86d8b82405f684980b7884dbd1b28e20, type: 3}
+  approvedImage: {fileID: 4996356899026728477, guid: 833f8f343dea84beebdd2652c8063d5a, type: 3}
+  deniedImage: {fileID: 4126188773927239339, guid: 0cac54d5b5a0546d48a4349d68ce8298, type: 3}
+  pendingImage: {fileID: 3946118851425130971, guid: fdb8fa777db8f433a97dd1391d721802, type: 3}
+  warningImage: {fileID: -3053691870847696622, guid: 012e16e3c52174a67bd6ff94eafbf5cf, type: 3}
+  logEntryIcon: {fileID: -4773196292517953385, guid: 3b460707e3bcf40b5a27f95b0b440dcd, type: 3}
+  creditsIcon: {fileID: 7823110838057745189, guid: 204aa405166714b8a96e4caf687ae5db, type: 3}
+  loyaltyIcon: {fileID: 2070085598448489916, guid: ec4ec907838d9489d823862a9099a833, type: 3}

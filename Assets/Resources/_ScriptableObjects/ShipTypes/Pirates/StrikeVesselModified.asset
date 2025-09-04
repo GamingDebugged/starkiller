@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: StrikeVesselModified
+  m_EditorClassIdentifier: 
+  typeName: Strike Vessel (Modified)
+  category: {fileID: 11400000, guid: ecb30c89403cb43c2bb35dd60b19facc, type: 2}
+  size: 1
+  specificShipNames: []
+  minCrewSize: 60
+  maxCrewSize: 200
+  commonOrigins:
+  - Frontier Systems
+  - Independent Worlds
+  validPurposes:
+  - Anti-piracy operations
+  - Boarding actions
+  - Hired Mercenary Mission
+  suspiciousIndicators:
+  - Unauthorized combat operations
+  - Modified boarding systems
+  - Powering Up Weapons
+  visualDescription: Reinforced ships with ramming capabilities and boarding mechanismsLarge
+    cumbersome ships designed for ramming and boarding other ships during battles.
+    Designed to Strike and cling to enemy ships they can be used by both Pirate and
+    Imperium.
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 0
+  canSmuggle: 1

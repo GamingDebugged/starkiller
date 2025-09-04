@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: FamilyChat_Day2_DailyMessage
+  m_EditorClassIdentifier: 
+  entryId: 7013784a-e6e8-45a1-8474-c50853747294
+  entryName: Message from Son
+  feedType: 1
+  headline: Top 3!
+  content: Finished in the Top 3 in my squadron today. Sure it was only rifle cleaning
+    but i'll take it!
+  videoClip: {fileID: 0}
+  videoThumbnail: {fileID: 0}
+  triggerEventId: 
+  minDay: 2
+  maxDay: 2
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

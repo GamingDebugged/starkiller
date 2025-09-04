@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: PirateCaptain
+  m_EditorClassIdentifier: 
+  typeName: Pirates
+  factions:
+  - Pirate
+  factionObjects:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  captains:
+  - firstName: Black
+    lastName: Jack
+    rank: 
+    authorityLevel: 3
+    portrait: {fileID: -1033340682074949599, guid: 8ab3702b026ee4701bf1cfa5672870df, type: 3}
+    briberyChance: 0.7
+    minBribeAmount: 10
+    maxBribeAmount: 40
+    deceptionChance: 0.6
+    greetingDialogs:
+    - phrase: Aye
+      associatedVideo: {fileID: 32900000, guid: ad0fc65ccdf7e4225867100f9c276113, type: 3}
+    approvedDialogs:
+    - phrase: approved
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: deny
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    - phrase: 
+      associatedVideo: {fileID: 0}
+    bribeDialogs:
+    - phrase: bribe
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: hold
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: tract
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  possibleFirstNames:
+  - One-eyed
+  - Peg Leg
+  - Black
+  possibleLastNames:
+  - Willy
+  - Pete
+  - Beard
+  commonRanks:
+  - Captain
+  - First Mate
+  - Emmisary
+  typicalBehaviors: []
+  dialoguePatterns: []

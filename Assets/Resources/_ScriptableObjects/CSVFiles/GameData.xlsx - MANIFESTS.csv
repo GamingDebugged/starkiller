@@ -1,0 +1,16 @@
+ID,Cargo Type,Description,Typical Quantity,Valid For Ships,Contraband Flag,Inspection Priority,Origin Restrictions,Destination Restrictions,Permit Required,Value Range,Weight Class,Special   Handling,Risk Factor
+MNF001,Military Supplies,Standard equipment for imperial forces,10-50 units,"Military, Transport",FALSE,Medium,Military bases only,Military bases only,Military,Medium,Heavy,Secure storage,Low
+MNF002,Officer Equipment,Personal gear and equipment for officers,5-20 crates,"Transport, Military",FALSE,Low,"Military bases, Administrative centers","Military bases, Administrative centers",Officer,Medium,Light,Standard,Low
+MNF003,Troops,Personnel transport manifest,10-200 persons,"Military, Transport",FALSE,High,Military bases,Military bases,Military,N/A,N/A,Personnel protocols,Medium
+MNF004,Weapons,Standard issue military weapons,5-50 crates,Military,FALSE,Maximum,Military bases    only,Military bases only,Weapons,High,Medium,High security,High
+MNF005,Food Supplies,Basic provisions and foodstuffs,20-100 crates,"Transport, Cargo",FALSE,Low,Any,Any,None,Low,Medium,Refrigeration,Low
+MNF006,Medical Supplies,Medicine and medical equipment,5-30 crates,"Transport, Cargo",FALSE,Low,Any,Any,None,Medium,Light,Climate controlled,Low
+MNF007,Raw Materials,Unprocessed resources for manufacturing,50-500 units,Cargo,FALSE,Low,"Mining    facilities, Industrial worlds",Manufacturing centers,None,Medium,Heavy,Standard,Low
+MNF008,Luxury Goods,High-value items for wealthy markets,5-25 crates,"Transport, Luxury",FALSE,Medium,"Wealthy worlds, Corporate sectors","Wealthy worlds, Corporate sectors",Luxury,High,Light,"Secure, climate controlled",Medium
+MNF009,Restricted Artifacts,Cultural or historical items with restrictions,1-5 containers,"Transport,   Luxury",TRUE,High,Varies,"Research facilities, Museums",Special,Very High,Light,"Secure, climate   controlled",High
+MNF010,Undeclared Cargo,Items not listed on official manifest,Varies,Any,TRUE,Maximum,N/A,N/A,N/A,Varies,Varies,N/A,Maximum
+MNF011,Insurgent Propaganda,Materials promoting anti-imperial sentiment,5-50 crates,"Transport, Cargo",TRUE,High,Hidden,Hidden,None,Low,Light,Concealed,High
+MNF012,Jazz,Illegal narcotic substance,1-10 containers,"Transport, Smuggler",TRUE,Maximum,Outer   Rim,Black markets,None,Very High,Light,Concealed,Very High
+MNF013,Stolen Goods,Items acquired through illegal means,Varies,"Transport, Smuggler",TRUE,High,Any,Black markets,None,High,Varies,Concealed,High
+MNF014,Contraband Weapons,Illegal or modified weapons,2-20 crates,"Transport, Smuggler",TRUE,Maximum,"Outer Rim, Lawless sectors","Black markets, Hidden bases",None,Very High,Medium,Concealed,Very   High
+MNF015,Military Intelligence,Classified data and intelligence,1-5 data cores,"Transport, Military",FALSE,Maximum,Military bases,Military bases,Intelligence,Extremely High,Light,Maximum security,Very High

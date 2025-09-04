@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: ImperiumInspection
+  m_EditorClassIdentifier: 
+  scenarioName: Imperium Inspection
+  type: 4
+  applicableShipTypes:
+  - {fileID: 11400000, guid: d9cd3c869e31e4409acb34a4c38059fd, type: 2}
+  - {fileID: 11400000, guid: 9744e7e70ae0840cd828100d2d9bf0e6, type: 2}
+  - {fileID: 11400000, guid: 9f36accbc9d1a4dd0adb7d5d414ae9d6, type: 2}
+  applicableCaptainTypes:
+  - {fileID: 11400000, guid: d685b1dd19fbc4f0ea28e07f728f22dd, type: 2}
+  dayFirstAppears: 3
+  maxAppearances: 1
+  possibleStories:
+  - Imperial officer arriving for surprise base inspection. Credentials are properly
+    authenticated but not on scheduled roster.
+  - High-ranking Imperial dignitary requesting immediate clearance for inspection
+    tour. All required codes match.
+  possibleManifests:
+  - Imperial Inspection Team, security detail, data recording equipment
+  - Senior Officer personnel, inspection droids, security protocols
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 0
+  bribeChanceMultiplier: 1
+  severityLevel: 2
+  possibleConsequences:
+  - Denied entry to an Imperial inspector resulted in serious reprimand from high
+    command.
+  - Imperial inspection team was delayed, reflecting poorly on base administration.
+    Demotion likely.
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 1
+  storyTag: imperium_inspection
+  inspectionVideo: {fileID: 32900000, guid: 43dc9c1525ad848fca328708f5c008da, type: 3}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

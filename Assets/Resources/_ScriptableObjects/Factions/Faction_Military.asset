@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d411fcd871644b72be98128aa024feb, type: 3}
+  m_Name: Faction_Military
+  m_EditorClassIdentifier: 
+  factionID: military
+  displayName: Imperial Military
+  description: The armed forces of the Imperium, maintaining order through strength.
+  primaryColor: {r: 0, g: 0, b: 0.5019608, a: 1}
+  factionIcon: {fileID: 6869070451092439142, guid: 69ebad2a880bb4731b6c1495cfac88de, type: 3}
+  factionBanner: {fileID: 0}
+  validAccessCodePrefixes:
+  - MIL
+  - IMP
+  - DEF
+  canUseEmergencyCodes: 1
+  alliedFactions:
+  - {fileID: 11400000, guid: d52266552f9ca4edd9a177f4df1faad2, type: 2}
+  - {fileID: 11400000, guid: 63dd4ddda2e2c44d99b390126a8ba82a, type: 2}
+  enemyFactions:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  - {fileID: 11400000, guid: 8783ea269659c430eac760f14ad9be42, type: 2}
+  neutralFactions:
+  - {fileID: 11400000, guid: 70fd7e9cfbf6745d4922c39dd28b8b54, type: 2}
+  - {fileID: 11400000, guid: 1df9692b7f980445b99bbb8fe31fc20a, type: 2}
+  - {fileID: 11400000, guid: 0dbf1bfe4c8664a7cbd27be70af1116f, type: 2}
+  - {fileID: 11400000, guid: bea4396c1b0044ebc978ab4a5070983a, type: 2}
+  - {fileID: 11400000, guid: cb9daf0c54141474f909342827ca9643, type: 2}
+  authorizedShipCategories:
+  - {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  forbiddenShipCategories: []
+  protocolAdherence: 1
+  contrabandProbability: 0
+  baseSuspicionLevel: 0
+  hasDiplomaticImmunity: 0
+  exemptFromSearches: 1
+  hasPriorityAccess: 1
+  canBeInfiltrated: 1
+  commonOrigins:
+  - Military Base
+  - Fleet Command
+  - Defense Station
+  - Training Academy
+  - Battle Group
+  commonDestinations:
+  - Combat Zone
+  - Military Installation
+  - Patrol Route
+  - Defense Perimeter
+  - Command Center
+  typicalCargo:
+  - Military Equipment
+  - Classified Materials
+  - Troop Supplies
+  - Ammunition
+  - War Machines
+  standardDocuments:
+  - Military ID
+  - Orders
+  - Security Clearance
+  - Combat Authorization
+  - Unit Assignment
+  factionColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,190 @@
+import pandas as pd
+import os
+from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment, PatternFill
+import datetime
+
+def create_excel_catalog():
+    # Create output file path
+    excel_file = os.path.join(os.path.dirname(__file__), 'Starkiller Base Command - File Catalog Updated.xlsx')
+    
+    # Define our data manually
+    # Format: [File Name, File Path, Purpose, Description, Category, Dependencies]
+    data = [
+        ["GameStateController.cs", "/Assets/GameStateController.cs", "Controls overall game state", "Manages game state transitions between menu, gameplay, day start/end and pauses. Controls audio muting and ensures proper initialization sequence.", "Core System", "GameManager.cs; MasterShipGenerator.cs; CredentialChecker.cs"],
+        ["ShipTimingController.cs", "/Assets/ShipTimingController.cs", "Controls ship timing", "Manages timing between ship appearances and encounter durations. Controls cooldown periods and holding pattern timing.", "Core System", "MasterShipGenerator.cs; GameManager.cs"],
+        ["CredentialChecker.cs", "/Assets/_scripts/CredentialChecker.cs", "Main gameplay UI controller", "Handles displaying ship encounters and processing player decisions (approve/deny/bribe/tractor beam/etc). Central point for main gameplay interaction.", "Core System", "MasterShipGenerator.cs; GameManager.cs; StarkkillerContentManager.cs"],
+        ["GameManager.cs", "/Assets/_scripts/GameManager.cs", "Core game manager", "Central manager for game progress including day counting, credits, ships processed, and game state.", "Core System", "Various dependent systems"],
+        ["MasterShipGenerator.cs", "/Assets/MasterShipGenerator.cs", "Main ship generator", "Creates and manages ship encounters. Primary source of ship data during gameplay.", "Ship System", "ShipTimingController.cs; CredentialChecker.cs"],
+        ["UIManager.cs", "/Assets/_scripts/UIManager.cs", "UI panel manager", "Controls visibility of menu panels and handles button click events for navigation.", "Core System", "GameManager.cs"],
+        ["MainMenuManager.cs", "/Assets/Scripts/MainMenuManager.cs", "Main menu controller", "Handles the main menu interactions and navigation.", "Core System", "UIManager.cs"],
+        ["EncounterMediaTransitionManager.cs", "/Assets/Scripts/EncounterMediaTransitionManager.cs", "Manages media transitions", "Handles transitions between videos and images for ships and captains with smooth fading.", "Ship System", "StarkkillerMediaSystem.cs; MasterShipGenerator.cs"],
+        ["VideoTransitionManager.cs", "/Assets/Scripts/VideoTransitionManager.cs", "Video transition handler", "Manages smooth transitions between videos to prevent jarring cuts.", "Ship System", "None"],
+        ["ShipEncounterSystem.cs", "/Assets/Assets/ShipEncounterSystem.cs", "Legacy ship system bridge", "Bridge class to forward calls to MasterShipGenerator. Part of the migration strategy.", "Ship System", "MasterShipGenerator.cs"],
+        ["StarkkillerEncounterSystem.cs", "/Assets/Assets/StarkkillerEncounterSystem.cs", "Starkiller-specific encounter bridge", "Bridge for Starkiller-specific content to connect with MasterShipGenerator.", "Ship System", "MasterShipGenerator.cs; StarkkillerContentManager.cs"],
+        ["ShipEncounterGenerator.cs", "/Assets/Assets/ShipEncounterGenerator.cs", "Legacy ship generator", "Original ship generator system being replaced by MasterShipGenerator.", "Ship System", "MasterShipGenerator.cs"],
+        ["GameManagerConnector.cs", "/Assets/Scripts/GameManagerConnector.cs", "GameManager connection bridge", "Connects GameManager to MasterShipGenerator for ship encounter generation.", "Core System", "GameManager.cs; MasterShipGenerator.cs; CredentialChecker.cs"],
+        ["EncounterSystemCoordinator.cs", "/Assets/Scripts/EncounterSystemCoordinator.cs", "Coordinates encounter systems", "Manages coordination between different encounter generation systems.", "Ship System", "MasterShipGenerator.cs; ShipEncounterSystem.cs"],
+        ["MasterShipEncounter.cs", "/Assets/MasterShipEncounter.cs", "Ship encounter data class", "Central data structure that contains all information about a ship encounter.", "Ship System", "None"],
+        ["MasterShipEncounterExtensions.cs", "/Assets/MasterShipEncounterExtensions.cs", "Ship encounter extensions", "Extension methods for MasterShipEncounter class.", "Ship System", "MasterShipEncounter.cs"],
+        ["ShipEncounter.cs", "/Assets/_scripts/ShipEncounter.cs", "Legacy ship encounter data", "Original ship encounter data structure.", "Ship System", "None"],
+        ["EnhancedShipEncounter.cs", "/Assets/_scripts/EnhancedShipEncounter.cs", "Enhanced ship encounter", "Enhanced version of the ship encounter with additional data.", "Ship System", "ShipEncounter.cs"],
+        ["VideoEnhancedShipEncounter.cs", "/Assets/_scripts/VideoEnhancedShipEncounter.cs", "Video-enhanced ship encounter", "Version of ship encounter with video capabilities.", "Ship System", "EnhancedShipEncounter.cs"],
+        ["EncounterSystemManager.cs", "/Assets/EncounterSystemManager.cs", "Manages encounter systems", "Manages and coordinates multiple encounter systems.", "Ship System", "MasterShipGenerator.cs; ShipEncounterSystem.cs"],
+        ["EncounterSystemMigrationManager.cs", "/Assets/EncounterSystemMigrationManager.cs", "Migration manager for encounters", "Handles migration between different encounter systems.", "Ship System", "EncounterSystemManager.cs"],
+        ["ShipCategory.cs", "/Assets/ShipCategory.cs", "Ship category data", "Defines ship categories and their properties.", "Ship System", "None"],
+        ["ShipScenario.cs", "/Assets/ShipScenario.cs", "Ship scenario definition", "Defines scenarios for ships including storylines and conditions.", "Ship System", "None"],
+        ["ShipType.cs", "/Assets/_scripts/ShipType.cs", "Ship type data", "Defines types of ships with their specifications.", "Ship System", "None"],
+        ["HoldingPatternEntry.cs", "/Assets/HoldingPatternEntry.cs", "Holding pattern data", "Data structure for ships in holding pattern.", "Ship System", "MasterShipEncounter.cs"],
+        ["HoldingPatternProcessor.cs", "/Assets/Scripts/HoldingPatternProcessor.cs", "Processes holding pattern ships", "Handles the processing of ships placed in the holding pattern.", "Ship System", "ShipTimingController.cs; MasterShipGenerator.cs"],
+        ["ConsequenceManager.cs", "/Assets/ConsequenceManager.cs", "Manages consequences", "Handles consequences of player decisions including display and tracking.", "Consequences System", "MasterShipEncounter.cs; GameManager.cs"],
+        ["Consequence.cs", "/Assets/_scripts/Consequence.cs", "Consequence data", "Data structure for consequences of player decisions.", "Consequences System", "None"],
+        ["FactCheckManager.cs", "/Assets/FactCheckManager.cs", "Manages fact checking", "Handles fact checking for ship data to determine validity.", "Ship System", "MasterShipEncounter.cs"],
+        ["ReportPanelTracker.cs", "/Assets/ReportPanelTracker.cs", "Tracks report panels", "Tracks visibility and state of report panels.", "Core System", "None"],
+        ["DailyBriefingManager.cs", "/Assets/DailyBriefingManager.cs", "Manages daily briefings", "Handles daily briefing presentations at the start of each day.", "Daily Game Flow", "GameManager.cs"],
+        ["DailyBriefingDebug.cs", "/Assets/DailyBriefingDebug.cs", "Debug tools for briefings", "Debug tools for daily briefing system.", "Daily Game Flow", "DailyBriefingManager.cs"],
+        ["DailyReportManager.cs", "/Assets/_scripts/DailyReportManager.cs", "Manages daily reports", "Handles end-of-day reports with daily statistics.", "Daily Game Flow", "GameManager.cs"],
+        ["DailyReportDiagnostic.cs", "/Assets/DailyReportDiagnostic.cs", "Diagnostic for daily reports", "Diagnostic tools for daily report system.", "Daily Game Flow", "DailyReportManager.cs"],
+        ["UpdatedDailyReportManager.cs", "/Assets/_scripts/UpdatedDailyReportManager.cs", "Updated report manager", "Improved version of the daily report manager.", "Daily Game Flow", "DailyReportManager.cs"],
+        ["TimeManager.cs", "/Assets/TimeManager.cs", "Manages game time", "Handles game time progression and day cycle.", "Core System", "GameManager.cs"],
+        ["TimerDiagnostic.cs", "/Assets/TimerDiagnostic.cs", "Timer diagnostics", "Diagnostic tools for timing systems.", "Core System", "TimeManager.cs"],
+        ["TimeModifierBehavior.cs", "/Assets/TimeModifierBehavior.cs", "Modifies time behavior", "Modifies time behavior for specific game elements.", "Core System", "TimeManager.cs"],
+        ["StarkkillerContentManager.cs", "/Assets/_scripts/StarkkillerContentManager.cs", "Manages game content", "Handles and provides access to game content including rules and settings.", "Content Management", "None"],
+        ["StarkkillerMediaSystem.cs", "/Assets/_scripts/StarkkillerMediaSystem.cs", "Media system", "Manages media assets including videos and images.", "Content Management", "StarkkillerMediaDatabase.cs"],
+        ["StarkkillerMediaDatabase.cs", "/Assets/_scripts/StarkkillerMediaDatabase.cs", "Media database", "Database of media assets for the game.", "Content Management", "None"],
+        ["VideoDatabase.cs", "/Assets/VideoDatabase.cs", "Video database", "Database specifically for video assets.", "Content Management", "None"],
+        ["ShipVideoSystem.cs", "/Assets/_scripts/ShipVideoSystem.cs", "Ship video system", "Handles videos for ships and captains.", "Ship System", "VideoDatabase.cs"],
+        ["VideoPlayerSetup.cs", "/Assets/VideoPlayerSetup.cs", "Video player setup", "Handles setup of video players for various game elements.", "Content Management", "None"],
+        ["ShipImageSystem.cs", "/Assets/_scripts/ShipImageSystem.cs", "Ship image system", "Handles images for ships and captains.", "Ship System", "None"],
+        ["ShipImageManager.cs", "/Assets/_scripts/ShipImageManager.cs", "Ship image manager", "Manages the loading and display of ship images.", "Ship System", "ShipImageSystem.cs"],
+        ["VideoSystemHelper.cs", "/Assets/_scripts/VideoSystemHelper.cs", "Video system helper", "Helper utilities for video system.", "Content Management", "None"],
+        ["VideoPlayerHelper.cs", "/Assets/_scripts/VideoPlayerHelper.cs", "Video player helper", "Helper utilities for video players.", "Content Management", "None"],
+        ["VideoSetupManager.cs", "/Assets/_scripts/VideoSetupManager.cs", "Video setup manager", "Manages setup of video components.", "Content Management", "None"],
+        ["VideoSetupHelper.cs", "/Assets/_scripts/VideoSetupHelper.cs", "Video setup helper", "Helper utilities for video setup.", "Content Management", "None"],
+        ["VideoSystemInitializer.cs", "/Assets/_scripts/VideoSystemInitializer.cs", "Video system initializer", "Initializes video system components.", "Content Management", "None"],
+        ["VideoSystemDiagnostics.cs", "/Assets/_scripts/VideoSystemDiagnostics.cs", "Video system diagnostics", "Diagnostic tools for video system.", "Content Management", "None"],
+        ["ImperialFamilySystem.cs", "/Assets/ImperialFamilySystem.cs", "Imperial family system", "Manages the imperial family and their data.", "Family System", "None"],
+        ["FamilyMemberDisplay.cs", "/Assets/FamilyMemberDisplay.cs", "Family member display", "Handles the display of family member data.", "Family System", "ImperialFamilySystem.cs"],
+        ["FamilyDisplayManager.cs", "/Assets/_scripts/FamilyDisplayManager.cs", "Family display manager", "Manages the display of family-related UI.", "Family System", "ImperialFamilySystem.cs"],
+        ["FamilyDisplaySetup.cs", "/Assets/_scripts/FamilyDisplaySetup.cs", "Family display setup", "Handles setup of family display components.", "Family System", "FamilyDisplayManager.cs"],
+        ["FamilyStatusInfo.cs", "/Assets/_scripts/FamilyStatusInfo.cs", "Family status information", "Contains status information for family members.", "Family System", "None"],
+        ["HolographicFamilyDisplay.cs", "/Assets/_scripts/HolographicFamilyDisplay.cs", "Holographic family display", "Handles holographic display of family information.", "Family System", "FamilyDisplayManager.cs"],
+        ["FamilyMemberHologram.cs", "/Assets/_scripts/FamilyMemberHologram.cs", "Family member hologram", "Handles hologram effect for family members.", "Family System", "HolographicFamilyDisplay.cs"],
+        ["LogBookManager.cs", "/Assets/_scripts/LogBookManager.cs", "Log book manager", "Manages the log book for player reference.", "Core System", "None"],
+        ["LogBookTabOpener.cs", "/Assets/LogBookTabOpener.cs", "Log book tab opener", "Handles opening tabs in the log book.", "Core System", "LogBookManager.cs"],
+        ["LogBookButtonConnector.cs", "/Assets/LogBookButtonConnector.cs", "Log book button connector", "Connects buttons to log book functionality.", "Core System", "LogBookManager.cs"],
+        ["StarkkillerLogBookManager.cs", "/Assets/StarkkillerLogBookManager.cs", "Starkiller log book manager", "Starkiller-specific log book manager.", "Core System", "LogBookManager.cs"],
+        ["NewsTicker.cs", "/Assets/NewsTicker.cs", "News ticker", "Handles scrolling news ticker display.", "Core System", "None"],
+        ["UIHelper.cs", "/Assets/_scripts/UIHelper.cs", "UI helper utilities", "Helper utilities for UI elements.", "Core System", "None"],
+        ["UITester.cs", "/Assets/_scripts/UITester.cs", "UI testing tools", "Tools for testing UI elements and interactions.", "Core System", "None"],
+        ["DebugMonitor.cs", "/Assets/DebugMonitor.cs", "Debug monitoring", "Monitors and logs debug information.", "Core System", "None"],
+        ["ButtonHoverEffect.cs", "/Assets/Scripts/ButtonHoverEffect.cs", "Button hover effect", "Handles visual effects when hovering over buttons.", "Core System", "None"],
+        ["SettingsMenu.cs", "/Assets/SettingsMenu.cs", "Settings menu", "Handles the settings menu and options.", "Core System", "None"],
+        ["AudioManager.cs", "/Assets/AudioManager.cs", "Audio management", "Manages game audio including music and sound effects.", "Core System", "None"],
+        ["MoralChoiceManager.cs", "/Assets/_scripts/MoralChoiceManager.cs", "Moral choice management", "Manages player moral choices and their impacts.", "Core System", "None"],
+        ["LegacySystemsAdapter.cs", "/Assets/Scripts/LegacySystemsAdapter.cs", "Legacy systems adapter", "Adapts legacy systems to work with new architecture.", "Core System", "None"],
+        ["LegacySystemsMigrator.cs", "/Assets/_scripts/LegacySystemsMigrator.cs", "Legacy systems migrator", "Migrates data from legacy systems to new systems.", "Core System", "None"],
+        ["MasterShipGeneratorAdapter.cs", "/Assets/Scripts/MasterShipGeneratorAdapter.cs", "Ship generator adapter", "Adapts MasterShipGenerator for different contexts.", "Ship System", "MasterShipGenerator.cs"],
+        ["ShipGeneratorCoordinator.cs", "/Assets/ShipGeneratorCoordinator.cs", "Coordinates ship generators", "Coordinates between different ship generation systems.", "Ship System", "MasterShipGenerator.cs"],
+        ["SpecializedScenarioProvider.cs", "/Assets/Scripts/SpecializedScenarioProvider.cs", "Specialized scenario provider", "Provides specialized scenarios for ships.", "Ship System", "ShipScenario.cs"],
+        ["ShipScenarioProvider.cs", "/Assets/_scripts/ShipScenarioProvider.cs", "Ship scenario provider", "Provides scenarios for ships during generation.", "Ship System", "ShipScenario.cs"],
+        ["GameStateDebugHelper.cs", "/Assets/_scripts/GameStateDebugHelper.cs", "Game state debug helper", "Helps debug and force game state for testing.", "Core System", "GameStateController.cs; CredentialChecker.cs"],
+        ["TextAnimator.cs", "/Assets/TextAnimator.cs", "Text animation", "Handles animated text effects.", "Visual Effects", "None"],
+        ["HologramEffect.cs", "/Assets/_scripts/HologramEffect.cs", "Hologram effect", "Creates holographic visual effects.", "Visual Effects", "None"],
+        ["HolographicScanLines.cs", "/Assets/_scripts/HolographicScanLines.cs", "Holographic scan lines", "Creates scan line effect for holograms.", "Visual Effects", "None"],
+        ["HolographicPulse.cs", "/Assets/_scripts/HolographicPulse.cs", "Holographic pulse", "Creates pulsing effect for holograms.", "Visual Effects", "None"],
+        ["HologramScanLines.cs", "/Assets/_scripts/HologramScanLines.cs", "Hologram scan lines", "Alternative implementation of scan lines for holograms.", "Visual Effects", "None"],
+        ["ImperialScanLines.cs", "/Assets/_scripts/ImperialScanLines.cs", "Imperial scan lines", "Scan line effect for imperial displays.", "Visual Effects", "None"],
+        ["StarkillerScanLines.cs", "/Assets/_scripts/StarkillerScanLines.cs", "Starkiller scan lines", "Scan line effect for Starkiller displays.", "Visual Effects", "None"],
+        ["StarkillerDisplaySetup.cs", "/Assets/_scripts/StarkillerDisplaySetup.cs", "Starkiller display setup", "Setup for Starkiller display effects.", "Visual Effects", "None"],
+        ["SafeArea.cs", "/Assets/SafeArea.cs", "Safe area handling", "Handles safe area adjustment for different screen sizes.", "Core System", "None"]
+    ]
+    
+    # Column names
+    columns = ["File Name", "File Path", "Purpose", "Description", "Category", "Dependencies"]
+    
+    # Create a DataFrame
+    df = pd.DataFrame(data, columns=columns)
+    
+    # Group by category
+    category_groups = df.groupby('Category')
+    
+    # Create a new workbook
+    wb = Workbook()
+    
+    # Remove default sheet
+    default_sheet = wb.active
+    wb.remove(default_sheet)
+    
+    # Add introduction sheet
+    ws = wb.create_sheet("Introduction")
+    intro_text = [
+        "",
+        "When implementing new features or modifying existing functionality, refer to this catalog to understand which systems to modify.",
+        "",
+        "The catalog is organized by system categories:",
+        "- Core System: Central game infrastructure components",
+        "- Ship System: Ship generation and encounter handling",
+        "- Family System: Imperial family management",
+        "- Consequences System: Decision consequence tracking",
+        "- Daily Game Flow: Daily game cycle management",
+        "- Content Management: Media and game content",
+        "- Visual Effects: Visual enhancement components",
+        "",
+        f"This catalog was updated on {datetime.datetime.now().strftime('%Y-%m-%d')}.",
+        "It includes newly added scripts and recent modifications."
+    ]
+    
+    # Write introduction
+    ws["A1"] = "File Organization Strategy"
+    ws["A1"].font = Font(bold=True)
+    for i, text in enumerate(intro_text, 2):
+        ws[f"A{i}"] = text
+    
+    # Sheet mapping
+    sheet_name_map = {
+        "Core System": "Core System Files",
+        "Ship System": "Ship System Files",
+        "Family System": "Family System Files",
+        "Consequences System": "Consequences System Files",
+        "Daily Game Flow": "Daily Game Flow Files",
+        "Content Management": "Content Management Files",
+        "Visual Effects": "Visual Effects Files"
+    }
+    
+    # Add a sheet for each category
+    for category, group in category_groups:
+        # Get the sheet name with mapping
+        sheet_name = sheet_name_map.get(category, category + " Files")
+        
+        # Create sheet
+        ws = wb.create_sheet(sheet_name)
+        
+        # Add headers
+        for col_idx, col_name in enumerate(columns, 1):
+            cell = ws.cell(row=1, column=col_idx, value=col_name)
+            cell.font = Font(bold=True)
+            cell.fill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")
+        
+        # Add data
+        for row_idx, (_, row) in enumerate(group.iterrows(), 2):
+            for col_idx, col_name in enumerate(columns, 1):
+                cell = ws.cell(row=row_idx, column=col_idx, value=row[col_name])
+                
+                # Set alignment for description column
+                if col_name == "Description":
+                    cell.alignment = Alignment(wrap_text=True)
+                    
+        # Auto-adjust column width
+        for col_idx in range(1, len(columns) + 1):
+            ws.column_dimensions[chr(64 + col_idx)].width = 20
+        
+        # Make description column wider
+        ws.column_dimensions['D'].width = 60
+    
+    # Save the workbook
+    wb.save(excel_file)
+    print(f"Excel file created at: {excel_file}")
+
+if __name__ == "__main__":
+    create_excel_catalog()

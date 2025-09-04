@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7784bd29afb0448c8657aeefe8bf882, type: 3}
+  m_Name: Civilian_Passenger_Transport
+  m_EditorClassIdentifier: 
+  manifestName: Civilian Passenger Transport
+  manifestCode: MANIFEST-7156
+  manifestDescription: Standard civilian passenger transport with verified identities
+  declaredItems:
+  - Registered Passengers (12)
+  - Personal Belongings
+  - Travel Documents
+  - Food Supplies
+  actualItems:
+  - Registered Passengers (12)
+  - Personal Belongings
+  - Travel Documents
+  - Food Supplies
+  totalCargoUnits: 15
+  cargoWeight: 5
+  factionRestriction: 0
+  allowedFactions: []
+  requiredShipCategories:
+  - Civilian Transports
+  - Trade Union
+  - Special Interest Vessels
+  hasContraband: 0
+  hasFalseEntries: 0
+  contrabandType: 0
+  contrabandItems: []
+  isEasilyDetectable: 1
+  clearanceCode: CIV-PASS-3321
+  authorizedBy: Port Authority
+  requiredClearanceLevel: 1
+  firstAppearanceDay: 1
+  lastAppearanceDay: -1
+  maxDailyAppearances: 3
+  requiresSpecialValidation: 0
+  validationKeywords:
+  - passenger
+  - civilian
+  - transport
+  suspiciousKeywords: []
+  reputationImpactIfWrong: -10
+  creditRewardIfCorrect: 5
+  priority: 1

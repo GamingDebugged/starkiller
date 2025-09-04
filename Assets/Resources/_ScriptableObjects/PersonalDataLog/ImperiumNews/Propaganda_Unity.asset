@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Propaganda_Unity
+  m_EditorClassIdentifier: 
+  entryId: b22efbe9-6a0a-42bf-b577-d53a3b348b96
+  entryName: Unity Through Strength
+  feedType: 0
+  headline: Unity Through Strength
+  content: Emperor's birthday celebrations unite billions across the galaxy. Local
+    governors report record attendance at loyalty ceremonies.
+  videoClip: {fileID: 32900000, guid: cc17a75cf912f4fe38a0b49308f84efc, type: 3}
+  videoThumbnail: {fileID: 9105620304023138525, guid: 3243d1453735b47eeb6a804e07404033, type: 3}
+  triggerEventId: 
+  minDay: 8
+  maxDay: 8
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0

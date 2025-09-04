@@ -1,0 +1,64 @@
+REFACTORED COMPONENTS SETUP INSTRUCTIONS
+========================================
+
+If Unity isn't seeing the new scripts, follow these steps:
+
+STEP 1: Force Unity to Refresh
+------------------------------
+1. In Unity, go to Assets → Refresh (or Ctrl+R / Cmd+R)
+2. OR delete the Library folder and let Unity regenerate it
+3. OR restart Unity completely
+
+STEP 2: Check File Locations
+----------------------------
+These files should exist:
+✓ _RefactoredScripts/README.md
+✓ _RefactoredScripts/Core/ServiceLocator.cs  
+✓ _RefactoredScripts/Core/GameEvents.cs
+✓ _RefactoredScripts/Core/Managers/GameStateManager.cs
+✓ _RefactoredScripts/TestRefactoredComponents.cs
+
+STEP 3: Add Components to Scene (IN ORDER)
+------------------------------------------
+1. Create Empty GameObject → Name: "ServiceLocator"
+   → Add Component: ServiceLocator
+
+2. Create Empty GameObject → Name: "GameStateManager" 
+   → Add Component: GameStateManager
+
+3. Create Empty GameObject → Name: "RefactorTester"
+   → Add Component: TestRefactoredComponents
+
+STEP 4: Test
+------------
+1. Hit Play
+2. Check Console for:
+   "[ServiceLocator] Initialized and registered"
+   "[GameStateManager] State changed: MainMenu -> MainMenu"
+   "✅ ServiceLocator working correctly"
+
+STEP 5: If Still Having Issues
+------------------------------
+- Check that all .cs files have using statements at the top
+- Make sure no compile errors (red icons in Console)
+- Try renaming GameStateManager to something else temporarily
+- Check that you're not missing any dependencies
+
+STEP 6: Alternative Simple Test
+-------------------------------
+If the above doesn't work, try creating a simple test script:
+
+```csharp
+using UnityEngine;
+
+public class SimpleTest : MonoBehaviour
+{
+    void Start()
+    {
+        Debug.Log("Simple test working!");
+    }
+}
+```
+
+If this doesn't work either, there's a Unity project issue.
+If it does work, the problem is with our namespace/dependencies.

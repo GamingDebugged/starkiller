@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: VisitiingFamily
+  m_EditorClassIdentifier: 
+  scenarioName: Visiting Family
+  type: 3
+  applicableShipTypes:
+  - {fileID: 11400000, guid: c7c01436f00ce451cb2225bd795c6955, type: 2}
+  - {fileID: 11400000, guid: 589d041916c3b459f8115dfe1d233b02, type: 2}
+  applicableCaptainTypes:
+  - {fileID: 11400000, guid: 57ecb4d43b8054411a76a6111c4a1d0e, type: 2}
+  dayFirstAppears: 5
+  maxAppearances: 1
+  possibleStories:
+  - My husband is an imperium officer currently under questioning. I need to see
+    him.
+  - My son was injured during the recent attack. He's a trooper. Please let me onboard
+    to see him.
+  - My daughter is under suspicition of being a insrgent. Please let me see her and
+    talk to her.
+  possibleManifests:
+  - Civilian Solicitor
+  - Passenger, security detail, classified documents, diplomatic package
+  - Legal officer, personal staff, security droids, encrypted communications equipment
+  - bodyguards, Holo Crew,
+  shouldBeApproved: 0
+  invalidReason: 
+  offersBribe: 1
+  bribeChanceMultiplier: 0.6
+  severityLevel: 0
+  possibleConsequences:
+  - Imperium staff are now a focus of the central worlds holo vids.
+  - Imperium shown to be lax in the face of family affairs
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 1
+  storyTag: visitingfamily
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

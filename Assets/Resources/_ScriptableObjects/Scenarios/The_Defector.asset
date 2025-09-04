@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: The_Defector
+  m_EditorClassIdentifier: 
+  scenarioName: The Defector
+  type: 3
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 8
+  maxAppearances: 1
+  possibleStories:
+  - Commander, I need immediate clearance. I have... information that certain parties
+    would find valuable. Time is of the essence.
+  - Listen carefully. I'm not who my credentials say I am anymore. I need to reach
+    the Outer Rim before they realize I'm gone.
+  - I've served the Empire for 20 years. I've seen things... done things. I can't
+    do it anymore. Please, just let me through.
+  - They're purging the officer corps. Anyone who questions the new protocols. I
+    have proof, but I need to get it to the right people.
+  possibleManifests:
+  - Personal Effects, Officer's Quarters Furniture, Classified Documents (Sealed)
+  - Navigation Equipment, Emergency Supplies, Encrypted Data Cores (Diplomatic Pouch)
+  - Medical Supplies, Communication Array, Strategic Planning Materials (Eyes Only)
+  - Standard Provisions, Archive Storage Units, Intelligence Briefings (Level 9 Clearance)
+  shouldBeApproved: 0
+  invalidReason: Imperial defector carrying stolen intelligence - approval aids rebellion
+  offersBribe: 1
+  bribeChanceMultiplier: 1
+  severityLevel: 2
+  possibleConsequences:
+  - Imperial Security discovers classified intelligence leak. Massive manhunt initiated.
+  - Stolen tactical data leads to successful rebel operation. Imperial supply lines
+    disrupted.
+  - Defector's information saves civilian colony from Imperial purge. Thousands evacuated.
+  - Imperial counter-intelligence uses defector to plant false information. Rebel
+    cell compromised.
+  minCasualties: 15
+  maxCasualties: 30
+  isStoryMission: 1
+  storyTag: defector
+  inspectionVideo: {fileID: 0}
+  alternativeVideos: []
+  scenarioAudioClip: {fileID: 0}

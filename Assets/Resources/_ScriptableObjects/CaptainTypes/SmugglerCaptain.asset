@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e9f2e61ca25423ea6880b1dc127ba5, type: 3}
+  m_Name: SmugglerCaptain
+  m_EditorClassIdentifier: 
+  typeName: Smuggler Captain
+  factions:
+  - Insurgent
+  - Independent
+  - Crime Syndicate
+  - Freelance
+  factionObjects:
+  - {fileID: 11400000, guid: 372ce204bdc744533b637c9efff386f6, type: 2}
+  captains:
+  - firstName: Smug
+    lastName: Smugglerson
+    rank: 
+    authorityLevel: 1
+    portrait: {fileID: -2460069153356990531, guid: d289c3024408f42f2837a912a3eebca6, type: 3}
+    briberyChance: 0.9
+    minBribeAmount: 20
+    maxBribeAmount: 100
+    deceptionChance: 0.3
+    greetingDialogs:
+    - phrase: Take a look at these
+      associatedVideo: {fileID: 32900000, guid: a10a708cd1718483dac461eb7af4c41a, type: 3}
+    approvedDialogs:
+    - phrase: appro
+      associatedVideo: {fileID: 32900000, guid: af90444e51d8b4e42b041d4168516704, type: 3}
+    deniedDialogs:
+    - phrase: den
+      associatedVideo: {fileID: 32900000, guid: c5882198790c84d4f9773112fd5e188a, type: 3}
+    bribeDialogs:
+    - phrase: bri
+      associatedVideo: {fileID: 32900000, guid: bd1ab0376ab224bfa94d885aeb9fcc5e, type: 3}
+    holdingPatternDialogs:
+    - phrase: hol
+      associatedVideo: {fileID: 32900000, guid: ec88692a3859a4b45926432236f2d9d9, type: 3}
+    tractorBeamDialogs:
+    - phrase: trac
+      associatedVideo: {fileID: 32900000, guid: 6b02f402bcddf4785a2f69bfe34268ec, type: 3}
+  possibleFirstNames:
+  - Eric
+  - Sando
+  - Han
+  - Dash
+  - Maz
+  - Hondo
+  possibleLastNames:
+  - Rolo
+  - Drendar
+  - Karden
+  - Ohane
+  - Dros
+  - Calgristian
+  commonRanks:
+  - Captain
+  - Commander
+  - Boss
+  typicalBehaviors:
+  - Speaks casually and avoids formalities
+  - Tends to be evasive about cargo specifics"
+  - Often claims 'delays' or 'route changes' to explain irregularities
+  - Quick to offer bribes when pressured
+  dialoguePatterns: []

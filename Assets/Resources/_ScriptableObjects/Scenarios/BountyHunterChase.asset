@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: BountyHunterChase
+  m_EditorClassIdentifier: 
+  scenarioName: BountyHunterChase
+  type: 0
+  applicableShipTypes:
+  - {fileID: 11400000, guid: 355d99a1fb3854b32a6e12289566f2d1, type: 2}
+  applicableCaptainTypes:
+  - {fileID: 11400000, guid: 00d894faffecb49ceaa5eda9e71b9999, type: 2}
+  dayFirstAppears: 3
+  maxAppearances: -1
+  possibleStories:
+  - I am tracking a possible Imperium Traitor at the request of Admiral Tak Mahoor.
+    They entered this system and I need urgent clearance to continue my pursuit.
+  possibleManifests:
+  - Weapons
+  - Slaves
+  - Prisoners
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 1
+  bribeChanceMultiplier: 1
+  severityLevel: 0
+  possibleConsequences:
+  - The Imperium Traitor has escaped the Ravager
+  minCasualties: 0
+  maxCasualties: 0
+  isStoryMission: 1
+  storyTag: HelpTraitor

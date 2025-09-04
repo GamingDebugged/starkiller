@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: RebelInfiltrationAttempt
+  m_EditorClassIdentifier: 
+  scenarioName: Rebel Infiltration Attempt
+  type: 2
+  applicableShipTypes:
+  - {fileID: 11400000, guid: f49bcb23ccf3c4996a340596a6dc6ffb, type: 2}
+  applicableCaptainTypes: []
+  dayFirstAppears: 4
+  maxAppearances: 2
+  possibleStories:
+  - Ship claims to be delivering routine supplies, but intelligence reports indicate
+    this vessel may have rebel connections.
+  - Captain is overly nervous during communication. Ship transponder shows recent
+    activity in suspected rebel sectors.
+  - Supply ship requesting emergency docking. Crew behavior and documentation show
+    inconsistencies.
+  possibleManifests:
+  - Routine supplies, maintenance equipment, 'specialized tools
+  - Medical supplies, food provisions, unmarked containers
+  - Repair components, standard provisions, surveillance equipment
+  shouldBeApproved: 0
+  invalidReason: Suspected rebel affiliations
+  offersBribe: 1
+  bribeChanceMultiplier: 0.5
+  severityLevel: 2
+  possibleConsequences:
+  - Rebel operatives infiltrated the base, sabotaging critical systems. {CASUALTIES}
+    casualties reported.
+  - Security breach led to data theft and compromised base defenses. {CASUALTIES}
+    personnel killed during security response.
+  minCasualties: 2
+  maxCasualties: 11
+  isStoryMission: 1
+  storyTag: insurgent_infiltration

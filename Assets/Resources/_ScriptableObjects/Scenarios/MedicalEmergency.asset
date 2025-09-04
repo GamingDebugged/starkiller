@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: MedicalEmergency
+  m_EditorClassIdentifier: 
+  scenarioName: Medical Emergency
+  type: 1
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 1
+  maxAppearances: -1
+  possibleStories:
+  - Ship reports wounded Imperium officers onboard requiring immediate medical attention.
+    Authorization codes are valid but rushed.
+  - Imperium transport with injured troopers requesting emergency docking. Claims
+    ambush by insurgents.
+  - Medical shuttle carrying critical patients needs immediate clearance. Documentation
+    is complete but filed hastily.
+  possibleManifests:
+  - Medical personnel, wounded officers, emergency medical supplies
+  - Injured stormtroopers, medical droids, Infec tanks
+  - Critical patients, medical staff, specialized surgical equipment
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 0
+  bribeChanceMultiplier: 1
+  severityLevel: 1
+  possibleConsequences:
+  - Delay in medical treatment resulted in {CASUALTIES} preventable casualties among
+    Imperial personnel.
+  - Medical emergency was not addressed promptly, causing loss of {CASUALTIES} valuable
+    officers.
+  minCasualties: 1
+  maxCasualties: 5
+  isStoryMission: 0
+  storyTag: 

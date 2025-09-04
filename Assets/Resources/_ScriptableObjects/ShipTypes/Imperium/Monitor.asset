@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725cc3075997749c895b218d90d5d5a2, type: 3}
+  m_Name: Monitor
+  m_EditorClassIdentifier: 
+  typeName: Monitor
+  category: {fileID: 11400000, guid: 9225cbb2e7ecb4fd4b409cefe08a196b, type: 2}
+  size: 0
+  specificShipNames:
+  - Skara
+  - Figor
+  - Ikor
+  - Leviok
+  - Fimhra
+  minCrewSize: 5
+  maxCrewSize: 11
+  commonOrigins:
+  - Planet Surface
+  - Stellar Destroyer
+  - Orbiting Battleship
+  validPurposes:
+  - Practice Maneuvers
+  - Blockades
+  - System defense
+  suspiciousIndicators:
+  - Arrival from Outer Rim
+  - Weapons Powering Up
+  - Irregular Flight Path
+  visualDescription: A monitor is a relatively small warship that is neither fast
+    nor strongly armored but carries disproportionately large guns
+  technicalSpecification: 
+  shipIcon: {fileID: 0}
+  shipVariations: []
+  defaultShipVideo: {fileID: 0}
+  videoClipPossibilities: []
+  canBeInfiltrated: 0
+  canBeUsedByOrder: 0
+  canSmuggle: 0

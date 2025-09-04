@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: SuspiciousCargo
+  m_EditorClassIdentifier: 
+  scenarioName: Suspicious Cargo
+  type: 2
+  applicableShipTypes:
+  - {fileID: 11400000, guid: f49bcb23ccf3c4996a340596a6dc6ffb, type: 2}
+  - {fileID: 11400000, guid: 9f36accbc9d1a4dd0adb7d5d414ae9d6, type: 2}
+  applicableCaptainTypes: []
+  dayFirstAppears: 2
+  maxAppearances: -1
+  possibleStories:
+  - Captain seems nervous. Claims to be delivering technical equipment but manifest
+    shows discrepancies.
+  - Ship reports engine trouble during transit. Crew behavior appears suspicious
+    upon questioning.
+  - Captain insists on urgent delivery despite lacking proper clearance. Manifest
+    appears altered.
+  possibleManifests:
+  - Communication equipment, unmarked containers, scanning devices
+  - Surveillance equipment, weapons components, 'personal items
+  - Technical components, encrypted data drives, unspecified medical supplies
+  shouldBeApproved: 0
+  invalidReason: Suspicious cargo - possible contraband
+  offersBribe: 1
+  bribeChanceMultiplier: 0.7
+  severityLevel: 1
+  possibleConsequences:
+  - Contraband items were smuggled onto the base, compromising security.
+  - Rebel sympathizers gained access to restricted areas. {CASUALTIES} personnel
+    injured in subsequent incident.
+  minCasualties: 0
+  maxCasualties: 3
+  isStoryMission: 0
+  storyTag: 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1f059f487164ef7a1187cf3f183a50, type: 3}
+  m_Name: Arridiny
+  m_EditorClassIdentifier: 
+  locationName: Arridiny
+  locationCode: IP0426
+  type: 0
+  affiliation: 0
+  isSecretLocation: 0
+  description: Ice planet with geothermal activity and vast cave systems. Collects,
+    purifies and distributes its natural resources around the Imperium Fleet.
+  locationImage: {fileID: 21300012, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}

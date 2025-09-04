@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221fc104f67714407ad1e5674cc3779b, type: 3}
+  m_Name: Ending_Underground
+  m_EditorClassIdentifier: 
+  endingType: 3
+  endingTitle: Underground
+  endingSubtitle: You remained at your post while secretly helping the resistance
+  mainNarrativeText: Maintaining your cover as a loyal officer, you became a valuable
+    asset to the underground network, providing intelligence while keeping your family
+    safe.
+  summaryText: 
+  positiveAchievements:
+  - Became valuable intelligence asset
+  - Maintained operational security
+  negativeAchievements: []
+  neutralAchievements: []
+  endingImage: {fileID: 0}
+  endingThemeColor: {r: 1, g: 1, b: 1, a: 1}
+  endingAnimation: {fileID: 0}
+  endingMusic: {fileID: 0}
+  endingNarration: {fileID: 0}
+  musicVolume: 0.7
+  displayDuration: 30
+  allowSkip: 1
+  fadeInDuration: 2
+  fadeOutDuration: 2
+  showStatistics: 1
+  statisticsToDisplay:
+  - Days Survived
+  - Ships Processed
+  - Family Status
+  - Imperial Loyalty
+  - Rebellion Sympathy
+  - Credits Earned
+  - Bribes Taken

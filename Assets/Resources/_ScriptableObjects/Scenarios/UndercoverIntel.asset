@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257f23121d9640dbb0a397ff2586245, type: 3}
+  m_Name: UndercoverIntel
+  m_EditorClassIdentifier: 
+  scenarioName: Undercover Intelligence Operation
+  type: 0
+  applicableShipTypes: []
+  applicableCaptainTypes: []
+  dayFirstAppears: 3
+  maxAppearances: 3
+  possibleStories:
+  - Unmarked vessel with non-standard clearance codes requesting docking. Captain
+    claims to be on classified assignment.
+  - Transport arriving from restricted sector claims to be carrying intelligence
+    assets. Authentication uses emergency protocols.
+  - Civilian ship transmitting Imperial Intelligence override codes. Refuses to state
+    mission details over open channel.
+  possibleManifests:
+  - Intelligence gathering equipment, surveillance devices, encrypted data modules,
+    field agents
+  - "Covert operatives, slicing equipment, espionage tools, captured rebel communiqu\xE9s"
+  - Surveillance drones, signal interceptors, disguised personnel, contraband samples
+  shouldBeApproved: 1
+  invalidReason: 
+  offersBribe: 0
+  bribeChanceMultiplier: 0
+  severityLevel: 1
+  possibleConsequences:
+  - Critical intelligence operation aborted. Rebel cell remained undetected and later
+    sabotaged Imperial facilities, causing {CASUALTIES} casualties.
+  - Valuable intelligence assets turned away. Time-sensitive information about insurgent
+    activity was lost, resulting in {CASUALTIES} deaths.
+  minCasualties: 3
+  maxCasualties: 8
+  isStoryMission: 0
+  storyTag: 

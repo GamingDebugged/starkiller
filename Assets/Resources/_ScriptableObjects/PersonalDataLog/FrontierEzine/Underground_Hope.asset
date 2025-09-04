@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeed2b4feef64a5780b0cfc6b4cd07e, type: 3}
+  m_Name: Underground_Hope
+  m_EditorClassIdentifier: 
+  entryId: 19bce3de-b374-4ead-9ee1-2f8b5694f92e
+  entryName: Hope Lives in the Outer Rim
+  feedType: 2
+  headline: Hope Lives in the Outer Rim
+  content: Despite Imperial propaganda, free systems continue to thrive beyond the
+    Empire's reach. 'Freedom finds a way,' reports anonymous source.
+  videoClip: {fileID: 32900000, guid: e3ea2e9870c164cf9ab560dab2eb9006, type: 3}
+  videoThumbnail: {fileID: -7144773097191472602, guid: fa343a3983dff43bc8a2e07bed58a1cb, type: 3}
+  triggerEventId: 
+  minDay: 10
+  maxDay: 10
+  appearanceChance: 1
+  severity: 0
+  linkedToIncident: 0
+  linkedIncidentType: 
+  requiresAction: 0
+  actionText: Help Family
+  creditCost: 0
+  actionId: 
+  persistDuration: 0
+  alternateHeadlines: []
+  alternateContent: []
+  prerequisiteEntryIds: []
+  exclusiveWithEntryIds: []
+  triggersEntryIds: []
+  familyPressureChange: 0
+  imperialLoyaltyChange: 0
